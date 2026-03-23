@@ -87,7 +87,7 @@ def save_to_notion(repos):
             "Language": lang_prop,
             "Stars": {"number": repo["stars"]},
             "Stars Today": {"number": repo["stars_today"]},
-            "URL": {"url": repo["url"]},
+            "userDefined:URL": {"url": repo["url"]},
             "Date": {"date": {"start": today}},
         }
 
