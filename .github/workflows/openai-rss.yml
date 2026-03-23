@@ -26,6 +26,7 @@ jobs:
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python fetch_openai_rss.py
 
       - name: Commit seen keys

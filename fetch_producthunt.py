@@ -5,6 +5,7 @@ Product Hunt 일일 피드를 수집한다.
 
 import json
 import os
+import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
@@ -12,6 +13,7 @@ from pathlib import Path
 
 import requests as http_requests
 from notion_client import Client
+from article_writer import write_article
 
 KST = timezone(timedelta(hours=9))
 SEEN_FILE = Path(__file__).parent / "seen_producthunt.json"
@@ -47,8 +49,11 @@ def fetch_rss(feed_url):
             except Exception:
                 pass
 
+        desc = item.findtext("description", "").strip()
+        desc = re.sub(r'<[^>]+>', '', desc)[:500]
+
         if title:
-            items.append({"title": title, "url": link, "date": iso_date})
+            items.append({"title": title, "url": link, "date": iso_date, "description": desc})
 
     # Atom format fallback
     ns = {"atom": "http://www.w3.org/2005/Atom"}
@@ -60,8 +65,11 @@ def fetch_rss(feed_url):
 
         iso_date = updated[:10] if updated else ""
 
+        content_text = entry.findtext("atom:content", "", ns).strip() or entry.findtext("atom:summary", "", ns).strip()
+        desc = re.sub(r'<[^>]+>', '', content_text)[:500]
+
         if title:
-            items.append({"title": title, "url": link, "date": iso_date})
+            items.append({"title": title, "url": link, "date": iso_date, "description": desc})
 
     return items
 
@@ -133,9 +141,10 @@ def save_to_notion(items, source_type):
         }
         if item["date"]:
             properties["발행일"] = {"date": {"start": item["date"]}}
-        notion.pages.create(
+        page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
+        write_article(page["id"], item["title"], item.get("description", ""), source_type)
         seen.add(item["url"])
         print(f"  ✅ {item['title']} ({item['date']})")
 

@@ -13,6 +13,7 @@ from pathlib import Path
 import requests as http_requests
 from playwright.sync_api import sync_playwright
 from notion_client import Client
+from article_writer import write_article
 
 OPENAI_STORIES_URL = "https://openai.com/ko-KR/stories/"
 KST = timezone(timedelta(hours=9))
@@ -170,9 +171,10 @@ def save_to_notion(stories):
         }
         if story["date"]:
             properties["발행일"] = {"date": {"start": story["date"]}}
-        notion.pages.create(
+        page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
+        write_article(page["id"], story["title"], story.get("category", ""), "OpenAI Stories")
         seen.add(story["url"])
         print(f"  ✅ {story['title']} ({story['category']}, {story['date']})")
 
