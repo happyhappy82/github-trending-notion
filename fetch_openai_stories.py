@@ -29,8 +29,15 @@ def fetch_stories():
     """OpenAI Stories 페이지를 Playwright로 크롤링하여 스토리 목록을 반환한다."""
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.goto(OPENAI_STORIES_URL, wait_until="networkidle", timeout=60000)
+        page = browser.new_page(
+            user_agent=(
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
+        )
+        page.goto(OPENAI_STORIES_URL, wait_until="domcontentloaded", timeout=60000)
+        # 스토리 카드가 로드될 때까지 대기
+        page.wait_for_selector('a[href*="/index/"]', timeout=30000)
 
         # "더 로딩하기" 버튼 반복 클릭하여 모든 스토리 로드
         for _ in range(20):
