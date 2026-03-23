@@ -8,21 +8,20 @@ import json
 import os
 import re
 
-import google.generativeai as genai
+from google import genai
 from notion_client import Client
 
-_configured = False
+_client = None
 
 
 def _ensure_configured():
     """Gemini API 설정을 확인하고 초기화한다."""
-    global _configured
-    if not _configured:
+    global _client
+    if _client is None:
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
             return False
-        genai.configure(api_key=api_key)
-        _configured = True
+        _client = genai.Client(api_key=api_key)
     return True
 
 
@@ -52,8 +51,6 @@ def write_article(notion_page_id, title, description="", source_name=""):
 
 def _generate_article(title, description, source_name):
     """Gemini API로 한국어 뉴스 기사를 생성한다."""
-    model = genai.GenerativeModel("gemini-2.0-flash")
-
     prompt = f"""당신은 한국의 AI 전문 뉴스 기자입니다. 아래 영문 뉴스 정보를 바탕으로 한국어 뉴스 기사를 작성하세요.
 
 [원문 제목]
@@ -80,7 +77,10 @@ def _generate_article(title, description, source_name):
 6. 전문 용어는 한국어(영어) 병기
 7. 추측이나 의견은 삼가고 사실 중심으로 서술"""
 
-    response = model.generate_content(prompt)
+    response = _client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=prompt,
+    )
     text = response.text.strip()
 
     # Remove markdown code block wrapper if present
