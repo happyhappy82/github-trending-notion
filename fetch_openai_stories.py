@@ -149,6 +149,8 @@ def save_to_notion(stories):
             "소스유형": {"select": {"name": "OpenAI Stories"}},
             "수집일": {"date": {"start": today}},
         }
+        if story["date"]:
+            properties["발행일"] = {"date": {"start": story["date"]}}
         notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
