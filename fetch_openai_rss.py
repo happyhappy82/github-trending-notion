@@ -1,6 +1,6 @@
 """OpenAI RSS Feeds → Notion DB 자동 수집기
 
-Codex Changelog, Developer Changelog 등 RSS 피드를 수집한다.
+Codex Changelog 등 OpenAI RSS 피드를 수집한다.
 """
 
 import os
@@ -17,10 +17,6 @@ RSS_FEEDS = [
     {
         "url": "https://developers.openai.com/codex/changelog/rss.xml",
         "source_type": "Codex Changelog",
-    },
-    {
-        "url": "https://developers.openai.com/changelog/rss.xml",
-        "source_type": "Developer Changelog",
     },
 ]
 

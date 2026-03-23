@@ -65,6 +65,8 @@ def fetch_model_releases():
                     if (!text) continue;
                     if (text === 'Was this article helpful?') continue;
                     if (text === 'Model Release Notes') continue;
+                    if (text.includes('Need more help')) continue;
+                    if (text.includes('Contact us')) continue;
 
                     const dateMatch = text.match(/\\(([^)]*\\d{4})\\)/);
                     const date = dateMatch ? dateMatch[1] : '';
