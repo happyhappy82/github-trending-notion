@@ -139,7 +139,6 @@ def save_to_notion(releases):
     """크롤링한 릴리즈노트를 Notion DB에 저장한다."""
     notion = Client(auth=os.environ["NOTION_API_KEY"])
     database_id = os.environ["NOTION_DATABASE_ID"]
-    today = datetime.now(KST).strftime("%Y-%m-%d")
 
     seen = load_seen()
     if seen is None:
@@ -148,17 +147,14 @@ def save_to_notion(releases):
 
     new_releases = [r for r in releases if r["title"] not in seen]
 
-    print(f"[{today}] 전체 {len(releases)}개 중 신규 {len(new_releases)}개 저장 시작...")
+    print(f"전체 {len(releases)}개 중 신규 {len(new_releases)}개 저장 시작...")
 
     for release in new_releases:
         properties = {
             "제목": {"title": [{"text": {"content": release["title"]}}]},
             "URL": {"url": release["url"]},
             "소스유형": {"select": {"name": SOURCE_TYPE}},
-            "수집일": {"date": {"start": today}},
         }
-        if release["date"]:
-            properties["발행일"] = {"date": {"start": release["date"]}}
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )

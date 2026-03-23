@@ -120,7 +120,6 @@ def save_to_notion(repos):
     """크롤링한 레포 목록을 Notion DB에 저장한다."""
     notion = Client(auth=os.environ["NOTION_API_KEY"])
     database_id = os.environ["NOTION_DATABASE_ID"]
-    today = datetime.now(KST).strftime("%Y-%m-%d")
 
     seen = load_seen()
     if seen is None:
@@ -132,17 +131,12 @@ def save_to_notion(repos):
     print(f"[GitHub Trending] 전체 {len(repos)}개 중 신규 {len(new_repos)}개 저장 시작...")
 
     for repo in new_repos:
-        lang = repo["language"] if repo["language"] in KNOWN_LANGUAGES else "Other"
-        lang_prop = {"select": {"name": lang}} if lang else {"select": None}
-
         properties = {
             "제목": {"title": [{"text": {"content": repo["repo"]}}]},
-            "Language": lang_prop,
             "Stars": {"number": repo["stars"]},
             "Stars Today": {"number": repo["stars_today"]},
             "URL": {"url": repo["url"]},
             "소스유형": {"select": {"name": "GitHub Trending"}},
-            "수집일": {"date": {"start": today}},
         }
 
         page = notion.pages.create(parent={"database_id": database_id}, properties=properties)

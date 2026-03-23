@@ -121,7 +121,6 @@ def save_to_notion(items, source_type):
     """RSS 아이템을 Notion DB에 저장한다."""
     notion = Client(auth=os.environ["NOTION_API_KEY"])
     database_id = os.environ["NOTION_DATABASE_ID"]
-    today = datetime.now(KST).strftime("%Y-%m-%d")
 
     seen = load_seen()
     if seen is None:
@@ -137,10 +136,7 @@ def save_to_notion(items, source_type):
             "제목": {"title": [{"text": {"content": item["title"][:2000]}}]},
             "URL": {"url": item["url"]},
             "소스유형": {"select": {"name": source_type}},
-            "수집일": {"date": {"start": today}},
         }
-        if item["date"]:
-            properties["발행일"] = {"date": {"start": item["date"]}}
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
