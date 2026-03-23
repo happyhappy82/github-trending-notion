@@ -8,6 +8,7 @@ import os
 import re
 from datetime import datetime, timezone, timedelta
 
+import requests as http_requests
 from playwright.sync_api import sync_playwright
 from notion_client import Client
 
@@ -99,32 +100,33 @@ def fetch_stories():
     return stories
 
 
-def get_existing_urls(notion, database_id):
+def get_existing_urls(api_key, database_id):
     """Notion DB에서 'OpenAI Stories' 소스유형의 기존 URL 목록을 가져온다."""
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Notion-Version": "2022-06-28",
+        "Content-Type": "application/json",
+    }
+    api_url = f"https://api.notion.com/v1/databases/{database_id}/query"
+    body = {
+        "filter": {
+            "property": "소스유형",
+            "select": {"equals": "OpenAI Stories"},
+        },
+        "page_size": 100,
+    }
     existing = set()
-    has_more = True
-    start_cursor = None
 
-    while has_more:
-        params = {
-            "database_id": database_id,
-            "filter": {
-                "property": "소스유형",
-                "select": {"equals": "OpenAI Stories"},
-            },
-            "page_size": 100,
-        }
-        if start_cursor:
-            params["start_cursor"] = start_cursor
-
-        resp = notion.databases.query(**params)
-        for pg in resp["results"]:
-            url_prop = pg["properties"].get("URL", {})
+    while True:
+        resp = http_requests.post(api_url, headers=headers, json=body, timeout=30)
+        data = resp.json()
+        for pg in data.get("results", []):
+            url_prop = pg.get("properties", {}).get("URL", {})
             if url_prop.get("url"):
                 existing.add(url_prop["url"])
-
-        has_more = resp.get("has_more", False)
-        start_cursor = resp.get("next_cursor")
+        if not data.get("has_more"):
+            break
+        body["start_cursor"] = data["next_cursor"]
 
     return existing
 
@@ -135,7 +137,7 @@ def save_to_notion(stories):
     database_id = os.environ["NOTION_DATABASE_ID"]
     today = datetime.now(KST).strftime("%Y-%m-%d")
 
-    existing_urls = get_existing_urls(notion, database_id)
+    existing_urls = get_existing_urls(os.environ["NOTION_API_KEY"], database_id)
     new_stories = [s for s in stories if s["url"] not in existing_urls]
 
     print(f"[{today}] 전체 {len(stories)}개 중 신규 {len(new_stories)}개 저장 시작...")
