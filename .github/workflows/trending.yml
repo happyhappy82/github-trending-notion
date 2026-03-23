@@ -2,7 +2,7 @@ name: Fetch GitHub Trending → Notion
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 매일 UTC 00:00 (KST 09:00)
+    - cron: "0 6 * * *"  # 매일 UTC 06:00 (KST 15:00)
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

@@ -82,13 +82,13 @@ def save_to_notion(repos):
         lang_prop = {"select": {"name": lang}} if lang else {"select": None}
 
         properties = {
-            "Repo": {"title": [{"text": {"content": repo["repo"]}}]},
-            "Description": {"rich_text": [{"text": {"content": repo["description"]}}]},
+            "제목": {"title": [{"text": {"content": repo["repo"]}}]},
             "Language": lang_prop,
             "Stars": {"number": repo["stars"]},
             "Stars Today": {"number": repo["stars_today"]},
-            "userDefined:URL": {"url": repo["url"]},
-            "Date": {"date": {"start": today}},
+            "URL": {"url": repo["url"]},
+            "소스유형": {"select": {"name": "GitHub Trending"}},
+            "수집일": {"date": {"start": today}},
         }
 
         notion.pages.create(parent={"database_id": database_id}, properties=properties)
