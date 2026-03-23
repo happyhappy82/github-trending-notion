@@ -1,0 +1,29 @@
+name: Fetch OpenAI Stories → Notion
+
+on:
+  schedule:
+    - cron: "30 6 * * *"  # 매일 UTC 06:30 (KST 15:30)
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  fetch-stories:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Fetch OpenAI Stories and save to Notion
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python fetch_openai_stories.py
