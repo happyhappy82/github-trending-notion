@@ -1,0 +1,36 @@
+name: Fetch Ben's Bites → Notion
+
+on:
+  schedule:
+    - cron: "30 8 * * *"  # 매일 UTC 08:30 (KST 17:30)
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  fetch-bensbites:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch Ben's Bites RSS feed and save to Notion
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python fetch_bensbites.py
+
+      - name: Commit seen keys
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen_*.json
+          git diff --staged --quiet || (git commit -m "Update seen_bensbites [skip ci]" && git push)
