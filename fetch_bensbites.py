@@ -20,7 +20,7 @@ SEEN_FILE = Path(__file__).parent / "seen_bensbites.json"
 
 RSS_FEEDS = [
     {
-        "url": "https://bensbites.beehiiv.com/feed",
+        "url": "https://www.bensbites.com/feed",
         "source_type": "Ben's Bites",
     },
 ]
