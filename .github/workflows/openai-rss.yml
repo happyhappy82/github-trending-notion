@@ -1,0 +1,27 @@
+name: Fetch OpenAI RSS Feeds → Notion
+
+on:
+  schedule:
+    - cron: "30 7 * * *"  # 매일 UTC 07:30 (KST 16:30)
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch OpenAI RSS feeds and save to Notion
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python fetch_openai_rss.py
