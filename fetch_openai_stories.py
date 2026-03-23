@@ -4,9 +4,11 @@ OpenAI Stories 페이지를 Playwright로 크롤링하여
 신규 스토리만 Notion DB에 저장한다.
 """
 
+import json
 import os
 import re
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
 
 import requests as http_requests
 from playwright.sync_api import sync_playwright
@@ -14,6 +16,7 @@ from notion_client import Client
 
 OPENAI_STORIES_URL = "https://openai.com/ko-KR/stories/"
 KST = timezone(timedelta(hours=9))
+SEEN_FILE = Path(__file__).parent / "seen_openai_stories.json"
 
 KOREAN_DATE_RE = re.compile(r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일")
 
@@ -131,14 +134,30 @@ def get_existing_urls(api_key, database_id):
     return existing
 
 
+def load_seen():
+    """seen 파일에서 기존 URL 목록을 로드한다."""
+    if SEEN_FILE.exists():
+        return set(json.loads(SEEN_FILE.read_text()))
+    return None
+
+
+def save_seen(keys):
+    """seen 파일에 URL 목록을 저장한다."""
+    SEEN_FILE.write_text(json.dumps(sorted(keys), ensure_ascii=False, indent=2))
+
+
 def save_to_notion(stories):
     """크롤링한 스토리를 Notion DB에 저장한다 (중복 제외)."""
     notion = Client(auth=os.environ["NOTION_API_KEY"])
     database_id = os.environ["NOTION_DATABASE_ID"]
     today = datetime.now(KST).strftime("%Y-%m-%d")
 
-    existing_urls = get_existing_urls(os.environ["NOTION_API_KEY"], database_id)
-    new_stories = [s for s in stories if s["url"] not in existing_urls]
+    seen = load_seen()
+    if seen is None:
+        print("[Bootstrap] seen 파일 없음, Notion DB에서 기존 URL 로드...")
+        seen = get_existing_urls(os.environ["NOTION_API_KEY"], database_id)
+
+    new_stories = [s for s in stories if s["url"] not in seen]
 
     print(f"[{today}] 전체 {len(stories)}개 중 신규 {len(new_stories)}개 저장 시작...")
 
@@ -154,9 +173,11 @@ def save_to_notion(stories):
         notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
+        seen.add(story["url"])
         print(f"  ✅ {story['title']} ({story['category']}, {story['date']})")
 
-    print(f"[완료] {len(new_stories)}개 신규 스토리 Notion DB에 저장됨!")
+    save_seen(seen)
+    print(f"[완료] {len(new_stories)}개 신규 스토리 저장, seen 파일 업데이트됨!")
 
 
 if __name__ == "__main__":

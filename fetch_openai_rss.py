@@ -3,15 +3,18 @@
 Codex Changelog 등 OpenAI RSS 피드를 수집한다.
 """
 
+import json
 import os
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
+from pathlib import Path
 
 import requests as http_requests
 from notion_client import Client
 
 KST = timezone(timedelta(hours=9))
+SEEN_FILE = Path(__file__).parent / "seen_openai_rss.json"
 
 RSS_FEEDS = [
     {
@@ -94,16 +97,30 @@ def get_existing_urls(api_key, database_id, source_type):
     return existing
 
 
+def load_seen():
+    """seen 파일에서 기존 URL 목록을 로드한다."""
+    if SEEN_FILE.exists():
+        return set(json.loads(SEEN_FILE.read_text()))
+    return None
+
+
+def save_seen(keys):
+    """seen 파일에 URL 목록을 저장한다."""
+    SEEN_FILE.write_text(json.dumps(sorted(keys), ensure_ascii=False, indent=2))
+
+
 def save_to_notion(items, source_type):
     """RSS 아이템을 Notion DB에 저장한다."""
     notion = Client(auth=os.environ["NOTION_API_KEY"])
     database_id = os.environ["NOTION_DATABASE_ID"]
     today = datetime.now(KST).strftime("%Y-%m-%d")
 
-    existing_urls = get_existing_urls(
-        os.environ["NOTION_API_KEY"], database_id, source_type
-    )
-    new_items = [i for i in items if i["url"] and i["url"] not in existing_urls]
+    seen = load_seen()
+    if seen is None:
+        print("[Bootstrap] seen 파일 없음, Notion DB에서 기존 URL 로드...")
+        seen = get_existing_urls(os.environ["NOTION_API_KEY"], database_id, source_type)
+
+    new_items = [i for i in items if i["url"] and i["url"] not in seen]
 
     print(f"[{source_type}] 전체 {len(items)}개 중 신규 {len(new_items)}개 저장 시작...")
 
@@ -119,9 +136,11 @@ def save_to_notion(items, source_type):
         notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
+        seen.add(item["url"])
         print(f"  ✅ {item['title']} ({item['date']})")
 
-    print(f"[{source_type}] {len(new_items)}개 신규 아이템 저장 완료!")
+    save_seen(seen)
+    print(f"[{source_type}] {len(new_items)}개 신규 아이템 저장, seen 파일 업데이트됨!")
 
 
 if __name__ == "__main__":

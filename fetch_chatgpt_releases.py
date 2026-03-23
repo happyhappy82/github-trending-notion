@@ -4,9 +4,11 @@ help.openai.com/en/articles/6825453-chatgpt-release-notes 페이지를
 Playwright로 크롤링하여 신규 릴리즈노트만 Notion DB에 저장한다.
 """
 
+import json
 import os
 import re
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
 
 import requests as http_requests
 from playwright.sync_api import sync_playwright
@@ -15,6 +17,7 @@ from notion_client import Client
 RELEASE_NOTES_URL = "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
 KST = timezone(timedelta(hours=9))
 SOURCE_TYPE = "ChatGPT Release Notes"
+SEEN_FILE = Path(__file__).parent / "seen_chatgpt_releases.json"
 
 ENGLISH_MONTHS = {
     "January": "01", "February": "02", "March": "03", "April": "04",
@@ -119,14 +122,30 @@ def get_existing_titles(api_key, database_id):
     return existing
 
 
+def load_seen():
+    """seen 파일에서 기존 제목 목록을 로드한다."""
+    if SEEN_FILE.exists():
+        return set(json.loads(SEEN_FILE.read_text()))
+    return None
+
+
+def save_seen(keys):
+    """seen 파일에 제목 목록을 저장한다."""
+    SEEN_FILE.write_text(json.dumps(sorted(keys), ensure_ascii=False, indent=2))
+
+
 def save_to_notion(releases):
     """크롤링한 릴리즈노트를 Notion DB에 저장한다."""
     notion = Client(auth=os.environ["NOTION_API_KEY"])
     database_id = os.environ["NOTION_DATABASE_ID"]
     today = datetime.now(KST).strftime("%Y-%m-%d")
 
-    existing_titles = get_existing_titles(os.environ["NOTION_API_KEY"], database_id)
-    new_releases = [r for r in releases if r["title"] not in existing_titles]
+    seen = load_seen()
+    if seen is None:
+        print("[Bootstrap] seen 파일 없음, Notion DB에서 기존 제목 로드...")
+        seen = get_existing_titles(os.environ["NOTION_API_KEY"], database_id)
+
+    new_releases = [r for r in releases if r["title"] not in seen]
 
     print(f"[{today}] 전체 {len(releases)}개 중 신규 {len(new_releases)}개 저장 시작...")
 
@@ -142,9 +161,11 @@ def save_to_notion(releases):
         notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
+        seen.add(release["title"])
         print(f"  ✅ {release['title']} ({release['date']})")
 
-    print(f"[완료] {len(new_releases)}개 신규 ChatGPT 릴리즈노트 저장됨!")
+    save_seen(seen)
+    print(f"[완료] {len(new_releases)}개 신규 ChatGPT 릴리즈노트 저장, seen 파일 업데이트됨!")
 
 
 if __name__ == "__main__":
