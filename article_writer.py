@@ -153,7 +153,7 @@ def _generate_article(title, description, source_name, original_content=""):
 8. 단정적 표현보다 '~으로 분석된다', '~할 것으로 전망된다' 등 객관적 표현을 사용한다."""
 
     response = _client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-flash",  # 기사 작성: Flash (빠르고 저렴)
         contents=prompt,
     )
     text = response.text.strip()
@@ -216,7 +216,7 @@ def _verify_article(title, original_content, article):
 issues 배열이 비어있으면 빈 배열 []로 응답하세요."""
 
     response = _client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-pro",  # 팩트체크: Pro (정확도 우선)
         contents=prompt,
     )
     text = response.text.strip()
