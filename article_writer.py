@@ -2,6 +2,11 @@
 
 Gemini API로 크롤링한 원문을 한국어 뉴스 기사로 변환하고
 Notion DB 아이템의 하부 페이지로 저장한다.
+
+하부 페이지 구조:
+  1. 원문 (Original) - 원문 그대로 저장
+  2. 뉴스 기사 (Article) - Gemini가 생성한 한국어 기사
+  3. 팩트체크 (Verification) - 원문 vs 기사 비교 검증 결과
 """
 
 import json
@@ -64,26 +69,45 @@ def _fetch_article_content(url):
 
 
 def write_article(notion_page_id, title, description="", source_name="", url=""):
-    """기사를 생성하고 Notion 하부 페이지로 저장하는 통합 함수.
+    """기사를 생성하고 Notion 하부 페이지 3개로 저장하는 통합 함수.
 
-    Args:
-        notion_page_id: Notion DB 레코드의 page ID
-        title: 원문 제목 (영어)
-        description: 원문 요약/설명 (영어)
-        source_name: 출처 이름 (예: "Product Hunt", "Hacker News")
-        url: 원문 URL
+    하부 페이지 구조:
+      1. 📄 원문 - 원문 콘텐츠 그대로
+      2. 📝 뉴스 기사 - Gemini가 생성한 한국어 기사
+      3. ✅ 팩트체크 - 원문 vs 기사 비교 검증 결과
     """
     if not _ensure_configured():
         print("  ⚠️ GEMINI_API_KEY 미설정, 기사 생성 건너뜀")
         return False
 
     try:
+        notion = Client(auth=os.environ["NOTION_API_KEY"])
+
+        # 1. 원문 수집
         original_content = _fetch_article_content(url)
+
+        # 하위 페이지 1: 원문 저장
+        _save_original_to_notion(notion, notion_page_id, title, original_content, url, source_name)
+        print(f"  📄 원문 저장 완료")
+
+        # 2. Gemini로 한국어 기사 생성
         article = _generate_article(title, description, source_name, original_content)
-        if article:
-            _save_to_notion(notion_page_id, article)
-            print(f"  📝 기사 생성: {article['headline']}")
-            return True
+        if not article:
+            print("  ⚠️ 기사 생성 실패")
+            return False
+
+        # 하위 페이지 2: 뉴스 기사 저장
+        _save_article_to_notion(notion, notion_page_id, article)
+        print(f"  📝 기사 생성: {article['headline']}")
+
+        # 3. 팩트체크 검증
+        verification = _verify_article(title, original_content, article)
+
+        # 하위 페이지 3: 팩트체크 결과 저장
+        _save_verification_to_notion(notion, notion_page_id, verification)
+        print(f"  ✅ 팩트체크: {verification['result']}")
+
+        return True
     except Exception as e:
         print(f"  ⚠️ 기사 생성 실패: {e}")
     return False
@@ -142,32 +166,207 @@ def _generate_article(title, description, source_name, original_content=""):
     return json.loads(text)
 
 
-def _save_to_notion(parent_page_id, article_data):
-    """Notion DB 레코드의 하부 페이지로 기사를 저장한다."""
-    notion = Client(auth=os.environ["NOTION_API_KEY"])
+def _verify_article(title, original_content, article):
+    """원문과 생성된 기사를 비교하여 팩트체크한다."""
+    if not original_content:
+        return {
+            "result": "⚠️ 검증 불가",
+            "score": 0,
+            "issues": ["원문을 가져올 수 없어 검증 불가"],
+            "details": "원문 콘텐츠가 없어 팩트체크를 수행할 수 없습니다.",
+        }
 
+    article_text = "\n\n".join(article["body"])
+
+    prompt = f"""당신은 뉴스 팩트체커입니다. 아래 원문(영어)과 이를 바탕으로 생성된 한국어 기사를 비교하여 정확성을 검증하세요.
+
+[원문 제목]
+{title}
+
+[원문 내용]
+{original_content}
+
+[생성된 한국어 기사 제목]
+{article["headline"]}
+
+[생성된 한국어 기사 본문]
+{article_text}
+
+반드시 아래 JSON 형식으로만 응답하세요 (다른 텍스트 없이):
+{{
+  "result": "✅ 통과" 또는 "⚠️ 주의" 또는 "❌ 오류 발견",
+  "score": 1~10 (정확도 점수, 10이 완벽),
+  "issues": ["발견된 문제1", "발견된 문제2"],
+  "details": "전체 검증 요약 (3~5문장)"
+}}
+
+검증 항목:
+1. 할루시네이션: 원문에 없는 사실이 기사에 추가되었는가?
+2. 사실 누락: 원문의 핵심 정보가 기사에서 빠졌는가?
+3. 수치 오류: 금액, 날짜, 비율, 건수 등 수치가 정확한가?
+4. 고유명사 오류: 기업명, 인물명, 제품명 등이 정확한가?
+5. 맥락 왜곡: 원문의 맥락이 기사에서 왜곡되었는가?
+6. 번역 오류: 영어→한국어 번역 과정에서 의미가 변질되었는가?
+
+판정 기준:
+- ✅ 통과 (8~10점): 모든 사실이 정확하고 핵심 정보가 빠짐없이 포함됨
+- ⚠️ 주의 (5~7점): 경미한 누락이나 표현 차이가 있으나 사실 왜곡은 없음
+- ❌ 오류 발견 (1~4점): 사실 오류, 할루시네이션, 심각한 누락이 발견됨
+
+issues 배열이 비어있으면 빈 배열 []로 응답하세요."""
+
+    response = _client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt,
+    )
+    text = response.text.strip()
+
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\n?", "", text)
+        text = re.sub(r"\n?```$", "", text)
+
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        return {
+            "result": "⚠️ 검증 실패",
+            "score": 0,
+            "issues": ["검증 응답 파싱 실패"],
+            "details": text[:500],
+        }
+
+
+def _save_original_to_notion(notion, parent_page_id, title, content, url, source_name):
+    """원문을 Notion 하부 페이지로 저장한다."""
     children = []
-    for paragraph in article_data["body"]:
-        children.append(
-            {
+
+    # 출처 정보
+    children.append({
+        "object": "block",
+        "type": "callout",
+        "callout": {
+            "icon": {"type": "emoji", "emoji": "🔗"},
+            "rich_text": [{"type": "text", "text": {"content": f"출처: {source_name}\nURL: {url or '없음'}"}}],
+        },
+    })
+
+    if content:
+        # 원문을 2000자 단위로 나눠서 저장
+        for i in range(0, len(content), 2000):
+            chunk = content[i:i + 2000]
+            children.append({
                 "object": "block",
                 "type": "paragraph",
                 "paragraph": {
-                    "rich_text": [
-                        {"type": "text", "text": {"content": paragraph[:2000]}}
-                    ]
+                    "rich_text": [{"type": "text", "text": {"content": chunk}}]
                 },
-            }
-        )
+            })
+    else:
+        children.append({
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [{"type": "text", "text": {"content": "(원문을 가져올 수 없었습니다)"}}]
+            },
+        })
 
     notion.pages.create(
         parent={"page_id": parent_page_id},
         properties={
-            "title": {
-                "title": [
-                    {"text": {"content": article_data["headline"][:2000]}}
-                ]
-            }
+            "title": {"title": [{"text": {"content": f"📄 원문: {title[:100]}"}}]}
+        },
+        children=children,
+    )
+
+
+def _save_article_to_notion(notion, parent_page_id, article_data):
+    """Gemini 생성 기사를 Notion 하부 페이지로 저장한다."""
+    children = []
+    for paragraph in article_data["body"]:
+        children.append({
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [{"type": "text", "text": {"content": paragraph[:2000]}}]
+            },
+        })
+
+    notion.pages.create(
+        parent={"page_id": parent_page_id},
+        properties={
+            "title": {"title": [{"text": {"content": f"📝 {article_data['headline'][:100]}"}}]}
+        },
+        children=children,
+    )
+
+
+def _save_verification_to_notion(notion, parent_page_id, verification):
+    """팩트체크 결과를 Notion 하부 페이지로 저장한다."""
+    result = verification.get("result", "검증 실패")
+    score = verification.get("score", 0)
+    issues = verification.get("issues", [])
+    details = verification.get("details", "")
+
+    children = []
+
+    # 판정 결과 callout
+    emoji = "✅" if score >= 8 else "⚠️" if score >= 5 else "❌"
+    children.append({
+        "object": "block",
+        "type": "callout",
+        "callout": {
+            "icon": {"type": "emoji", "emoji": emoji},
+            "rich_text": [{"type": "text", "text": {"content": f"판정: {result}\n정확도: {score}/10"}}],
+        },
+    })
+
+    # 상세 요약
+    if details:
+        children.append({
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [{"type": "text", "text": {"content": "검증 요약"}}]
+            },
+        })
+        children.append({
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [{"type": "text", "text": {"content": details[:2000]}}]
+            },
+        })
+
+    # 발견된 문제
+    if issues:
+        children.append({
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [{"type": "text", "text": {"content": "발견된 문제"}}]
+            },
+        })
+        for issue in issues:
+            children.append({
+                "object": "block",
+                "type": "bulleted_list_item",
+                "bulleted_list_item": {
+                    "rich_text": [{"type": "text", "text": {"content": issue[:2000]}}]
+                },
+            })
+    else:
+        children.append({
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [{"type": "text", "text": {"content": "발견된 문제 없음"}}]
+            },
+        })
+
+    notion.pages.create(
+        parent={"page_id": parent_page_id},
+        properties={
+            "title": {"title": [{"text": {"content": f"{emoji} 팩트체크: {result} ({score}/10)"}}]}
         },
         children=children,
     )
