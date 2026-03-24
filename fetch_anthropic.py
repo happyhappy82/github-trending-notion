@@ -24,7 +24,9 @@ RSS_FEEDS = [
     {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml", "source_type": "Anthropic News"},
     {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml", "source_type": "Anthropic Research"},
     {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml", "source_type": "Anthropic Engineering"},
-    {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_claude.xml", "source_type": "Anthropic Claude"},
+    {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic.xml", "source_type": "Anthropic Blog"},
+    {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml", "source_type": "Anthropic Claude Code"},
+    {"url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_red.xml", "source_type": "Anthropic Red Team"},
 ]
 
 
