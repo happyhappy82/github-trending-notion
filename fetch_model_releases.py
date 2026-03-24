@@ -17,6 +17,8 @@ from article_writer import write_article
 
 MODEL_NOTES_URL = "https://help.openai.com/en/articles/9624314-model-release-notes"
 KST = timezone(timedelta(hours=9))
+_today = datetime.now(timezone.utc).date()
+_recent_dates = {(_today - timedelta(days=i)).isoformat() for i in range(2)}
 SOURCE_TYPE = "Model Release Notes"
 SEEN_FILE = Path(__file__).parent / "seen_model_releases.json"
 
@@ -156,7 +158,7 @@ def save_to_notion(releases):
         print("[Bootstrap] seen 파일 없음, Notion DB에서 기존 제목 로드...")
         seen = get_existing_titles(os.environ["NOTION_API_KEY"], database_id)
 
-    new_releases = [r for r in releases if r["title"] not in seen]
+    new_releases = [r for r in releases if r["title"] not in seen and r.get("date", "") in _recent_dates]
 
     print(f"전체 {len(releases)}개 중 신규 {len(new_releases)}개 저장 시작...")
 
@@ -178,6 +180,7 @@ def save_to_notion(releases):
 
 
 if __name__ == "__main__":
+    print(f"[날짜 필터] 최근 2일만 수집: {sorted(_recent_dates)}")
     releases = fetch_model_releases()
     if releases:
         save_to_notion(releases)

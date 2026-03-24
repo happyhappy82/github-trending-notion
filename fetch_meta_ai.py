@@ -16,6 +16,8 @@ from notion_client import Client
 from article_writer import write_article
 
 KST = timezone(timedelta(hours=9))
+_today = datetime.now(timezone.utc).date()
+_recent_dates = {(_today - timedelta(days=i)).isoformat() for i in range(2)}
 SEEN_FILE = Path(__file__).parent / "seen_meta_ai.json"
 
 RSS_FEEDS = [
@@ -112,6 +114,7 @@ def save_seen(keys):
 
 
 if __name__ == "__main__":
+    print(f"[날짜 필터] 최근 2일만 수집: {sorted(_recent_dates)}")
     seen = load_seen()
     if seen is None:
         print("[Bootstrap] seen 파일 없음, Notion DB에서 기존 URL 로드...")
@@ -132,7 +135,7 @@ if __name__ == "__main__":
 
         try:
             items = fetch_rss(feed["url"])
-            new_items = [i for i in items if i["url"] and i["url"] not in seen]
+            new_items = [i for i in items if i["url"] and i["url"] not in seen and i.get("date", "") in _recent_dates]
             print(f"[{feed['source_type']}] 전체 {len(items)}개 중 신규 {len(new_items)}개 저장 시작...")
 
             for item in new_items:

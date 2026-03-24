@@ -17,6 +17,8 @@ from article_writer import write_article
 
 OPENAI_STORIES_URL = "https://openai.com/ko-KR/stories/"
 KST = timezone(timedelta(hours=9))
+_today = datetime.now(timezone.utc).date()
+_recent_dates = {(_today - timedelta(days=i)).isoformat() for i in range(2)}
 SEEN_FILE = Path(__file__).parent / "seen_openai_stories.json"
 
 KOREAN_DATE_RE = re.compile(r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일")
@@ -157,7 +159,7 @@ def save_to_notion(stories):
         print("[Bootstrap] seen 파일 없음, Notion DB에서 기존 URL 로드...")
         seen = get_existing_urls(os.environ["NOTION_API_KEY"], database_id)
 
-    new_stories = [s for s in stories if s["url"] not in seen]
+    new_stories = [s for s in stories if s["url"] not in seen and s.get("date", "") in _recent_dates]
 
     print(f"전체 {len(stories)}개 중 신규 {len(new_stories)}개 저장 시작...")
 
@@ -179,6 +181,7 @@ def save_to_notion(stories):
 
 
 if __name__ == "__main__":
+    print(f"[날짜 필터] 최근 2일만 수집: {sorted(_recent_dates)}")
     stories = fetch_stories()
     if stories:
         save_to_notion(stories)
