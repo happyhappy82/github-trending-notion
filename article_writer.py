@@ -85,7 +85,7 @@ def _generate_article(title, description, source_name):
 8. 단정적 표현보다 '~으로 분석된다', '~할 것으로 전망된다' 등 객관적 표현을 사용한다."""
 
     response = _client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-2.5-flash",
         contents=prompt,
     )
     text = response.text.strip()
