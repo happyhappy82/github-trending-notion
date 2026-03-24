@@ -150,6 +150,12 @@ def save_to_notion(items, source_type):
 
     new_items = [i for i in items if i["url"] and i["url"] not in seen and i.get("date", "") in _recent_dates]
 
+    # arXiv는 하루에 수백 개의 논문이 올라오므로 최대 10개만 처리
+    MAX_ITEMS = 10
+    if len(new_items) > MAX_ITEMS:
+        print(f"[{source_type}] 신규 {len(new_items)}개 중 상위 {MAX_ITEMS}개만 처리")
+        new_items = new_items[:MAX_ITEMS]
+
     print(f"[{source_type}] 전체 {len(items)}개 중 신규 {len(new_items)}개 저장 시작...")
 
     for item in new_items:
