@@ -1,0 +1,3040 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "OpenAI" [ref=e5] [cursor=pointer]:
+          - /url: /en
+          - img "OpenAI" [ref=e6]
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - generic [ref=e9]: Language
+            - button "Language" [ref=e10] [cursor=pointer]:
+              - generic [ref=e11]: English
+              - generic [ref=e12]: United States
+          - link "Login" [ref=e13] [cursor=pointer]:
+            - /url: /auth/login?returnTo=%2Fen%2Farticles%2F6825453-chatgpt-release-notes
+      - generic [ref=e14]:
+        - img
+        - textbox "Search for articles..." [ref=e15]
+    - generic [ref=e17]:
+      - navigation "Breadcrumb" [ref=e18]:
+        - list [ref=e19]:
+          - listitem [ref=e20]:
+            - link "All Collections" [ref=e21] [cursor=pointer]:
+              - /url: /en
+            - img [ref=e22]
+          - listitem [ref=e24]:
+            - link "ChatGPT" [ref=e25] [cursor=pointer]:
+              - /url: /en/collections/3742473-chatgpt
+            - img [ref=e26]
+          - listitem [ref=e28]:
+            - generic [ref=e29]: ChatGPT — Release Notes
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - article [ref=e32]:
+            - heading "ChatGPT — Release Notes" [level=1] [ref=e33]
+            - paragraph [ref=e34]: A changelog of the latest updates and release notes for ChatGPT
+            - generic [ref=e35]: "Updated: 44분 전"
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "March 20, 2026" [level=1] [ref=e38]
+                - heading "Codex for Students" [level=2] [ref=e39]
+                - paragraph [ref=e40]: Codex for Students is now available for verified university students in the United States and Canada. Eligible students can claim $100 in ChatGPT credits, or 2,500 credits, to extend Codex usage beyond the limits included in ChatGPT Free, Go, Plus, and Pro.
+                - paragraph [ref=e41]:
+                  - text: To get started, students sign in at chatgpt.com/codex/students and complete student verification through SheerID with their university email. Credits are applied automatically to the student's personal workspace, can be used in Codex, are not API credits, and expire 12 months after the grant date.
+                  - link "Learn more." [ref=e42] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/20001147-codex-credits-for-students-terms-of-service
+              - generic [ref=e43]:
+                - heading "March 19, 2026" [level=1] [ref=e44]
+                - heading "Legacy deep research mode deprecation notice" [level=2] [ref=e45]
+                - paragraph [ref=e46]:
+                  - text: The legacy deep research mode will be removed on Thursday, March 26, 2026. This change only affects the legacy mode; the current deep research experience will remain unchanged.
+                  - text: Historical conversations and results will remain accessible.
+                  - text: "To learn more about deep research, see:"
+                  - link "Deep research in ChatGPT" [ref=e47] [cursor=pointer]:
+                    - /url: https://help.openai.com/articles/10500283
+                  - text: .
+              - generic [ref=e48]:
+                - heading "March 18, 2026" [level=1] [ref=e49]
+                - heading "GPT-5.4 mini in ChatGPT" [level=2] [ref=e50]
+                - paragraph [ref=e51]:
+                  - text: We’re rolling out GPT-5.4 mini in ChatGPT. GPT-5.4 mini is available to Free and Go users via the “Thinking” feature in the + menu. For all other users, GPT-5.4 mini is available as a rate limit fallback for GPT-5.4 Thinking.
+                  - text: For Plus, Pro, and other paid users, GPT-5.4 mini will be used as a fallback for GPT-5.4 Thinking when rate limits are reached, helping with continued access to reasoning capabilities during high usage. Enterprise customers will retain the option to default Auto routing to GPT-5.4 mini, if preferred.
+                  - text: GPT-5.4 mini will not appear as a selectable model in the model picker, and GPT-5 Thinking mini will be retired as a selectable option in 30 days. Learn more in our
+                  - link "blog post" [ref=e52] [cursor=pointer]:
+                    - /url: https://openai.com/index/introducing-gpt-5-4-mini-and-nano/
+                  - text: .
+              - generic [ref=e53]:
+                - heading "March 17, 2026" [level=1] [ref=e54]
+                - heading "Updates to the model picker in ChatGPT" [level=2] [ref=e55]
+                - paragraph [ref=e56]:
+                  - text: We’ve simplified the model picker to make it easier to choose the right level of reasoning.
+                  - text: "Users on Plus, Pro, Business, Enterprise, and Edu accounts will see a set of model options depending on their plan, including:"
+                - list [ref=e57]:
+                  - listitem [ref=e58]:
+                    - paragraph [ref=e59]: Instant – fast responses for everyday questions
+                  - listitem [ref=e60]:
+                    - paragraph [ref=e61]: Thinking – deeper reasoning for more complex tasks
+                  - listitem [ref=e62]:
+                    - paragraph [ref=e63]: Pro – the most advanced reasoning models
+                - paragraph [ref=e64]: The Auto functionality can be accessed by clicking Configure in the model picker menu and choosing "Auto-switch to Thinking.” This setting will automatically be on if your last chat was set to Auto.
+                - heading "Configure more advanced settings" [level=3] [ref=e65]
+                - paragraph [ref=e66]: "If you want more control, click Configure to:"
+                - list [ref=e67]:
+                  - listitem [ref=e68]:
+                    - paragraph [ref=e69]: Turn automatic switching between Instant and Thinking on or off
+                  - listitem [ref=e70]:
+                    - paragraph [ref=e71]: Access legacy models
+                  - listitem [ref=e72]:
+                    - paragraph [ref=e73]: Set thinking effort when Thinking or Pro is selected
+                - paragraph [ref=e74]: We’ve also simplified the retry menu, making it easier to regenerate responses with Thinking or Pro models by clicking on the three dots underneath the response.
+                - heading "Sunsetting the “Nerdy” base style" [level=2] [ref=e75]
+                - paragraph [ref=e76]: We’re sunsetting the preset Nerdy base style to simplify options and improve response quality. Users who selected it will be moved to the default personality. You can manage personality settings anytime in ChatGPT under Settings → Personalization.
+              - generic [ref=e77]:
+                - heading "March 16, 2026" [level=1] [ref=e78]
+                - heading "GPT-5.3 Instant update" [level=2] [ref=e79]
+                - paragraph [ref=e80]: We’re rolling out an update to GPT-5.3 Instant that improves follow-up tone and reduces teaser-style phrasing in responses (e.g., “If you want…”, “You’ll never believe…”, “I can tell you these three things that…”).
+              - generic [ref=e81]:
+                - heading "March 11, 2026" [level=1] [ref=e82]
+                - heading "Retiring GPT-5.1 models" [level=2] [ref=e83]
+                - paragraph [ref=e84]:
+                  - text: As of March 11, 2026, GPT-5.1 models are no longer available in ChatGPT.
+                  - text: "This applies to GPT-5.1 Instant, GPT-5.1 Thinking, and GPT-5.1 Pro. Existing conversations that used GPT-5.1 will automatically continue on the corresponding current model: GPT-5.3 Instant, GPT-5.4 Thinking, or GPT-5.4 Pro."
+              - generic [ref=e85]:
+                - heading "March 10, 2026" [level=1] [ref=e86]
+                - heading "Interactive learning for math and science" [level=3] [ref=e87]
+                - paragraph [ref=e88]:
+                  - text: When you ask ChatGPT about certain topics, it can now present an interactive visual module that lets you experiment with formulas and variables in real time. Adjust inputs, manipulate equations, and instantly see how changes affect graphs and outcomes—turning abstract concepts into something you can explore directly.
+                  - text: Interactive learning launches with 70+ math and science topics, including concepts like the Pythagorean theorem, ideal gas law, circle area, and lens equations.
+                  - text: This feature builds on other learning tools in ChatGPT, like study mode and quizzes, designed to help students work through problems step by step and strengthen understanding.
+                  - text: "Try asking:"
+                - list [ref=e89]:
+                  - listitem [ref=e90]:
+                    - paragraph [ref=e91]: “Help me understand the Pythagorean theorem.”
+                  - listitem [ref=e92]:
+                    - paragraph [ref=e93]: “Explain how PV = nRT works.”
+                  - listitem [ref=e94]:
+                    - paragraph [ref=e95]: “How do I find the area of a circle?”
+                - paragraph [ref=e96]: "Availability: Rolling out to all logged-in ChatGPT users across consumer and business plans."
+                - heading "Auto top-up for flexible usage credits" [level=3] [ref=e97]
+                - paragraph [ref=e98]: Eligible ChatGPT Plus and Pro users can now turn on auto top-up for credits used with Codex and Sora. Auto top-up automatically replenishes your shared credit balance when it falls below the minimum balance you choose, using your default payment method on file to purchase only the amount needed to reach your target balance.
+                - paragraph [ref=e99]:
+                  - text: "You can manage auto top-up from Codex Settings → Usage Dashboard. Auto top-up applies to the same shared credit balance used across supported features like Codex and Sora, and if your balance is already below your selected minimum when you turn it on, a top-up may happen right away. Learn more:"
+                  - link "Using Credits for Flexible Usage in ChatGPT (Free/Go/Plus/Pro) & Sora" [ref=e100] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-freegopluspro-sora
+                  - text: .
+              - generic [ref=e101]:
+                - heading "March 5, 2026" [level=1] [ref=e102]
+                - heading "GPT-5.4 Thinking in ChatGPT" [level=2] [ref=e103]
+                - paragraph [ref=e104]:
+                  - text: GPT‑5.4 brings together the best of our recent advances in reasoning, coding, and agentic workflows into a single frontier model. It incorporates the industry-leading coding capabilities of
+                  - link "GPT‑5.3‑Codex⁠" [ref=e105] [cursor=pointer]:
+                    - /url: https://openai.com/index/introducing-gpt-5-3-codex/
+                  - text: while improving how the model works across tools, software environments, and professional tasks involving spreadsheets, presentations, and documents. The result is a model that gets complex real work done accurately, effectively, and efficiently—delivering what you asked for with less back and forth.
+                  - text: In ChatGPT, GPT‑5.4 Thinking can now provide an upfront plan of its thinking, so you can adjust course mid-response while it’s working, and arrive at a final output that’s more closely aligned with what you need without additional turns. GPT‑5.4 Thinking improves deep web research, particularly for highly specific queries, while better maintaining context for questions that require longer thinking. GPT‑5.4 Thinking also has improved context window management that supports its ability to think for longer. Together, these improvements mean higher-quality answers that arrive faster and stay relevant to the task at hand.
+              - generic [ref=e106]:
+                - heading "March 4, 2026" [level=1] [ref=e107]
+                - heading "Codex app on Windows" [level=2] [ref=e108]
+                - paragraph [ref=e109]:
+                  - text: The Codex app is now available on Windows for ChatGPT plans that include Codex. The app gives users a Windows desktop surface for running multiple Codex agents in parallel, with isolated worktrees and reviewable diffs that can be edited, discarded, or turned into a pull request.
+                  - text: "Users can sign in with ChatGPT from the app and keep work moving across the app, CLI, and IDE without switching between tools for every task. Learn more:"
+                  - link "Using Codex with your ChatGPT plan" [ref=e110] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
+                  - text: .
+              - generic [ref=e111]:
+                - heading "March 3, 2026" [level=1] [ref=e112]
+                - heading "GPT-5.3 Instant Update" [level=2] [ref=e113]
+                - paragraph [ref=e114]:
+                  - text: GPT‑5.3 Instant delivers more accurate answers, richer and better-contextualized results when searching the web, and reduces unnecessary dead ends, caveats, and overly declarative phrasing that can interrupt the flow of conversation.
+                  - text: "This update focuses on the parts of the ChatGPT experience people feel every day: tone, relevance, and conversational flow. These are nuanced problems that don’t always show up in benchmarks, but shape whether ChatGPT feels helpful or frustrating. GPT‑5.3 Instant directly reflects user feedback in these areas."
+              - generic [ref=e115]:
+                - heading "February 27, 2026" [level=1] [ref=e116]
+                - 'heading "ChatGPT Web and Android updates: Edit image prompts, share faster, and smoother conversations" [level=2] [ref=e117]'
+                - heading "Web" [level=3] [ref=e118]
+                - list [ref=e119]:
+                  - listitem [ref=e120]:
+                    - paragraph [ref=e121]: Edit messages with images. You can now edit messages that include image attachments, so you don’t have to start over to adjust your prompt or regenerate results.
+                  - listitem [ref=e122]:
+                    - paragraph [ref=e123]: Open search results in a new tab. Cmd+click in the search panel now opens results in a new tab, making it easier to explore without losing your place.
+                  - listitem [ref=e124]:
+                    - paragraph [ref=e125]: Faster sharing. Sharing chats is now easier and faster, with a quicker-loading share menu.
+                  - listitem [ref=e126]:
+                    - paragraph [ref=e127]: Export visuals from Code Blocks. Flowcharts, diagrams, and data visualizations created in Code Blocks can now be exported as images for easy reuse.
+                - heading "Android" [level=3] [ref=e128]
+                - list [ref=e129]:
+                  - listitem [ref=e130]:
+                    - paragraph [ref=e131]: Automatic scroll to latest message. Existing conversations now automatically scroll to the bottom, so you can jump right back in.
+                  - listitem [ref=e132]:
+                    - paragraph [ref=e133]: Faster sidebar actions. Sidebar interactions, such as renaming chats, are now faster and more responsive.
+                  - listitem [ref=e134]:
+                    - paragraph [ref=e135]: Improved dictation visuals. Dictation now has a clearer, more streamlined interface that keeps your text visible and updates as you speak.
+                  - listitem [ref=e136]:
+                    - paragraph [ref=e137]: Keyboard opens automatically when attaching files. The keyboard now opens automatically after you attach a file, helping you continue your message seamlessly.
+                - heading "Bug fixes" [level=3] [ref=e138]
+                - list [ref=e139]:
+                  - listitem [ref=e140]:
+                    - paragraph [ref=e141]: Fixed increased message streaming errors in GPT-5.2 Thinking
+                  - listitem [ref=e142]:
+                    - paragraph [ref=e143]: Fixed a flicker affecting the Voice Mode button when opening a conversation
+                  - listitem [ref=e144]:
+                    - paragraph [ref=e145]: Sidebar actions on mobile web no longer stick while scrolling
+              - generic [ref=e146]:
+                - heading "February 25, 2026" [level=1] [ref=e147]
+                - heading "Add sources to your projects from anywhere" [level=2] [ref=e148]
+                - paragraph [ref=e149]: Projects now make it easy to build a living knowledge base by adding sources wherever your context already lives; from apps, conversations, or quick text inputs.
+                - list [ref=e150]:
+                  - listitem [ref=e151]:
+                    - paragraph [ref=e152]: "Sources from apps: Paste a link to a Slack channel or Google Drive file or folder to add it directly as a project source."
+                    - list [ref=e153]:
+                      - listitem [ref=e154]:
+                        - paragraph [ref=e155]: Additionally, use connected apps directly in chats.
+                  - listitem [ref=e156]:
+                    - paragraph [ref=e157]: "Sources from chats: Save useful ChatGPT responses into your project so great outputs become reusable knowledge."
+                  - listitem [ref=e158]:
+                    - paragraph [ref=e159]: "Ad-hoc text sources: Paste notes, briefs, or reference material directly to capture context instantly."
+                - paragraph [ref=e160]:
+                  - text: Learn more about
+                  - link "projects in ChatGPT" [ref=e161] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+                  - text: .
+              - generic [ref=e162]:
+                - heading "February 20, 2026" [level=1] [ref=e163]
+                - heading "Expanded context window for Thinking" [level=2] [ref=e164]
+                - paragraph [ref=e165]: ChatGPT now has a total context window length of 256k tokens (128k input and 128k max output) when you manually select Thinking. Previously it was 196k total tokens.
+              - generic [ref=e166]:
+                - heading "February 19, 2026" [level=1] [ref=e167]
+                - heading "Interactive Code Blocks in ChatGPT" [level=2] [ref=e168]
+                - paragraph [ref=e169]:
+                  - text: We improved Code Blocks in ChatGPT to make them more interactive.
+                  - text: You can write, edit, and preview your code in ChatGPT, all in one
+                  - text: "place:"
+                - list [ref=e170]:
+                  - listitem [ref=e171]:
+                    - paragraph [ref=e172]: Write and edit text in-line
+                  - listitem [ref=e173]:
+                    - paragraph [ref=e174]: Preview diagrams and mini apps directly in chat
+                  - listitem [ref=e175]:
+                    - paragraph [ref=e176]: Review code in split-screen views
+              - generic [ref=e177]:
+                - heading "February 13, 2026" [level=1] [ref=e178]
+                - heading "Retiring GPT-4o and other legacy models" [level=2] [ref=e179]
+                - paragraph [ref=e180]:
+                  - text: As
+                  - link "previously announced" [ref=e181] [cursor=pointer]:
+                    - /url: https://openai.com/index/retiring-gpt-4o-and-older-models/
+                  - text: ", we have retired GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini from ChatGPT. We are also retiring GPT-5 (Instant and Thinking),"
+                  - link "as previously announced" [ref=e182] [cursor=pointer]:
+                    - /url: https://openai.com/index/gpt-5-1/
+                  - text: . There are no API changes at this time. For details, see our
+                  - link "blog post" [ref=e183] [cursor=pointer]:
+                    - /url: https://openai.com/index/retiring-gpt-4o-and-older-models/
+                  - text: and
+                  - link "Help Center" [ref=e184] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models
+                  - text: .
+                - 'heading "ChatGPT updates: Better file uploads, easier copying, and more reliable long chats" [level=2] [ref=e185]'
+                - heading "Web" [level=3] [ref=e186]
+                - list [ref=e187]:
+                  - listitem [ref=e188]:
+                    - paragraph [ref=e189]: Attach up to 20 files in a single message. You can now upload up to 20 files at once (previously 10), making it easier to analyze document sets, compare multiple files, or provide broader context in a single message.
+                  - listitem [ref=e190]:
+                    - paragraph [ref=e191]: Expanded file type support. We now support additional text and code file formats, improving compatibility with source files, logs, configuration files, and other structured text.
+                  - listitem [ref=e192]:
+                    - paragraph [ref=e193]: Cleaner “Select All” behavior (Cmd+A). Cmd+A now selects only the conversation content, excluding surrounding interface elements for cleaner copying and sharing of chat transcripts.
+                - heading "Android" [level=3] [ref=e194]
+                - list [ref=e195]:
+                  - listitem [ref=e196]:
+                    - paragraph [ref=e197]: Quick tools in the composer. A new quick-tools menu in the message composer makes common actions easier to access.
+                  - listitem [ref=e198]:
+                    - paragraph [ref=e199]: Simplified composer. The message composer has been streamlined to reduce visual complexity and make it easier to focus on your message.
+                - heading "iOS" [level=3] [ref=e200]
+                - list [ref=e201]:
+                  - listitem [ref=e202]:
+                    - paragraph [ref=e203]: Performance improvements. We’ve made multiple performance enhancements to improve responsiveness and overall speed throughout the app.
+                - heading "Web, iOS, and Android" [level=3] [ref=e204]
+                - list [ref=e205]:
+                  - listitem [ref=e206]:
+                    - paragraph [ref=e207]: Improved reliability for long “Thinking” chats. We've reduced interruption rates in longer “Thinking” chats through infrastructure improvements.
+              - generic [ref=e208]:
+                - heading "February 12, 2026" [level=1] [ref=e209]
+                - heading "ChatGPT Voice Update" [level=2] [ref=e210]
+                - paragraph [ref=e211]: We’re making an update to ChatGPT Voice that improves its ability to follow user instructions, and usage of tools like web search to provide better responses. This update applies to the version of Voice primarily used by those on the free ChatGPT plan, and by Plus users when limits are reached for the main model.
+              - generic [ref=e212]:
+                - heading "February 10, 2026" [level=1] [ref=e213]
+                - heading "Updates to deep research" [level=2] [ref=e214]
+                - paragraph [ref=e215]:
+                  - text: We’re introducing improvements to deep research in ChatGPT to help produce more accurate, credible reports with greater control. You can now focus research on specific websites and a larger collection of connected apps as trusted sources.
+                  - text: A redesigned sidebar entry point and fullscreen report view make it easier to start, review, and manage research in one place. Create and edit a research plan before it begins, and track progress with the ability to adjust direction mid-run.
+                - paragraph [ref=e216]:
+                  - text: Rolling out throughout today to Plus and Pro users, with Free and Go users following in the coming days.
+                  - text: "For more information, please refer to our help center article:"
+                  - link "Deep research in ChatGPT" [ref=e217] [cursor=pointer]:
+                    - /url: https://help.openai.com/articles/10500283
+                - heading "GPT-5.2 Instant Update" [level=2] [ref=e218]
+                - paragraph [ref=e219]:
+                  - text: We’re making an update to GPT-5.2 Instant in ChatGPT and the API that improves response style and quality.
+                  - text: Users should notice responses that are more measured and grounded in tone, in a way that’s more contextually appropriate to the conversation. The model also tends to output clearer, more relevant answers to advice-seeking and how-to questions, more reliably placing the most important info upfront.
+              - generic [ref=e220]:
+                - heading "February 9, 2026" [level=1] [ref=e221]
+                - heading "Testing ads in ChatGPT (Free, Go)" [level=2] [ref=e222]
+                - paragraph [ref=e223]:
+                  - text: We’re beginning to roll out a test for ads in ChatGPT in the U.S. for logged-in adults on the Free and Go tiers. Plus, Pro, Business, Enterprise, and Education plans do not have ads. The test will be a subset of users to start. We will expand over the coming weeks as we learn from this test.
+                  - text: ChatGPT’s answers are generated independently from advertising. Answers are optimized based on what’s most helpful to you. When you see an ad, they are always clearly labeled as sponsored and visually separated from the organic answer.
+                  - text: "Ads are shown using information that stays within ChatGPT and is not shared with advertisers. This includes what you’re discussing, how you interact with ads (such as ads you hide or engage with), and your past chats and memories, if you have ads personalization enabled. You’re in control of this experience: you can dismiss ads, share feedback, learn how and why you’re being shown an ad, delete your ad data with one tap, and manage ad personalization at any time."
+                  - text: Advertisers never see your chats or personal details and receive only aggregated performance information, like impressions and clicks. During the test, ads do not appear in chats about sensitive topics or regulated topics, including health, mental health, or politics, and are not shown to users who tell us or we predict are under 18.
+              - generic [ref=e224]:
+                - heading "February 4, 2026" [level=1] [ref=e225]
+                - heading "Update on thinking time settings for GPT-5.2 Thinking in ChatGPT" [level=2] [ref=e226]
+                - paragraph [ref=e227]: "Jan 10, 2026: We lowered the Standard and Light thinking time as we observed users prefer faster responses. As part of this update, the Extended thinking setting for GPT-5.2 was unintentionally changed to be lower which we have now fixed."
+                - paragraph [ref=e228]: "February 3, 2026: We made another small reduction to Standard thinking time based on testing."
+                - paragraph [ref=e229]:
+                  - text: "February 4, 2026: We’re restoring the Extended thinking level for GPT-5.2 Thinking to its prior setting, correcting the inadvertent reduction from January. Extended is now back to its prior level."
+                  - text: We periodically adjust the default thinking time for our reasoning models. These changes are based on ongoing experiments to find the best balance between answer quality and response speed for users.
+                  - text: The
+                  - link "thinking level toggle" [ref=e230] [cursor=pointer]:
+                    - /url: https://x.com/OpenAI/status/1968395215536042241
+                  - text: introduced in September 2025 gives users more choice beyond Standard, allowing them to select the right thinking level for their question—whether they want lighter, faster responses or more extended reasoning when depth and accuracy matter more.
+                  - text: Thinking time is not directly comparable across different models. Each model is tuned independently to what works best for users. We’ll continue to adjust these settings as models evolve, and will keep giving users clear controls when there are meaningful tradeoffs to choose from.
+              - generic [ref=e231]:
+                - heading "February 2, 2026" [level=1] [ref=e232]
+                - heading "Introducing the Codex app" [level=2] [ref=e233]
+                - paragraph [ref=e234]: Today we’re releasing the Codex app for MacOS, a command center for managing multiple coding agents in parallel. The app lets you run long‑horizon and background tasks, review clean diffs from isolated worktrees, see agent progress and decisions, and execute reusable skills and automations.
+                - paragraph [ref=e235]: "Available with ChatGPT plans that include Codex, with a limited‑time promo: Free and Go can try Codex with included limits, while Plus, and Pro users get 2x Codex rate limits."
+                - paragraph [ref=e236]:
+                  - text: Get started by downloading the macOS app, and
+                  - link "learn more" [ref=e237] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
+                  - text: about Codex.
+              - generic [ref=e238]:
+                - heading "January 30, 2026" [level=1] [ref=e239]
+                - heading "More visual responses" [level=2] [ref=e240]
+                - paragraph [ref=e241]:
+                  - text: Responses in ChatGPT are now more visual and easier to scan.
+                  - text: For everyday questions, responses may include at-a-glance visuals—like checking your team’s latest stats, converting units, or doing a quick calculation.
+                  - text: Answers now also highlight important people, places, products, and ideas. You can tap any highlight to open a side panel with key facts and trusted sources, making it easy to understand the context without asking follow-up questions.
+                  - text: Rolling out globally on iOS, Android, web.
+              - generic [ref=e242]:
+                - heading "January 29, 2026" [level=1] [ref=e243]
+                - heading "Retiring GPT-4o and other legacy models" [level=2] [ref=e244]
+                - paragraph [ref=e245]:
+                  - text: On February 13, 2026, alongside the
+                  - link "previously announced retirement" [ref=e246] [cursor=pointer]:
+                    - /url: https://openai.com/index/gpt-5-1/
+                  - text: ⁠ of GPT‑5 (Instant and Thinking), we will retire GPT‑4o, GPT‑4.1, GPT‑4.1 mini, and OpenAI o4-mini from ChatGPT. In the API, there are no changes at this time. For more, see our
+                  - link "blog post" [ref=e247] [cursor=pointer]:
+                    - /url: https://openai.com/index/retiring-gpt-4o-and-older-models/
+                  - text: or
+                  - link "help center" [ref=e248] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models
+                  - text: .
+              - generic [ref=e249]:
+                - heading "January 26, 2026" [level=1] [ref=e250]
+                - heading "Improvements to search response quality in Voice" [level=2] [ref=e251]
+                - paragraph [ref=e252]: We’ve improved search responses in ChatGPT Voice to deliver more complete, up-to-date answers, including better access to shopping results.
+              - generic [ref=e253]:
+                - heading "January 22, 2026" [level=1] [ref=e254]
+                - heading "5.2 Personality System Prompt Update" [level=2] [ref=e255]
+                - paragraph [ref=e256]: We’re updating GPT-5.2 Instant’s default personality to be more conversational and better at adapting its tone contextually, making exchanges feel smoother and more natural. You can still select a different base style and tone for ChatGPT, along with tuning characteristics like warmth and emoji use, within the Personalization menu in settings.
+              - generic [ref=e257]:
+                - heading "January 20, 2026" [level=1] [ref=e258]
+                - heading "Voice Updates" [level=2] [ref=e259]
+                - paragraph [ref=e260]: We’re making an update to ChatGPT Voice for paid users that improves its ability to follow user instructions, as well as fixes a bug where Voice can sometimes repeat back custom instructions.
+                - heading "Rolling out age prediction" [level=2] [ref=e261]
+                - paragraph [ref=e262]:
+                  - text: We're rolling out an age prediction model on ChatGPT consumer plans to help determine whether an account likely belongs to someone under 18, so we can apply the right experience and safeguards for teens.
+                  - text: The model looks at a combination of behavioral and account-level signals, including how long an account has existed, typical times of day when someone is active, usage patterns over time, and a user’s stated age.
+                  - text: If an adult is placed in the under-18 experience by mistake, they can quickly verify their age with a selfie through Persona, a verification service available in Settings > Account. Users can check whether safeguards have been added and verify at any time.
+              - generic [ref=e263]:
+                - heading "January 15, 2026" [level=1] [ref=e264]
+                - heading "Improved memory for finding details from past chats (Plus & Pro)" [level=2] [ref=e265]
+                - paragraph [ref=e266]:
+                  - text: When reference chat history is enabled, ChatGPT can now more reliably find specific details from your past chats when you ask. Any past chat used to answer your question now appears as a source so you can open and review the original context.
+                  - text: This memory improvement is now available for Plus and Pro users globally.
+              - generic [ref=e267]:
+                - heading "January 12, 2026" [level=1] [ref=e268]
+                - heading "Dictation Updates" [level=2] [ref=e269]
+                - paragraph [ref=e270]: We’re improving our dictation capabilities in ChatGPT for all logged-in users, significantly reducing empty transcriptions and improving accuracy.
+              - generic [ref=e271]:
+                - heading "January 7, 2026" [level=1] [ref=e272]
+                - heading "Health in ChatGPT" [level=2] [ref=e273]
+                - paragraph [ref=e274]: We’re starting to roll out Health, a dedicated space in ChatGPT for health and wellness conversations. You can securely connect medical records, Apple Health and supported wellness apps so answers can be grounded in your own data. Health is designed to help you navigate medical care, not replace it. Health conversations, memory, and files are kept separate from the rest of ChatGPT and are not used to train our foundation models.
+                - paragraph [ref=e275]:
+                  - text: Health appears as a new space in the ChatGPT sidebar. If you ask a health-related question in a regular chat, ChatGPT may also suggest continuing in Health. If you’re interested in getting access as it becomes available, you can sign up for the
+                  - link "waitlist" [ref=e276] [cursor=pointer]:
+                    - /url: https://chatgpt.com/health/waitlist
+                  - text: . We’re starting by providing access to a small group of early users to learn and continue refining the experience. At launch, Health is available on web and iOS, with Android coming soon to ChatGPT Free, Go, Plus, and Pro users in supported countries (excluding the EEA, Switzerland, and the UK).
+                - paragraph [ref=e277]:
+                  - text: Learn more in the
+                  - link "blog" [ref=e278] [cursor=pointer]:
+                    - /url: https://openai.com/index/introducing-chatgpt-health/
+                  - text: or
+                  - link "help center article" [ref=e279] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/20001036-what-is-chatgpt-health
+                  - text: .
+              - generic [ref=e280]:
+                - heading "December 22, 2025" [level=1] [ref=e281]
+                - heading "Your Year with ChatGPT" [level=2] [ref=e282]
+                - paragraph [ref=e283]:
+                  - text: Today we’re rolling out
+                  - emphasis [ref=e284]: Your Year with ChatGPT
+                  - text: ", an optional, personalized end-of-year experience that reflects on how you interacted with ChatGPT in 2025. It highlights high-level themes from your conversations and includes summary statistics about your usage over the year."
+                - paragraph [ref=e285]: This experience is rolling out gradually throughout the day, so it may not be available to everyone immediately. It’s available to Free, Plus, and Pro users in United States, United Kingdom, Canada, Australia, and New Zealand as well as Go, Plus, and Pro users in India, and is not available on Business, Enterprise, or Edu plans.
+                - paragraph [ref=e286]:
+                  - text: To see
+                  - emphasis [ref=e287]: Your Year with ChatGPT
+                  - text: ", Memory and Reference Chat History must be turned on, and you must meet a minimum activity threshold. If you have very limited activity, you’ll only see basic chat statistics."
+                - paragraph [ref=e288]: At launch, this experience is available in English in the United States, United Kingdom, Canada, Australia, and New Zealand.
+              - generic [ref=e289]:
+                - heading "December 19, 2025" [level=1] [ref=e290]
+                - heading "New detailed characteristic controls" [level=2] [ref=e291]
+                - paragraph [ref=e292]: "In addition to selecting a base style and tone preset—like candid and friendly—you can now adjust specific characteristics individually. From the ‘personalization’ pane in settings, you can adjust ChatGPT to:"
+                - list [ref=e293]:
+                  - listitem [ref=e294]:
+                    - paragraph [ref=e295]: Be more or less warm
+                  - listitem [ref=e296]:
+                    - paragraph [ref=e297]: Be more or less enthusiastic
+                  - listitem [ref=e298]:
+                    - paragraph [ref=e299]: Use more or fewer headers & lists
+                  - listitem [ref=e300]:
+                    - paragraph [ref=e301]: Use more or fewer emojis
+              - generic [ref=e302]:
+                - heading "December 18, 2025" [level=1] [ref=e303]
+                - heading "Introducing the app directory in ChatGPT" [level=2] [ref=e304]
+                - paragraph [ref=e305]:
+                  - text: You can now browse and add approved apps in the new
+                  - link "app directory" [ref=e306] [cursor=pointer]:
+                    - /url: https://chatgpt.com/apps
+                    - generic [ref=e307]: app directory
+                  - text: . Apps let you work with your tools and data directly inside a conversation—from interactive in-chat experiences to secure connections that allow ChatGPT to search and reference information from third-party services.
+                  - text: As part of this update,
+                  - link "connectors now appear in the directory as apps" [ref=e308] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-apps-in-chatgpt
+                    - generic [ref=e309]: connectors now appear in the directory as apps
+                  - text: ", making it easier to manage all your tools in one place. References across the Help Center have been updated to reflect this new terminology."
+                  - text: Apps are available to all logged-in ChatGPT users, with availability and functionality varying by plan and region. Some apps or capabilities may not be available in certain regions or may require specific plan tiers.
+                  - text: Additionally,
+                  - link "developers can submit apps for review and publication" [ref=e310] [cursor=pointer]:
+                    - /url: https://openai.com/index/developers-can-now-submit-apps-to-chatgpt/
+                  - text: in the app directory, making approved apps available to a broader set of ChatGPT users.
+                - heading "Pinned chats in ChatGPT" [level=2] [ref=e311]
+                - paragraph [ref=e312]: You can now pin chats to the top of your list for quick access to important conversations. Pinned chats are available on iOS, Android, Web, and Atlas.On web, hover over a chat in the left-hand sidebar, click ⋯, and select Pin chat. On mobile, long-press a chat and select Pin chat.
+                - heading "December 17, 2025" [level=1] [ref=e313]
+                - heading "Tasks are now in Pulse" [level=2] [ref=e314]
+                - paragraph [ref=e315]:
+                  - text: Tasks let you set up automated prompts that ChatGPT can run for you.
+                  - text: "You can now manage all your tasks directly in Pulse:"
+                - list [ref=e316]:
+                  - listitem [ref=e317]:
+                    - paragraph [ref=e318]: See all tasks in one place in Pulse.
+                  - listitem [ref=e319]:
+                    - paragraph [ref=e320]: Create tasks in chat or in Pulse—whatever’s easier in the moment.
+                - paragraph [ref=e321]:
+                  - text: Edit and review tasks in Pulse anytime after you create them.
+                  - text: Please note that Pulse is only available in ChatGPT Pro.
+                - heading "December 16, 2025" [level=1] [ref=e322]
+                - heading "ChatGPT Images on Web and Mobile (iOS & Android)" [level=2] [ref=e323]
+                - paragraph [ref=e324]: We’ve introduced a new and improved version of ChatGPT Images, powered by our best image generation model yet. With ChatGPT Images, precise instruction following and editing makes AI image creation not just more fun, but meaningfully more useful—from everyday edits to creative transformations.
+                - paragraph [ref=e325]:
+                  - text: All images you create with ChatGPT are automatically saved under My images at
+                  - link "https://chatgpt.com/images" [ref=e326] [cursor=pointer]:
+                    - /url: https://chatgpt.com/images
+                  - text: ", giving you a single place to browse, revisit, and reuse your work without having to sift through past conversations."
+                - paragraph [ref=e327]:
+                  - text: Learn more about ChatGPT Images in our
+                  - link "ChatGPT Images FAQ" [ref=e328] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11084440
+                  - text: .
+                - paragraph [ref=e329]: Available on Free, Go, Plus, Edu, and Pro plans. Business and Enterprise are coming soon!
+                - heading "December 11, 2025" [level=1] [ref=e330]
+                - heading "Voice on macOS desktop app is retiring (effective January 15, 2026)" [level=2] [ref=e331]
+                - paragraph [ref=e332]: We’re retiring the Voice experience in the ChatGPT macOS app on January 15, 2026. This change allows us to focus on more unified and improved voice experiences across our apps.
+                - list [ref=e333]:
+                  - listitem [ref=e334]:
+                    - paragraph [ref=e335]:
+                      - text: Voice will continue to be available on
+                      - link "chatgpt.com" [ref=e336] [cursor=pointer]:
+                        - /url: http://chatgpt.com/
+                      - text: ", iOS, Android, and Windows app."
+                  - listitem [ref=e337]:
+                    - paragraph [ref=e338]: No other ChatGPT features on macOS are affected.
+                - heading "December 11, 2025" [level=1] [ref=e339]
+                - paragraph [ref=e340]:
+                  - text: Today, we’re releasing GPT-5.2, the next upgrade to the GPT-5 series. GPT-5.2 is smarter and more useful for both work and learning—while remaining just as enjoyable to talk to. As with GPT-5.1, we’re continuing to improve our main models for everyone on a regular basis to make them more useful and enjoyable to use.
+                  - text: GPT-5.2 Instant is a fast yet powerful workhorse for everyday work and learning, with clear improvements in info-seeking questions, how-tos and walk-throughs, technical writing, and translation, all while retaining the warmer, more conversational tone introduced in GPT-5.1 Instant. Early testers noted its more clearly structured explanations where important info is highlighted upfront. It’s also more effective at supporting studying and skill-building, as well as offering clearer job and career guidance.
+                  - text: GPT-5.2 Thinking solves harder work tasks more effectively and with more polish—particularly in spreadsheet formatting and financial modeling, alongside improvements in slideshow creation. Early testing showed gains in coding, summarizing long documents, answering questions about uploaded files, walking through complex math and logic step by step, and helping with planning and decision-making with clearer structure and thoughtful detail.
+                  - text: GPT-5.2 Pro is our smartest and most trustworthy model yet for difficult questions where a higher-quality answer is worth the wait. In early testing, it shows fewer major errors and stronger performance across complex domains like programming.
+                  - text: All three models (Instant, Thinking, and Pro) have a new knowledge cutoff of August 2025. For users, this means GPT-5.2 starts with a more current understanding of the world, so answers are more accurate and useful, with more relevant examples and context, even before turning to web search.
+                  - text: Read our
+                  - link "blog" [ref=e341] [cursor=pointer]:
+                    - /url: https://openai.com/index/introducing-gpt-5-2/
+                  - text: for more details on examples and evals.
+                  - text: "Update for free and Go users: We’re removing automatic model switching for reasoning in ChatGPT. Previously, some questions were automatically routed to the Thinking model when ChatGPT determined it might help. To maximize choice, free users will now use GPT-5.2 Instant by default, and can still choose to use reasoning anytime by selecting Thinking from the tools menu in the message composer."
+              - generic [ref=e342]:
+                - heading "November 25, 2025" [level=1] [ref=e343]
+                - 'heading "An improved Voice interface: the audio you know, with text and visuals when you need them." [level=2] [ref=e344]'
+                - paragraph [ref=e345]: We’re making ChatGPT Voice a seamless part of the ChatGPT experience, so you can use voice right inside the chat interface you already use every day—no separate mode required.
+                - paragraph [ref=e346]: Many of you have asked for a more flexible Voice experience—now, you can speak, listen, and see your conversation at the same time. Answers will be spoken alongside streamed text, image search results, widgets (maps, weather, etc.) and more—right in the same chat thread.
+                - paragraph [ref=e347]: "This makes voice chats clearer, richer and more contextual by pairing spoken answers with visual context. You can:"
+                - list [ref=e348]:
+                  - listitem [ref=e349]:
+                    - paragraph [ref=e350]: Follow along with typed answers as you listen
+                  - listitem [ref=e351]:
+                    - paragraph [ref=e352]: See visual search results like images, charts, and map cards in real time
+                  - listitem [ref=e353]:
+                    - paragraph [ref=e354]: Refer back to earlier messages without interrupting the conversation
+                  - listitem [ref=e355]:
+                    - paragraph [ref=e356]: Type back when you can’t talk and still get a Voice response
+                  - listitem [ref=e357]:
+                    - paragraph [ref=e358]: Share photos to discuss them out loud
+                - paragraph [ref=e359]: This means Voice can better adapt to your day and meet you where you are, whether you're practicing a language and seeing words spelled out, need to refer to a measurement while cooking hands-free, or talking through a chart or code sample where visuals help.
+                - paragraph [ref=e360]: This update is rolling out to all users globally on the ChatGPT mobile app and chatgpt.com. If you prefer the original Voice experience, you can switch back anytime by going to Settings and turning on “Separate mode” under Voice Mode. We’ll continue listening and refining this experience as we build toward Voice interactions that are both integrated and immersive.
+                - heading "November 24, 2025" [level=1] [ref=e361]
+                - heading "Shopping research in ChatGPT" [level=2] [ref=e362]
+                - paragraph [ref=e363]: Shopping research is a new interactive experience that helps you find the right products without doing all the research yourself. Describe what you need—like a quiet cordless vacuum for a small apartment, a gift for a four‑year‑old who loves art, or a way to choose between three bikes—and ChatGPT will ask clarifying questions, research deeply across the internet, review quality sources, and build on ChatGPT’s understanding of you from past conversations and memory to return a personalized buyer’s guide with options, tradeoffs, and links to buy.
+                - paragraph [ref=e364]: ChatGPT learns what you like through an interactive interface allowing you to guide the research based on your real-time feedback.
+                - paragraph [ref=e365]:
+                  - text: Shopping research is available on ChatGPT Web, iOS, and Android for logged‑in Free, Go, Plus, and Pro users. To help with holiday shopping, we’re making usage nearly unlimited across plans through the season. To learn more, visit the
+                  - link "blog" [ref=e366] [cursor=pointer]:
+                    - /url: https://openai.com/index/chatgpt-shopping-research/
+                  - text: .
+                - heading "November 21, 2025" [level=1] [ref=e367]
+                - heading "More images in answers" [level=2] [ref=e368]
+                - paragraph [ref=e369]: ChatGPT now adds more inline images from the web to help you quickly understand topics like well-known people, places, and products. When visuals can add clarity, you’ll see images placed beside the relevant paragraph. You can click on any of the images to see them in original dimensions and with the source attribution.
+                - paragraph [ref=e370]: These improvements are gradually rolling out globally across all ChatGPT plans, on web, iOS, and Android for responses using GPT 5.1.
+                - heading "November 20, 2025" [level=1] [ref=e371]
+                - heading "Instant Checkout now rolling out to Shopify merchants" [level=2] [ref=e372]
+                - paragraph [ref=e373]: You can now find and buy from Shopify merchants starting with Spanx, Skims, and Glossier through Instant Checkout in ChatGPT.
+                - paragraph [ref=e374]:
+                  - text: When a product from a Shopify merchant supports Instant Checkout, you can complete the purchase right in the
+                  - text: chat with a quick confirmation of your shipping and payment details.
+                - paragraph [ref=e375]: Instant Checkout is available for logged in Plus, Pro, and Free users in the US.
+                - heading "November 19, 2025" [level=1] [ref=e376]
+                - 'heading "GPT-5.1 Pro: Clearer, more capable answers for complex work" [level=2] [ref=e377]'
+                - paragraph [ref=e378]: Today we’re updating GPT-5 Pro to GPT-5.1 Pro. In early testing, users consistently preferred GPT-5.1 Pro over GPT-5 Pro, rating it especially highly for writing help, data science, and business questions. Testers highlighted the model’s improved clarity, relevance, and structure in its responses.
+                - paragraph [ref=e379]: GPT-5.1 Pro is rolling out today for all ChatGPT Pro users and is available in the model picker. GPT-5 Pro will remain available as a legacy model for 90 days before being retired.
+                - heading "November 13, 2025" [level=1] [ref=e380]
+                - heading "Group chats in ChatGPT" [level=2] [ref=e381]
+                - paragraph [ref=e382]: We’re piloting group chats so you can bring people - and ChatGPT - into the same conversation. Plan trips, make decisions, and collaborate on projects together while ChatGPT helps search, summarize, generate content, and keep everyone on the same page.
+                - paragraph [ref=e383]:
+                  - text: Group chats are starting to roll out on ChatGPT Web, iOS, and Android in New Zealand, Japan, South Korea, and Taiwan. We’ll use early feedback from this pilot to improve the experience and inform how we expand to more regions and plans over time. To learn more visit the
+                  - link "blog" [ref=e384] [cursor=pointer]:
+                    - /url: https://openai.com/index/group-chats-in-chatgpt/
+                  - text: .
+                - heading "November 12, 2025" [level=1] [ref=e385]
+                - heading "GPT-5.1 in ChatGPT" [level=2] [ref=e386]
+                - paragraph [ref=e387]: We’re updating GPT-5 to GPT-5.1 Instant and GPT-5.1 Thinking, making answers both smarter and more conversational. GPT-5.1 Instant now uses light adaptive reasoning for tougher questions while staying fast, and GPT-5.1 Thinking adapts its thinking time more precisely for complex tasks with clearer, less jargony responses.
+                - paragraph [ref=e388]: GPT-5.1 Auto continues to route each query to the best model, and GPT-5 models remain available for three months under the Legacy models dropdown so you can compare and transition at your own pace.
+                - paragraph [ref=e389]: GPT-5.1 Instant and Thinking are rolling out first to paid (Pro, Plus, Go, Business) users, then to free and logged-out users, with Enterprise and Edu getting a temporary early-access toggle; GPT-5.1 will also be available soon in the API as gpt-5.1-chat-latest (Instant) and gpt-5.1 (Thinking).
+                - heading "New tone and personalization controls" [level=2] [ref=e390]
+                - paragraph [ref=e391]: We’re updating ChatGPT’s tone controls so it’s easier to make responses sound the way you prefer. You can now choose from updated presets like Default, Friendly, Efficient, Professional, Candid, and Quirky (with Cynical and Nerdy still available), and we’re experimenting with more granular controls over how concise, warm, or scannable responses are, plus how often emojis appear.
+                - paragraph [ref=e392]: Changes you make in Personalization now apply across all chats immediately (including existing conversations), and GPT-5.1 models follow your custom instructions and style preferences more reliably.
+                - heading "November 7, 2025" [level=1] [ref=e393]
+                - heading "Personality and custom instructions now apply to all chats" [level=2] [ref=e394]
+                - paragraph [ref=e395]: Previously, changes you made to your ChatGPT personality or custom instructions only applied to new conversations. Starting today, updates you make in Settings → Personalization are applied immediately across all chats (including existing conversations!) so your experience stays consistent everywhere without needing to start a new thread.
+                - heading "November 5, 2025" [level=1] [ref=e396]
+                - heading "Interrupt ChatGPT" [level=2] [ref=e397]
+                - paragraph [ref=e398]: You can now interrupt long-running queries (such as deep research or GPT-5 Pro) to refine what you’re asking—no restart required or progress lost. For example, if you're researching the perfect bookshelf and suddenly remember that your wall is 72" wide and you can't drill into it, you can simply add that information midstream by clicking “update” in the sidebar and sending the new information as a message. The model will adjust its approach based on your new requirements.
+                - heading "November 3, 2025" [level=1] [ref=e399]
+                - heading "ChatGPT Go Promo - India" [level=2] [ref=e400]
+                - paragraph [ref=e401]:
+                  - text: Eligible customers in India can get now get 12 months of
+                  - link "ChatGPT Go" [ref=e402] [cursor=pointer]:
+                    - /url: https://what%20is%20chatgpt%20go/
+                  - text: at no cost. new New users can
+                  - link "redeem now" [ref=e403] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12739021-chatgpt-go-promotion-india
+                  - text: on ChatGPT web or the Android app (Google Play). The Apple App Store option arrives next week - no promo code is required for redemption.
+                - paragraph [ref=e404]: Available to users in India who are new, on the free plan, or are current ChatGPT Go subscribers - one redemption per account. Requires a payment method (credit card or UPI).
+                - paragraph [ref=e405]:
+                  - text: If you have an existing ChatGPT Go membership, we may be able to automatically add the promotion for you at the end of your current billing cycle - review
+                  - link "ChatGPT Go Promotion (India)" [ref=e406] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12739021-chatgpt-go-promotion-india
+                  - text: for more details.
+                  - text: "Update: as of January 21, 2026, the promo has ended"
+                - heading "October 30, 2025" [level=1] [ref=e407]
+                - heading "ChatGPT Go expansion" [level=2] [ref=e408]
+                - paragraph [ref=e409]:
+                  - text: We're excited to announce that ChatGPT Go, our low cost subscription plan, is now available in 8 additional countries in Europe, bringing total coverage to
+                  - link "98 countries" [ref=e410] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go#h_3dfe7afb4d
+                  - text: . The new countries we added are Austria, Czech Republic, Denmark, Norway, Poland, Portugal, Spain and Sweden.
+                - paragraph [ref=e411]:
+                  - text: For an affordable price, ChatGPT Go provides everything included in the
+                  - link "Free" [ref=e412] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+                  - text: "plan, and:"
+                - list [ref=e413]:
+                  - listitem [ref=e414]:
+                    - paragraph [ref=e415]: More messages, larger file uploads, and expanded image generation
+                  - listitem [ref=e416]:
+                    - paragraph [ref=e417]: Access to advanced data analysis
+                  - listitem [ref=e418]:
+                    - paragraph [ref=e419]: Longer memory for more personalized responses
+                - paragraph [ref=e420]: Available on web, mobile (iOS & Android), and desktop (macOS & Windows).
+                - paragraph [ref=e421]:
+                  - text: Learn more about
+                  - link "ChatGPT Go" [ref=e422] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+                  - text: .
+                - heading "Credits for Flexible Usage for Codex and Sora" [level=2] [ref=e423]
+                - paragraph [ref=e424]:
+                  - text: "Today we’re introducing ways to purchase additional usage in products like Codex and Sora. If you hit your included limits, you can seamlessly buy more credits right in the Codex dashboard or buy more video generations in the Sora app to keep going. Learn more in our article:"
+                  - link "Using Credits for Flexible Usage in ChatGPT (Free/Go/Plus/Pro) & Sora." [ref=e425] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12642688-using-credits-for-flexible-usage-in-chatgpt-plus-pro
+                - heading "October 29, 2025" [level=1] [ref=e426]
+                - heading "ChatGPT Pulse on Web" [level=3] [ref=e427]
+                - paragraph [ref=e428]: ChatGPT Pulse is now available on web and rolling out to Atlas for Pro users.
+                - paragraph [ref=e429]: With Pulse, ChatGPT can do asynchronous research on your behalf once a day based on your past chats, memory, and feedback to help you get things done. The research is delivered to you proactively the next day as a series of visual summaries that you can scan at a glance, expand for more detail, save for later, or ask follow up questions.
+                - heading "October 28, 2025" [level=1] [ref=e430]
+                - heading "ChatGPT Go now available in Brazil" [level=3] [ref=e431]
+                - paragraph [ref=e432]:
+                  - text: We're launching ChatGPT Go, our low cost subscription plan, in Brazil. ChatGPT Go provides everything included in the
+                  - link "Free" [ref=e433] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+                  - text: "plan, and:"
+                - list [ref=e434]:
+                  - listitem [ref=e435]:
+                    - paragraph [ref=e436]: More messages, larger file uploads, and expanded image generation
+                  - listitem [ref=e437]:
+                    - paragraph [ref=e438]: Access to advanced data analysis
+                  - listitem [ref=e439]:
+                    - paragraph [ref=e440]: Longer memory for more personalized responses
+                - paragraph [ref=e441]: Available on web, mobile (iOS & Android), and desktop (macOS & Windows).
+                - paragraph [ref=e442]:
+                  - text: Learn more about
+                  - link "ChatGPT Go" [ref=e443] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+                  - text: .
+                - heading "October 23, 2025" [level=1] [ref=e444]
+                - heading "Shared projects" [level=3] [ref=e445]
+                - paragraph [ref=e446]: Starting today, project sharing is available to all ChatGPT users, including for Free, Plus, Pro, and Go users globally on web, iOS, and Android.
+                - paragraph [ref=e447]: ChatGPT can draw from anything in the shared project – including chats, uploaded files and custom instructions – so responses are informed by your group's internal knowledge, and you can pick up where others left off.
+                - paragraph [ref=e448]: "Shared projects are ideal for:"
+                - list [ref=e449]:
+                  - listitem [ref=e450]:
+                    - paragraph [ref=e451]: "Group work: Upload notes, proposals, and contracts so collaborators can draft deliverables faster and stay in sync."
+                  - listitem [ref=e452]:
+                    - paragraph [ref=e453]: "Content creation: Apply project-specific instructions to keep tone and style consistent across contributors."
+                  - listitem [ref=e454]:
+                    - paragraph [ref=e455]: "Reporting: Store datasets and reports in one project, and return each week to generate updates without starting over."
+                  - listitem [ref=e456]:
+                    - paragraph [ref=e457]: "Research: Keep transcripts, survey results, and market research in one place, so anyone in the project can query and build on the findings."
+                - paragraph [ref=e458]: "Project owners can choose to share a project with “Only those invited” or “Anyone with a link,” and can change visibility settings at any time including switching back to invite-only. The following collaboration limits apply:"
+                - list [ref=e459]:
+                  - listitem [ref=e460]:
+                    - paragraph [ref=e461]: "Pro users: up to 40 files and 100 collaborators"
+                  - listitem [ref=e462]:
+                    - paragraph [ref=e463]: "Plus and Go users: up to 25 files and 10 collaborators"
+                  - listitem [ref=e464]:
+                    - paragraph [ref=e465]: "Free users: up to 5 files and 5 collaborators"
+                - heading "October 22, 2025" [level=1] [ref=e466]
+                - paragraph [ref=e467]:
+                  - text: We’re updating the model for signed-out users to GPT-5 Instant, giving more people access to higher-quality responses by default.
+                  - link "See here" [ref=e468] [cursor=pointer]:
+                    - /url: https://openai.com/index/introducing-gpt-5/
+                  - text: to learn more about the intelligence of GPT-5.
+                - heading "October 15, 2025" [level=1] [ref=e469]
+                - heading "ChatGPT can now automatically manage saved memories so it’s even better at remembering what’s important to you." [level=2] [ref=e470]
+                - paragraph [ref=e471]: ChatGPT now manages saved memories automatically by keeping the most relevant details prioritized and moving less important ones to the background. This helps prevent saved memories from reaching capacity and helps avoid “memory full” state in your ChatGPT account.
+                - paragraph [ref=e472]: To decide which memories stay top of mind, ChatGPT considers factors such as how recent a detail is and how often you talk about a topic. You can now also search your saved memories more easily and sort them by newest or oldest.
+                - paragraph [ref=e473]: "You’re always in control: you can turn off automatic memory management at any time, and you can see which memories are currently top of mind and choose to prioritize or deprioritize any specific memory yourself in settings. You can also view and restore prior versions of saved memories."
+                - paragraph [ref=e474]: These updates are designed to make saved memory feel seamless, reliable, and easy to manage. We’re beginning to roll this out to Plus and Pro users globally on the web.
+                - heading "October 14, 2025" [level=1] [ref=e475]
+                - heading "ChatGPT Go expansion" [level=2] [ref=e476]
+                - paragraph [ref=e477]:
+                  - text: We're excited to announce that ChatGPT Go, our low cost subscription plan, is now available in
+                  - link "71 additional countries" [ref=e478] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go#h_3dfe7afb4d
+                  - text: ", bringing total coverage to 89 countries."
+                - paragraph [ref=e479]:
+                  - text: For an affordable price, ChatGPT Go provides everything included in the
+                  - link "Free" [ref=e480] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+                  - text: "plan, and:"
+                - list [ref=e481]:
+                  - listitem [ref=e482]:
+                    - paragraph [ref=e483]: More messages, larger file uploads, and expanded image generation
+                  - listitem [ref=e484]:
+                    - paragraph [ref=e485]: Access to advanced data analysis
+                  - listitem [ref=e486]:
+                    - paragraph [ref=e487]: Longer memory for more personalized responses
+                - paragraph [ref=e488]: Available on web, mobile (iOS & Android), and desktop (macOS & Windows).
+                - paragraph [ref=e489]: "Note: In Cambodia, Laos, and Nepal, ChatGPT Go subscriptions aren’t available in the iOS app currently. Web and Android subscriptions remain available."
+                - paragraph [ref=e490]:
+                  - text: Learn more about
+                  - link "ChatGPT Go" [ref=e491] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+                  - text: .
+                - heading "October 13, 2025" [level=1] [ref=e492]
+                - heading "Slack connector and app" [level=2] [ref=e493]
+                - paragraph [ref=e494]:
+                  - text: "We’re rolling out two new ways to bring Slack and ChatGPT together: a"
+                  - link "connector" [ref=e495] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+                  - text: that brings your Slack context into ChatGPT, and a ChatGPT app for Slack – an integration that enables you to chat with ChatGPT from inside Slack.
+                - paragraph [ref=e496]:
+                  - text: With the
+                  - link "ChatGPT app for Slack," [ref=e497] [cursor=pointer]:
+                    - /url: https://intercom.help/openai/en/articles/12462158-chatgpt-app-for-slack
+                  - text: you can chat one-on-one with ChatGPT in a dedicated Slack sidebar – a space to ask questions, summarize long threads into action items, draft replies, and search messages and files you already have access to. Chats you start in Slack also appear in your ChatGPT sidebar, so it’s easy to pick up later from web or mobile. Semantic search is supported for Slack customers with AI enabled on Business+ or Enterprise+ plans; all other plans use keyword search.
+                - paragraph [ref=e498]:
+                  - text: With the
+                  - link "ChatGPT connector for Slack" [ref=e499] [cursor=pointer]:
+                    - /url: https://intercom.help/openai/en/articles/12525822-chatgpt-connector-for-slack
+                  - text: ", you can securely bring in context from your Slack channels and DMs, making responses more helpful Available in chat, Deep Research, and Agent Mode. Users can enable from Settings > Apps & Connectors."
+                - paragraph [ref=e500]: Both app and connector are available to Plus, Pro, Business and Enterprise/Edu customers. Additionally, the ChatGPT app for Slack requires a paid Slack account; availability and workspace installation may depend on your Slack workspace settings.
+                - paragraph [ref=e501]: Installing the app requires the connector to be enabled for your account.
+                - paragraph [ref=e502]:
+                  - text: Visit the
+                  - link "ChatGPT app for Slack" [ref=e503] [cursor=pointer]:
+                    - /url: https://intercom.help/openai/en/articles/12462158-chatgpt-app-for-slack
+                  - text: page to get started with installation.
+                - heading "October 9, 2025" [level=1] [ref=e504]
+                - heading "Adding Notion & Linear synced connectors" [level=2] [ref=e505]
+                - paragraph [ref=e506]:
+                  - text: We're adding
+                  - link "Notion" [ref=e507] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12532955-notion-synced-connector
+                  - text: and
+                  - link "Linear" [ref=e508] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12526595-linear-synced-connector
+                  - text: as synced connectors (for Pro users), so you can securely bring Notion pages and Linear issues/discussions into Chat for fast answers and summaries. You can enable sync for Notion and Linear from your Connector settings (connect to Notion or Linear if you haven’t already, first). Once synced, ChatGPT will automatically reference the indexed content when relevant. Learn more about
+                  - link "synced connectors" [ref=e509] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/10847137-chatgpt-synced-connectors
+                  - text: .
+                - heading "October 8, 2025" [level=1] [ref=e510]
+                - heading "ChatGPT Go expansion" [level=2] [ref=e511]
+                - paragraph [ref=e512]:
+                  - text: We're excited to announce that ChatGPT Go, our low cost subscription plan, is now available in
+                  - link "16 additional countries" [ref=e513] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go#h_3dfe7afb4d
+                  - text: . For an affordable price, ChatGPT Go provides everything included in the
+                  - link "Free" [ref=e514] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+                  - text: "plan, and:"
+                - list [ref=e515]:
+                  - listitem [ref=e516]:
+                    - paragraph [ref=e517]: More messages, larger file uploads, and expanded image generation
+                  - listitem [ref=e518]:
+                    - paragraph [ref=e519]: Access to advanced data analysis
+                  - listitem [ref=e520]:
+                    - paragraph [ref=e521]: Longer memory for more personalized responses
+                - paragraph [ref=e522]: Available on web, mobile (iOS & Android), and desktop (macOS & Windows).
+                - paragraph [ref=e523]: "Note: In Cambodia, Laos, and Nepal, ChatGPT Go subscriptions aren’t available in the iOS app currently. Web and Android subscriptions remain available."
+                - paragraph [ref=e524]:
+                  - text: Learn more about
+                  - link "ChatGPT Go" [ref=e525] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+                  - text: .
+                - heading "October 6, 2025" [level=1] [ref=e526]
+                - heading "Updates to Codex" [level=2] [ref=e527]
+                - paragraph [ref=e528]:
+                  - text: "We’re rolling out new Codex capabilities to help teams work and build better:"
+                  - link "Codex now works in Slack" [ref=e529] [cursor=pointer]:
+                    - /url: https://developers.openai.com/codex/integrations/slack
+                  - text: ", and supports programmatic control through the"
+                  - link "Codex SDK" [ref=e530] [cursor=pointer]:
+                    - /url: https://developers.openai.com/codex/sdk
+                  - text: . Additionally, we've updated
+                  - link "Codex rates" [ref=e531] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11481834-chatgpt-rate-card#h_e8c3d8c100
+                  - text: .
+                - paragraph [ref=e532]:
+                  - text: For more information, review our Help Center article on
+                  - link "Codex" [ref=e533] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
+                  - text: ", and the"
+                  - link "Codex developer documentation" [ref=e534] [cursor=pointer]:
+                    - /url: https://developers.openai.com/codex
+                  - text: .
+                - heading "October 3, 2025" [level=1] [ref=e535]
+                - heading "Updating GPT-5" [level=3] [ref=e536]
+                - paragraph [ref=e537]: We’re updating GPT-5 Instant to better recognize and support people in moments of distress.
+                - paragraph [ref=e538]: The model is trained to more accurately detect and respond to potential signs of mental and emotional distress. These updates were guided by mental health experts, and help ChatGPT de-escalate conversations and point people to real-world crisis resources when appropriate, while still using language that feels supportive and grounding.
+                - paragraph [ref=e539]:
+                  - text: As we shared in a
+                  - link "recent blog" [ref=e540] [cursor=pointer]:
+                    - /url: https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/
+                  - text: ", we've been using our real-time router to direct sensitive parts of conversations—such as those showing signs of acute distress—to reasoning models. GPT-5 Instant now performs just as well as GPT-5 Thinking on these types of questions. When GPT-5 Auto or a non-reasoning model is selected, we'll instead route these conversations to GPT-5 Instant to more quickly provide helpful and beneficial responses. ChatGPT will continue to tell users which model is active when asked."
+                - paragraph [ref=e541]: This update to GPT-5 Instant is starting to roll out to ChatGPT users today. We’re continuing to work on improvements and will keep updating the model to make it smarter and safer over time.
+                - heading "September 29, 2025" [level=1] [ref=e542]
+                - heading "Parental Controls" [level=2] [ref=e543]
+                - paragraph [ref=e544]: We’re rolling out parental controls globally in ChatGPT to help families guide how ChatGPT works in their homes. Available starting on the web today, mobile soon.
+                - paragraph [ref=e545]: To set up parental controls, a parent or guardian sends an invite to their teen to connect accounts. After the teen accepts, the parent can manage the teen’s settings from their own account. Teens can also invite a parent to connect.
+                - paragraph [ref=e546]: Once a teen is connected to a parent’s account, they automatically receive additional content protections, such as reduced graphic content and viral challenges. Parents will have the option to turn this setting off if they choose, but teen users cannot make changes.
+                - paragraph [ref=e547]: Parents don’t have access to their teen’s conversations, except in rare cases where our system and trained reviewers detect possible signs of serious safety risk, parents may be notified — but only with the information needed to support their teen’s safety. Parents can choose if they’d like to be contacted by email, SMS, push notification, or all three.
+                - paragraph [ref=e548]: "Parents can adjust certain features, set time limits, and add safeguards that work for their family including:"
+                - list [ref=e549]:
+                  - listitem [ref=e550]:
+                    - paragraph [ref=e551]: Set quiet hours, or specific times when ChatGPT can’t be used.
+                  - listitem [ref=e552]:
+                    - paragraph [ref=e553]: Turn off voice mode, to remove the option to use voice mode in ChatGPT.
+                  - listitem [ref=e554]:
+                    - paragraph [ref=e555]: Turn off memory, so ChatGPT won’t save and use memories when responding.
+                  - listitem [ref=e556]:
+                    - paragraph [ref=e557]: Remove image generation, so ChatGPT won’t have the ability to create or edit images.
+                  - listitem [ref=e558]:
+                    - paragraph [ref=e559]: Opt out of model training, so their teen’s conversations won’t be used to improve models powering ChatGPT and Sora.
+                - heading "Introducing Instant Checkout and the Agentic Commerce Protocol" [level=2] [ref=e560]
+                - paragraph [ref=e561]: We’re introducing Instant Checkout in ChatGPT and the Agentic Commerce Protocol that powers it, built with Stripe.
+                - paragraph [ref=e562]: ChatGPT can help you find anything on the web and now with Instant Checkout, you can seamlessly buy directly from the merchant, right in chat. Starting today, U.S. ChatGPT Plus, Pro, and Free users can buy directly from U.S. Etsy sellers through ChatGPT, with over 1 million Shopify merchants, like Glossier, SKIMS, Spanx and Vuori, coming soon.
+                - heading "Instant Checkout" [level=3] [ref=e563]
+                - paragraph [ref=e564]: Instant Checkout makes it easy to go from chat to checkout in just a few taps.
+                - list [ref=e565]:
+                  - listitem [ref=e566]:
+                    - paragraph [ref=e567]: Ask ChatGPT a shopping question and it finds organic, unsponsored product results from across the web.
+                  - listitem [ref=e568]:
+                    - paragraph [ref=e569]: Choose an item and ChatGPT shows where to buy, ranking merchants by factors like inventory, price, quality, primary seller status, and Instant Checkout availability.
+                  - listitem [ref=e570]:
+                    - paragraph [ref=e571]: If Instant Checkout is offered, tap Buy, confirm shipping and payment details, and pay in one tap with your card on file or other express pay options.
+                  - listitem [ref=e572]:
+                    - paragraph [ref=e573]: If Instant Checkout isn’t available, ChatGPT provides a direct link so you can purchase from the merchant’s site.
+                - paragraph [ref=e574]:
+                  - text: You’re in control at all times and give explicit confirmation to purchase. Payment goes directly from you to the merchant, not through OpenAI.
+                  - link "Learn more about Instant Checkout" [ref=e575] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12440090-instant-checkout
+                  - text: .
+                - heading "Agentic Commerce Protocol" [level=3] [ref=e576]
+                - paragraph [ref=e577]: The Agentic Commerce Protocol (ACP) gives merchants and developers a way to build agentic commerce experiences that work with their current systems and connect them with 700M+ weekly active users on ChatGPT.
+                - paragraph [ref=e578]:
+                  - text: If you’re a merchant and want to add Instant Checkout in ChatGPT, apply on our
+                  - link "merchant page." [ref=e579] [cursor=pointer]:
+                    - /url: http://chatgpt.com/merchants
+                  - text: We’ll be accepting and onboarding merchants on a rolling basis.
+                - paragraph [ref=e580]:
+                  - text: Developers can start exploring the Agentic Commerce Protocol
+                  - link "documentation" [ref=e581] [cursor=pointer]:
+                    - /url: https://developers.openai.com/commerce
+                  - text: and example implementations on
+                  - link "GitHub" [ref=e582] [cursor=pointer]:
+                    - /url: https://github.com/agentic-commerce-protocol/agentic-commerce-protocol
+                  - text: .
+                - heading "September 25, 2025" [level=1] [ref=e583]
+                - heading "Introducing ChatGPT Pulse for Pro users" [level=2] [ref=e584]
+                - paragraph [ref=e585]: We’re launching an early preview of ChatGPT pulse for Pro users on iOS and Android. This is a new experience where ChatGPT can now proactively deliver personalized, focused updates for you once a day. These updates are based on asynchronous research ChatGPT can do on your behalf overnight, synthesizing information from your memory, chat history, and direct feedback to learn what’s most relevant to you.
+                - paragraph [ref=e586]: Updates are delivered once a day as visual summaries you can scan at a glance or dive deeper into. Each topic opens into more detail where you can ask follow-up questions. You can shape what shows up in pulse with a quick thumbs up or down, or by using curate to tell ChatGPT what you’d like to see.
+                - paragraph [ref=e587]: If you ask for something new in the evening, we aim to include it the next morning, though exact timing may vary. Pulse refreshes daily, and you can save any item into a chat to keep it.
+                - paragraph [ref=e588]: As a preview, pulse has some limitations. It aims to show you what’s most relevant and useful but you may still see suggestions that miss the mark. For example, you may get tips for a project you already completed. You can guide what shows up by telling ChatGPT directly. It remembers your feedback for next time and improves as it learns from real use.
+                - paragraph [ref=e589]:
+                  - text: It requires saved memory and chat history to be turned on, and you can switch pulse off anytime in settings. See
+                  - link "ChatGPT Pulse" [ref=e590] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/12293630-chatgpt-pulse
+                  - text: .
+                - heading "September 22, 2025" [level=1] [ref=e591]
+                - heading "ChatGPT Go now available in Indonesia" [level=2] [ref=e592]
+                - paragraph [ref=e593]: We're launching ChatGPT Go, our low cost subscription plan, in Indonesia.
+                - paragraph [ref=e594]:
+                  - text: For Rp 75.000/month, ChatGPT Go provides everything included in the
+                  - link "Free" [ref=e595] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+                  - text: "plan, and:"
+                - list [ref=e596]:
+                  - listitem [ref=e597]:
+                    - paragraph [ref=e598]: More messages, larger file uploads, and expanded image generation
+                  - listitem [ref=e599]:
+                    - paragraph [ref=e600]: Access to advanced data analysis
+                  - listitem [ref=e601]:
+                    - paragraph [ref=e602]: Longer memory for more personalized responses
+                - paragraph [ref=e603]: Available on web, mobile (iOS & Android), and desktop (macOS & Windows).
+                - paragraph [ref=e604]:
+                  - text: Learn more about
+                  - link "ChatGPT Go" [ref=e605] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+                  - text: .
+                - heading "September 18, 2025" [level=1] [ref=e606]
+                - heading "Voice Updates" [level=2] [ref=e607]
+                - paragraph [ref=e608]: We’re improving the quality and latency of responses of the version of Advanced Voice powered by GPT-4o mini.
+                - heading "September 17, 2025" [level=1] [ref=e609]
+                - heading "Toggle thinking time in the message composer" [level=2] [ref=e610]
+                - heading "What’s new" [level=3] [ref=e611]
+                - paragraph [ref=e612]: We’re giving Plus, Business, and Pro users more control over how long GPT-5 thinks before responding. You can now choose the level of reasoning time, so you can decide whether you want a quicker answer or more in-depth reasoning for your task.
+                - heading "How it works" [level=3] [ref=e613]
+                - paragraph [ref=e614]: When you select GPT-5 with Thinking in ChatGPT, you’ll see a new thinking time toggle in the message composer.
+                - list [ref=e615]:
+                  - listitem [ref=e616]:
+                    - paragraph [ref=e617]: Standard (new default, balancing speed and intelligence) and Extended (the previous default for Plus) are available to all Plus, Business users
+                  - listitem [ref=e618]:
+                    - paragraph [ref=e619]: "Pro users get two additional options: Light (snappiest) and Heavy (deeper reasoning)."
+                  - listitem [ref=e620]:
+                    - paragraph [ref=e621]: All queries default to Standard unless you choose to change it. Once you choose a different thinking time, your preference is saved and used for future queries until you switch again.
+                - heading "Why we’re making this change" [level=3] [ref=e622]
+                - paragraph [ref=e623]: "We’ve heard from some of you that GPT-5 Thinking’s answers can take longer than you’d like. Now you can decide what you need in the moment:"
+                - list [ref=e624]:
+                  - listitem [ref=e625]:
+                    - paragraph [ref=e626]: Light / Standard → quicker answers that still apply reasoning, balancing speed and intelligence.
+                  - listitem [ref=e627]:
+                    - paragraph [ref=e628]: Extended / Heavy → more time for deeper, more comprehensive responses when the stakes are higher or the question is more difficult.
+                - heading "What’s next" [level=3] [ref=e629]
+                - paragraph [ref=e630]: The thinking-time toggle is live today on chatgpt.com. Settings you choose on the web won’t yet sync to mobile, but we’ll bring this control to our iOS and Android apps in the coming weeks.
+                - heading "September 16, 2025" [level=1] [ref=e631]
+                - heading "Improvements to search in ChatGPT" [level=2] [ref=e632]
+                - paragraph [ref=e633]: We’ve made further improvements to search in ChatGPT, making results more accurate, reliable, and useful.
+                - list [ref=e634]:
+                  - listitem [ref=e635]:
+                    - paragraph [ref=e636]: "Factuality: Fewer hallucinations, improving answer quality."
+                  - listitem [ref=e637]:
+                    - paragraph [ref=e638]: "Shopping: Search is better at detecting shopping intent, showing products when you want them and keeping results focused when you don’t."
+                  - listitem [ref=e639]:
+                    - paragraph [ref=e640]: "Formatting: Answers are better formatted for quick understanding without losing detail or quality."
+                - heading "September 15, 2025" [level=1] [ref=e641]
+                - heading "Personalization settings are now in Settings" [level=2] [ref=e642]
+                - paragraph [ref=e643]: Personalization no longer opens in a separate modal. You can manage personalization, choose a ChatGPT personality, add custom instructions, and update Memory directly in Settings → Personalization.
+                - heading "Updates to Codex (Plus/Pro) - Introducing GPT-5-Codex" [level=2] [ref=e644]
+                - paragraph [ref=e645]:
+                  - text: "We’re adding GPT-5-codex, a GPT-5 variant optimized for agentic coding in Codex. It’s available everywhere you use Codex: default for cloud tasks and code review, and selectable for local workflows via the Codex CLI and IDE extension. Use GPT-5-codex for coding-focused work in Codex, or Codex-like environments; use GPT-5 for general, non-coding tasks. Please review the"
+                  - link "announcement" [ref=e646] [cursor=pointer]:
+                    - /url: https://openai.com/index/introducing-upgrades-to-codex/
+                  - text: blog for more information.
+                - paragraph [ref=e647]:
+                  - emphasis [ref=e648]: "Note: GPT-5-Codex is not currently supported in ChatGPT or the API."
+                - paragraph [ref=e649]:
+                  - text: To learn more about Codex, visit the
+                  - link "developers site" [ref=e650] [cursor=pointer]:
+                    - /url: http://developers.openai.com/codex
+                  - text: "as well as our general help article:"
+                  - link "Using Codex with your ChatGPT plan" [ref=e651] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11369540
+                  - text: .
+                - heading "September 9, 2025" [level=1] [ref=e652]
+                - heading "ChatGPT Voice Update" [level=2] [ref=e653]
+                - paragraph [ref=e654]: Last month we announced that everyone now has access to Advanced Voice Mode, with usage expanded from minutes per day to hours for Free users, and near-unlimited use for Plus.
+                - paragraph [ref=e655]: We also shared that Standard Voice Mode would be retired following a 30-day sunset period. We’ve heard feedback that Standard Voice is special to some folks, and we want to make sure the transition feels right. To that end, we’re keeping Standard Voice available while we address some feedback from its users about Advanced Voice.
+                - paragraph [ref=e656]: Stay tuned—more improvements to Voice are coming soon.
+                - heading "September 4, 2025" [level=1] [ref=e657]
+                - heading "Branch conversations on web" [level=2] [ref=e658]
+                - paragraph [ref=e659]: You can now branch conversations in ChatGPT, making it easier to explore different directions without losing your original thread. Hover over a message, click More actions (⋯), and select Branch in new chat to start a separate conversation from that point.
+                - paragraph [ref=e660]: This feature is available today for all logged-in users on web.
+                - heading "September 3, 2025" [level=1] [ref=e661]
+                - heading "Projects Now Available on ChatGPT Free Tier" [level=2] [ref=e662]
+                - paragraph [ref=e663]: Projects bring your chats and files into one place, helping you stay focused and get things done. They’re now available on our Free tier, with up to 5 file uploads per project.
+                - paragraph [ref=e664]: "We’ve also updated file uploads on paid tiers: Plus, Go, and Edu support up to 25 files per project. Pro, Business, and Enterprise support up to 40 files per project."
+                - paragraph [ref=e665]: New customization options are available for all plans, including colors and icons, to help keep your projects organized.
+                - paragraph [ref=e666]:
+                  - text: Learn more about
+                  - link "projects in ChatGPT" [ref=e667] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+                  - text: .
+                - heading "August 27, 2025" [level=1] [ref=e668]
+                - heading "Updates to Codex (Plus/Pro)" [level=2] [ref=e669]
+                - paragraph [ref=e670]: Starting today, Codex works with you everywhere you build—in your terminal or IDE, on the web, in GitHub, and even from the ChatGPT iOS app. Your ChatGPT account connects it all, so you can work seamlessly between your local environment and Codex’s cloud without losing state.
+                - paragraph [ref=e671]: "We’re excited to introduce the latest Codex updates:"
+                - list [ref=e672]:
+                  - listitem [ref=e673]:
+                    - paragraph [ref=e674]: "IDE Extension: The new extension brings codex into VS Code, Cursor, and other VS Code forks, so that you can seamlessly preview local changes and edit code"
+                  - listitem [ref=e675]:
+                    - paragraph [ref=e676]: "Sign in with ChatGPT: Available in both the IDE and CLI, eliminating API key setup and providing access directly through your existing ChatGPT plan"
+                  - listitem [ref=e677]:
+                    - paragraph [ref=e678]: "Seamless Local ↔ Cloud Handoff: Developers can pair with Codex locally and then delegate tasks to the cloud to execute asynchronously without losing state"
+                  - listitem [ref=e679]:
+                    - paragraph [ref=e680]: "Upgraded Codex CLI: Refreshed UI, new commands, and bug fixes"
+                  - listitem [ref=e681]:
+                    - paragraph [ref=e682]: "Code reviews in GitHub: Set up Codex to automatically review new PRs in a repo, or mention @codex in PRs to get reviews and suggested fixes"
+                - paragraph [ref=e683]:
+                  - text: "Additionally, all product information and updates for Codex moving forward will be announced on our new site:"
+                  - link "developers.openai.com/codex" [ref=e684] [cursor=pointer]:
+                    - /url: http://developers.openai.com/codex
+                  - text: .
+                - paragraph [ref=e685]: We invite you to explore the site for more details on these new features, as well as guides on how to get started.
+                - paragraph [ref=e686]:
+                  - text: To learn more about Codex, visit the new
+                  - link "developers site" [ref=e687] [cursor=pointer]:
+                    - /url: http://developers.openai.com/codex
+                  - text: "as well as our general help article:"
+                  - link "Using Codex with your ChatGPT plan" [ref=e688] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11369540
+                  - text: .
+                - heading "August 22, 2025" [level=1] [ref=e689]
+                - heading "Project-only memory" [level=2] [ref=e690]
+                - paragraph [ref=e691]:
+                  - text: An improvement to
+                  - link "projects" [ref=e692] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+                  - text: is now available. When creating a project, users have the option to enable project-only memory.
+                - paragraph [ref=e693]:
+                  - text: With project-only memory enabled, ChatGPT can use other conversations in that project for additional context, and won’t use your
+                  - link "saved memories" [ref=e694] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11146739-how-does-reference-saved-memories-work
+                  - text: from outside the project to shape responses. Additionally, it won’t carry anything from the project into future chats outside of the project.
+                - paragraph [ref=e695]: This creates a focused, self-contained space, which is useful for long-running or sensitive work where you want ChatGPT to stay anchored to that project’s tone, context, and history.
+                - paragraph [ref=e696]: "Note:"
+                - list [ref=e697]:
+                  - listitem [ref=e698]:
+                    - paragraph [ref=e699]: Personal Memory must be enabled to utilize this feature.
+                    - list [ref=e700]:
+                      - listitem [ref=e701]:
+                        - paragraph [ref=e702]: Settings -> Personalization -> Memory
+                  - listitem [ref=e703]:
+                    - paragraph [ref=e704]: This feature will initially only be available on the ChatGPT website and Windows app. Support for mobile (iOS and Android) and macOS app will follow in the coming weeks.
+                - paragraph [ref=e705]:
+                  - text: Learn more about
+                  - link "memory in projects" [ref=e706] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt#h_374a3efb05
+                  - text: .
+                - heading "August 18, 2025" [level=1] [ref=e707]
+                - heading "Introducing ChatGPT Go" [level=2] [ref=e708]
+                - paragraph [ref=e709]: We’re launching ChatGPT Go, a new low-cost subscription plan. This will initially be available for users in India only.
+                - paragraph [ref=e710]:
+                  - text: For ₹399/month (GST included), ChatGPT Go provides everything included in the
+                  - link "Free plan" [ref=e711] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+                  - text: ", and:"
+                - list [ref=e712]:
+                  - listitem [ref=e713]:
+                    - paragraph [ref=e714]: More messages, larger file uploads, and expanded image generation
+                  - listitem [ref=e715]:
+                    - paragraph [ref=e716]: Access to advanced data analysis
+                  - listitem [ref=e717]:
+                    - paragraph [ref=e718]: Longer memory for more personalized responses
+                - paragraph [ref=e719]: Available on web, mobile (iOS & Android), and desktop (macOS & Windows).
+                - paragraph [ref=e720]: ChatGPT Go is geo-restricted to India at launch, and is able to be subscribed to by credit card or UPI.
+                - paragraph [ref=e721]:
+                  - text: Learn more about
+                  - link "ChatGPT Go" [ref=e722] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+                  - text: .
+                - heading "August 15, 2025" [level=1] [ref=e723]
+                - heading "GPT-5 Updates" [level=2] [ref=e724]
+                - paragraph [ref=e725]: We’re making GPT-5’s default personality warmer and more familiar. This is in response to user feedback that the initial version of GPT-5 came across as too reserved and professional. The differences in personality should feel subtle but create a noticeably more approachable ChatGPT experience.
+                - paragraph [ref=e726]:
+                  - text: Warmth here means small acknowledgements that make interactions feel more personable — for example, “Good question,” “Great start,” or briefly recognizing the user’s circumstances when relevant. This is different from sycophancy, which we define as excessive flattery that can feel insincere. You can find more about our learnings on reducing sycophancy
+                  - link "here" [ref=e727] [cursor=pointer]:
+                    - /url: https://openai.com/index/expanding-on-sycophancy/
+                  - text: .
+                - paragraph [ref=e728]:
+                  - text: This update does not show an increase in sycophancy compared to the previous personality of GPT-5, measured by the same internal evals we ran and detailed in our
+                  - link "system card" [ref=e729] [cursor=pointer]:
+                    - /url: https://cdn.openai.com/pdf/8124a3ce-ab78-4f06-96eb-49ea29ffb52f/gpt5-system-card-aug7.pdf
+                  - text: . Teaching models to be warm without being sycophantic is an ongoing research challenge, and we will continue iterating to get this right. More updates are coming soon.
+                - heading "August 13, 2025" [level=1] [ref=e730]
+                - heading "Gmail, Google Calendar, and Google Contacts Connectors in ChatGPT (Plus)" [level=2] [ref=e731]
+                - paragraph [ref=e732]: Gmail, Google Calendar, and Google Contacts Connectors in ChatGPT are now available to Plus users globally. Access will be granted to users throughout today.
+                - paragraph [ref=e733]:
+                  - text: This was previously made available to Pro users on
+                  - link "August 12, 2025" [ref=e734] [cursor=pointer]:
+                    - /url: "#h_4da46a695f"
+                  - text: .
+                - paragraph [ref=e735]:
+                  - text: Learn more about
+                  - link "connectors" [ref=e736] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+                  - text: .
+                - heading "August 12, 2025" [level=1] [ref=e737]
+                - heading "GPT-5 Updates" [level=2] [ref=e738]
+                - paragraph [ref=e739]: You can now choose between “Auto”, “Fast”, and “Thinking” for GPT-5. Most users will want Auto, but the additional control will be useful for some people.
+                - paragraph [ref=e740]: ChatGPT Plus users now have 3,000 messages/week with GPT-5 Thinking, and then extra capacity on GPT-5 Thinking mini after that limit. The context limit for GPT-5 Thinking is 196k tokens. We may have to update rate limits over time depending on usage.
+                - paragraph [ref=e741]: 4o is back in the model picker for all paid users by default. Paid users also now have a “Show additional models” toggle in ChatGPT web settings which will add models like o3, o4-mini, 4.1, and GPT-5 Thinking mini. 4.5 is only available to Pro users due to GPUs.
+                - heading "Gmail, Google Calendar, and Google Contacts Connectors in ChatGPT (Pro)" [level=2] [ref=e742]
+                - paragraph [ref=e743]: Gmail, Google Calendar, and Google Contacts are now available to connect and use in chat. Once you enable them, ChatGPT will automatically reference them when relevant, making it faster and easier to bring information from these tools into your conversations without having to manually select them each time.
+                - paragraph [ref=e744]: This capability is part of GPT-5 and will begin rolling out to Pro users globally this week, followed by Plus, Team, Enterprise, and Edu plans in the coming weeks. To enable, visit Settings → Connectors→ Connect on the application.
+                - paragraph [ref=e745]: If you already have Gmail or Google Calendar enabled for deep research, you can now also use them in chat. To use them in deep research, you will still need to enable each connector separately and select it every time you start a new deep research request.
+                - paragraph [ref=e746]:
+                  - text: Learn more about
+                  - link "connectors" [ref=e747] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+                  - text: .
+                - heading "August 11, 2025" [level=1] [ref=e748]
+                - heading "Additional connectors for Plus and Pro" [level=2] [ref=e749]
+                - paragraph [ref=e750]: Now connect even more tools in ChatGPT for useful, relevant responses in chat.
+                - paragraph [ref=e751]: The following connectors are now available to search by chat in addition to deep research.
+                - list [ref=e752]:
+                  - listitem [ref=e753]:
+                    - paragraph [ref=e754]: "Plus: Box, Canva, Dropbox, HubSpot, Notion, Microsoft SharePoint, and Microsoft Teams"
+                  - listitem [ref=e755]:
+                    - paragraph [ref=e756]: "Pro: Microsoft Teams and Github"
+                - paragraph [ref=e757]: Rollout begins today, and all eligible accounts will have access in the coming days.
+                - paragraph [ref=e758]:
+                  - text: To enable, visit Settings → Connectors→ Connect on the application. Note that connectors are still in beta and defaulted off for Enterprise & Edu plans. Admins can enable them for their workspace in
+                  - link "Settings" [ref=e759] [cursor=pointer]:
+                    - /url: https://chatgpt.com/admin/settings
+                  - text: .
+                - paragraph [ref=e760]: "Note: Connectors for Plus/Pro plans are not available in EEA, Switzerland, and the UK."
+                - heading "August 8, 2025" [level=1] [ref=e761]
+                - heading "Image generation update to ChatGPT Free" [level=2] [ref=e762]
+                - paragraph [ref=e763]: We're rolling out a small update to image generation for ChatGPT Free tier users that makes its performance more efficient.
+                - heading "August 7, 2025" [level=1] [ref=e764]
+                - heading "GPT-5" [level=2] [ref=e765]
+                - paragraph [ref=e766]: GPT-5 is slowly rolling out to all users on ChatGPT Plus, Pro, Team, and Free plans worldwide across web, mobile, and desktop. GPT-5 will be available to ChatGPT Enterprise and Edu plans soon.
+                - paragraph [ref=e767]: GPT-5 in ChatGPT is our next flagship model and the new default for all logged-in users. It simplifies ChatGPT to a single auto-switching system that brings together the best of our previous models into a smart, fast model.
+                - paragraph [ref=e768]: GPT-5 is available to all ChatGPT Tiers. Users on Paid tiers - Plus, Pro, and Team - have access to the model picker, which enables you to manually select GPT-5 or GPT-5 Thinking. Pro and Team tier users have access to GPT-5 Thinking Pro, which takes a bit longer to think but delivers the accuracy you need for complex tasks.
+                - paragraph [ref=e769]:
+                  - link "Learn more about GPT-5 in ChatGPT." [ref=e770] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11909943
+                - heading "Personalities" [level=2] [ref=e771]
+                - paragraph [ref=e772]:
+                  - text: You can now choose from four distinct personalities or use the Default personality in your
+                  - link "Customize ChatGPT settings" [ref=e773] [cursor=pointer]:
+                    - /url: https://chatgpt.com/#settings/Personalization
+                  - text: ". Default is the standard ChatGPT style: clear, neutral, and adaptable. The other personalities each have their own style and tone, described below."
+                - paragraph [ref=e774]: Cynic – Sarcastic and dry, delivers blunt help with wit. Often teases, but provides direct, practical answers when it matters.
+                - paragraph [ref=e775]: Robot – Precise, efficient, and emotionless, delivering direct answers without extra words.
+                - paragraph [ref=e776]: Listener – Warm and laid-back, reflecting your thoughts back with calm clarity and light wit.
+                - paragraph [ref=e777]: Nerd – Playful and curious, explaining concepts clearly while celebrating knowledge and discovery.
+                - paragraph [ref=e778]: Please note that these personalities will not apply to Voice mode.
+                - heading "Accent Colors" [level=2] [ref=e779]
+                - paragraph [ref=e780]: You can now set an accent color that applies to elements in ChatGPT, including your conversation bubbles, the Voice button, and highlighted text.
+                - paragraph [ref=e781]: "On web: Click your profile icon at the bottom left, select Settings, go to the General tab, and choose an option from the Accent color drop-down."
+                - paragraph [ref=e782]: "On mobile (iOS and Android): Tap your profile icon at the bottom, go to Personalization, then select Color Scheme to pick your accent color."
+                - heading "ChatGPT Voice updates" [level=2] [ref=e783]
+                - paragraph [ref=e784]: Today we’re rolling out improvements to Voice Mode to make it more accessible and useful for everyone. It also now works with custom GPTs. We’re expanding access with near-unlimited use for Plus users and hours each day for Free users. To simplify the experience, Standard Voice Mode will be retired in 30 days, unifying all users onto our latest voice experience.
+                - paragraph [ref=e785]: For paid users, Voice now adapts to your instructions, adjusting its speaking style (length, speed, tone, and more) to fit the moment.
+                - heading "July 29, 2025" [level=1] [ref=e786]
+                - heading "Study Mode" [level=2] [ref=e787]
+                - paragraph [ref=e788]: Study mode is currently available to users in Free, Plus, Pro, and Teams plans globally and will expand to Edu plans in the coming weeks. Study mode works with any model available in ChatGPT on iOS, Android, web, and desktop.
+                - paragraph [ref=e789]: Study mode is a new learning experience in ChatGPT designed to help you build a deeper understanding of any topic. When you turn it on, ChatGPT will ask interactive questions to understand your goals and skill level, then work with you to reach the answer together.
+                - paragraph [ref=e790]: "With Study mode enabled, ChatGPT can:"
+                - list [ref=e791]:
+                  - listitem [ref=e792]:
+                    - paragraph [ref=e793]: Guide understanding with Socratic-style questions.
+                  - listitem [ref=e794]:
+                    - paragraph [ref=e795]: Break concepts into easy to follow sections starting simple and adding complexity as you progress.
+                  - listitem [ref=e796]:
+                    - paragraph [ref=e797]: Personalize responses based on your past chats if memory is on, using examples and tips tailored to you.
+                  - listitem [ref=e798]:
+                    - paragraph [ref=e799]: Check your understanding with open-ended prompts and feedback.
+                  - listitem [ref=e800]:
+                    - paragraph [ref=e801]: Work with your materials by referencing images or PDFs you upload.
+                - paragraph [ref=e802]:
+                  - text: You can enable study mode at any time by selecting Tools in the prompt window and choosing Study and learn from the drop‑down menu or go to
+                  - link "chatgpt.com/studymode" [ref=e803] [cursor=pointer]:
+                    - /url: http://chatgpt.com/studymode
+                  - text: .
+                - paragraph [ref=e804]: Study mode is powered by custom system instructions and can have some inconsistent behavior and mistakes across conversations. We plan on training this behavior directly into our main models once we’ve learned what works best through iteration and user feedback.
+                - paragraph [ref=e805]:
+                  - link "Learn more about study mode." [ref=e806] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11780217
+                - heading "July 24, 2025" [level=1] [ref=e807]
+                - heading "Canva and Notion connectors (Pro)" [level=2] [ref=e808]
+                - paragraph [ref=e809]: Pro users can now connect to Canva and Notion for both chat search and deep research.
+                - paragraph [ref=e810]: Note this feature is currently limited to users located outside of the EEA, Switzerland, and the UK.
+                - paragraph [ref=e811]:
+                  - text: Learn more about
+                  - link "connectors" [ref=e812] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+                  - text: .
+                - heading "Chat search for HubSpot and custom connectors (MCP) (Pro)" [level=2] [ref=e813]
+                - paragraph [ref=e814]: Pro users can now utilize chat search with HubSpot and custom connectors (MCP) in addition to deep research.
+                - paragraph [ref=e815]: Note this feature is currently limited to users located outside of the EEA, Switzerland, and the UK.
+                - paragraph [ref=e816]:
+                  - text: Learn more about
+                  - link "connectors" [ref=e817] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+                  - text: ", as well as"
+                  - link "how to create a custom connector using MCP" [ref=e818] [cursor=pointer]:
+                    - /url: https://platform.openai.com/docs/mcp
+                  - text: .
+                - heading "July 17, 2025" [level=1] [ref=e819]
+                - heading "Updates to Advanced Voice Mode for Free tier users" [level=2] [ref=e820]
+                - paragraph [ref=e821]:
+                  - text: The Advanced Voice upgrades
+                  - link "we announced on June 7th" [ref=e822] [cursor=pointer]:
+                    - /url: "#h_d1dfd7dad4"
+                  - text: are now rolling out to ChatGPT free users too. With the same improvements available to paid users, ChatGPT sounds more natural and expressive, and can translate more effectively. Rate limits for free users stay the same.
+                - heading "July 16, 2025" [level=1] [ref=e823]
+                - heading "Record mode in ChatGPT macOS desktop app (Plus)" [level=2] [ref=e824]
+                - paragraph [ref=e825]: Record mode is now available to ChatGPT Plus users globally in the macOS desktop app.
+                - list [ref=e826]:
+                  - listitem [ref=e827]:
+                    - paragraph [ref=e828]: Record live conversations like team meetings or voice notes, and turn those into an editable summary in canvas.
+                  - listitem [ref=e829]:
+                    - paragraph [ref=e830]: Available on the macOS desktop app only.
+                - paragraph [ref=e831]:
+                  - text: Learn more about
+                  - link "record mode" [ref=e832] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487532
+                  - text: .
+                - paragraph [ref=e833]: "Note: Record mode originally rolled out to Team users on June 4, and Enterprise & Edu plans on June 18."
+              - generic [ref=e834]:
+                - heading "June 24, 2025" [level=1] [ref=e835]
+                - heading "Chat search connectors (Pro)" [level=2] [ref=e836]
+                - paragraph [ref=e837]: "Pro users are now able to use chat search connectors (in addition to deep research connectors) for the following integrations: Dropbox, Box, Google Drive (synced and non-synced), Microsoft OneDrive (Business), Microsoft SharePoint."
+                - paragraph [ref=e838]: Note this feature is currently limited to users located outside of the EEA, Switzerland, and the UK.
+                - paragraph [ref=e839]:
+                  - text: Learn more about
+                  - link "Connectors" [ref=e840] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775-connectors-in-chatgpt
+                  - text: .
+                - heading "Project file limit increased (Pro)" [level=2] [ref=e841]
+                - paragraph [ref=e842]: Projects can now support 40 uploaded files, up from 20, for Pro users.
+                - heading "June 18, 2025" [level=1] [ref=e843]
+                - heading "ChatGPT record mode" [level=2] [ref=e844]
+                - paragraph [ref=e845]: Capture meetings, brainstorms, or voice notes. Launching today for Pro, Enterprise, and Edu users. Previously launched for Team users on June 4, 2025.
+                - list [ref=e846]:
+                  - listitem [ref=e847]:
+                    - paragraph [ref=e848]: ChatGPT will transcribe, summarize, and turn them into helpful outputs like follow-ups, plans, or even code.
+                  - listitem [ref=e849]:
+                    - paragraph [ref=e850]: Available on the macOS desktop app only.
+                - paragraph [ref=e851]:
+                  - text: Learn more about
+                  - link "ChatGPT Record" [ref=e852] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487532
+                  - text: .
+                - heading "June 16, 2025" [level=1] [ref=e853]
+                - heading "Expanded Model Support for Custom GPTs" [level=2] [ref=e854]
+                - paragraph [ref=e855]: Enterprise and Edu users can also now choose from the full set of ChatGPT models (GPT-4o, o3, o4-mini and more) when building Custom GPTs. This was launched to Plus, Pro and Team users earlier this month.
+                - paragraph [ref=e856]: "Key details:"
+                - list [ref=e857]:
+                  - listitem [ref=e858]:
+                    - paragraph [ref=e859]:
+                      - text: GPTs
+                      - emphasis [ref=e860]: without Custom Actions
+                      - text: can use the model picker to select from all models available to the user.
+                  - listitem [ref=e861]:
+                    - paragraph [ref=e862]:
+                      - text: GPTs
+                      - emphasis [ref=e863]: with Custom Actions
+                      - text: currently support GPT-4o and 4.1
+                  - listitem [ref=e864]:
+                    - paragraph [ref=e865]: Available on web for users on all paid plans (Plus, Pro Team, Enterprise, Edu).
+                - heading "June 13, 2025" [level=1] [ref=e866]
+                - heading "Improvements to the ChatGPT search response quality" [level=2] [ref=e867]
+                - paragraph [ref=e868]: We’ve upgraded ChatGPT search for all users to provide even more comprehensive, up-to-date responses. In testing, we found users preferred these search improvements over our previous search experience.
+                - heading "Improved quality" [level=3] [ref=e869]
+                - list [ref=e870]:
+                  - listitem [ref=e871]:
+                    - paragraph [ref=e872]: Smarter responses that are more intelligent, are better at understanding what you’re asking, and provide more comprehensive answers.
+                  - listitem [ref=e873]:
+                    - paragraph [ref=e874]: Handles longer conversational contexts, allowing better intelligence in longer conversations.
+                - heading "Improved search capability and instruction following" [level=3] [ref=e875]
+                - list [ref=e876]:
+                  - listitem [ref=e877]:
+                    - paragraph [ref=e878]: More robust ability to follow instructions, especially in longer conversations, significantly reducing repetitive responses.
+                  - listitem [ref=e879]:
+                    - paragraph [ref=e880]: Capability to run multiple searches automatically for complex or difficult questions.
+                  - listitem [ref=e881]:
+                    - paragraph [ref=e882]: Search the web using an image you’ve uploaded.
+                - heading "Known limitations" [level=3] [ref=e883]
+                - list [ref=e884]:
+                  - listitem [ref=e885]:
+                    - paragraph [ref=e886]: Users may notice longer responses with this new search experience.
+                  - listitem [ref=e887]:
+                    - paragraph [ref=e888]: In some cases, a “chain of thought” reasoning will show up unexpectedly for simple queries. A fix for this is rolling out to users shortly.
+                  - listitem [ref=e889]:
+                    - paragraph [ref=e890]: ChatGPT may still make occasional mistakes - please double check responses.
+                - heading "June 12, 2025" [level=1] [ref=e891]
+                - heading "Expanded Model Support for Custom GPTs" [level=2] [ref=e892]
+                - paragraph [ref=e893]: Creators can now choose from the full set of ChatGPT models (GPT-4o, o3, o4-mini and more) when building Custom GPTs—making it easier to fine-tune performance for different tasks, industries, and workflows. Creators can also set a recommended model to guide users.
+                - paragraph [ref=e894]: "Key details:"
+                - list [ref=e895]:
+                  - listitem [ref=e896]:
+                    - paragraph [ref=e897]:
+                      - text: GPTs
+                      - emphasis [ref=e898]: without Custom Actions
+                      - text: can use the model picker to select from all models available to the user.
+                  - listitem [ref=e899]:
+                    - paragraph [ref=e900]:
+                      - text: GPTs
+                      - emphasis [ref=e901]: with Custom Actions
+                      - text: currently support GPT-4o and 4.1
+                  - listitem [ref=e902]:
+                    - paragraph [ref=e903]: Available on web for users on Plus, Pro and Team plans.
+                  - listitem [ref=e904]:
+                    - paragraph [ref=e905]: Enterprise and Edu rollout coming soon.
+                - img "Image" [ref=e907]
+                - heading "Adding More Capabilities to Projects" [level=2] [ref=e908]
+                - paragraph [ref=e909]: Starting today, we’re adding several updates to projects in ChatGPT to help you do more focused work. These updates are available for Plus, Pro, and Team users.
+                - list [ref=e910]:
+                  - listitem [ref=e911]:
+                    - paragraph [ref=e912]: Deep research and voice mode support
+                  - listitem [ref=e913]:
+                    - paragraph [ref=e914]: Improvements to memory to reference past chats in a project*
+                  - listitem [ref=e915]:
+                    - paragraph [ref=e916]: Sharing chats from projects
+                  - listitem [ref=e917]:
+                    - paragraph [ref=e918]: Starting a new project directly from a chat
+                  - listitem [ref=e919]:
+                    - paragraph [ref=e920]: Upload files and access model selector on mobile
+                - paragraph [ref=e921]:
+                  - link "Learn more" [ref=e922] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt
+                  - text: about projects.
+                - paragraph [ref=e923]: "*Memory improvements are available for Plus and Pro users."
+                - heading "June 10, 2025" [level=1] [ref=e924]
+                - heading "Today, we're launching OpenAI o3-pro—available now for Pro users in ChatGPT and in our API." [level=2] [ref=e925]
+                - paragraph [ref=e926]: Like o1-pro, o3-pro is a version of our most intelligent model, o3, designed to think longer and provide the most reliable responses. Since the launch of o1-pro, users have favored this model for domains such as math, science, and coding—areas where o3-pro continues to excel, as shown in academic evaluations. Like o3, o3-pro has access to tools that make ChatGPT useful—it can search the web, analyze files, reason about visual inputs, use Python, personalize responses using memory, and more. Because o3-pro has access to tools, responses typically take longer than o1-pro to complete. We recommend using it for challenging questions where reliability matters more than speed, and waiting a few minutes is worth the tradeoff.
+                - paragraph [ref=e927]: In expert evaluations, reviewers consistently prefer o3-pro over o3 in every tested category and especially in key domains like science, education, programming, business, and writing help. Reviewers also rated o3-pro consistently higher for clarity, comprehensiveness, instruction-following, and accuracy.
+                - img "Image" [ref=e929]
+                - paragraph [ref=e930]: Academic evaluations show that o3-pro consistently outperforms both o1-pro and o3.
+                - img "Image" [ref=e932]
+                - paragraph [ref=e933]: "To assess the key strength of o3-pro, we once again use our rigorous \"4/4 reliability\" evaluation, where a model is considered successful only if it correctly answers a question in all four attempts, not just one:"
+                - img "Image" [ref=e935]
+                - paragraph [ref=e936]: o3-pro is available in the model picker for Pro and Team users starting today, replacing o1-pro. Enterprise and Edu users will get access the week after.
+                - paragraph [ref=e937]:
+                  - text: As o3-pro uses the same underlying model as o3, full safety details can be found in the
+                  - link "o3 system card" [ref=e938] [cursor=pointer]:
+                    - /url: https://openai.com/index/o3-o4-mini-system-card/
+                  - text: .
+                - paragraph [ref=e939]: Limitations
+                - paragraph [ref=e940]: At the moment, temporary chats are disabled for o3-pro as we resolve a technical issue.
+                - paragraph [ref=e941]: Image generation is not supported within o3-pro—please use GPT-4o, OpenAI o3, or OpenAI o4-mini to generate images.
+                - paragraph [ref=e942]: Canvas is also currently not supported within o3-pro.
+                - heading "June 7, 2025" [level=1] [ref=e943]
+                - heading "Updates to Advanced Voice Mode for paid users" [level=2] [ref=e944]
+                - paragraph [ref=e945]: We're upgrading Advanced Voice in ChatGPT for paid users with significant enhancements in intonation and naturalness, making interactions feel more fluid and human-like. When we first launched Advanced Voice, it represented a leap forward in AI speech—now, it speaks even more naturally, with subtler intonation, realistic cadence (including pauses and emphases), and more on-point expressiveness for certain emotions including empathy, sarcasm, and more.
+                - paragraph [ref=e946]: Voice also now offers intuitive and effective language translation. Just ask Voice to translate between languages, and it will continue translating throughout your conversation until you tell it to stop or switch. It’s ready to translate whenever you need it—whether you're asking for directions in Italy or chatting with a colleague from the Tokyo office. For example, at a restaurant in Brazil, Voice can translate your English sentences into Portuguese, and the waiter’s Portuguese responses back into English—making conversations effortless, no matter where you are or who you're speaking with.
+                - paragraph [ref=e947]: This upgrade to Advanced Voice is available for all paid users across markets and platforms—just tap the Voice icon in the message composer to get started.
+                - paragraph [ref=e948]: This update is in addition to improvements we made earlier this year to ensure fewer interruptions and improved accents.
+                - heading "Known Limitations" [level=3] [ref=e949]
+                - paragraph [ref=e950]: In testing, we've observed that this update may occasionally cause minor decreases in audio quality, including unexpected variations in tone and pitch. These issues are more noticeable with certain voice options. We expect to improve audio consistency over time.
+                - paragraph [ref=e951]: Additionally, rare hallucinations in Voice Mode persist with this update, resulting in unintended sounds resembling ads, gibberish, or background music. We are actively investigating these issues and working toward a solution.
+                - heading "June 4, 2025" [level=1] [ref=e952]
+                - heading "Connectors in beta for deep research (Plus, Pro, Team, Enterprise, Edu)" [level=2] [ref=e953]
+                - paragraph [ref=e954]: ChatGPT Team, Enterprise, and Edu customers globally can use connectors in deep research, as well as Pro and Plus users (excluding users in Switzerland, EEA, and the UK) to generate long-form, cited responses that include your company’s internal tools.
+                - list [ref=e955]:
+                  - listitem [ref=e956]:
+                    - paragraph [ref=e957]: "Supported connectors: Google Drive, SharePoint, Dropbox, Box, Outlook, Gmail, Google Calendar, Linear, GitHub, HubSpot, and Teams"
+                  - listitem [ref=e958]:
+                    - paragraph [ref=e959]: Combines internal + web sources for synthesis
+                - paragraph [ref=e960]:
+                  - text: Learn more about
+                  - link "Connectors in ChatGPT" [ref=e961] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11487775
+                  - text: .
+                - heading "Custom connectors via Model Context Protocol (Pro, Team, Enterprise, Edu)" [level=2] [ref=e962]
+                - paragraph [ref=e963]: Admins and users can now build and deploy custom connectors to proprietary systems using Model Context Protocol (MCP).
+                - list [ref=e964]:
+                  - listitem [ref=e965]:
+                    - paragraph [ref=e966]: Requires a remote MCP server
+                  - listitem [ref=e967]:
+                    - paragraph [ref=e968]: Available only in deep research
+                  - listitem [ref=e969]:
+                    - paragraph [ref=e970]: Admin-published connectors appear in the connector list for all users
+                - paragraph [ref=e971]:
+                  - text: Learn more about
+                  - link "building custom connectors with MCP" [ref=e972] [cursor=pointer]:
+                    - /url: http://platform.openai.com/docs/mcp
+                  - text: . For Team, Enterprise, and Edu plans, only admins can build and deploy custom connectors.
+                - heading "June 3, 2025" [level=1] [ref=e973]
+                - heading "Memory is now more comprehensive for Free users" [level=2] [ref=e974]
+                - paragraph [ref=e975]: Memory improvements are starting to roll out to Free users. In addition to the saved memories that were there before, ChatGPT now references your recent conversations to deliver responses that feel more relevant and tailored to you.
+                - paragraph [ref=e976]: Free users must be logged in and on up-to-date apps (iOS/Android v1.2025.147+).
+                - heading "Opt‑in reminders" [level=3] [ref=e977]
+                - list [ref=e978]:
+                  - listitem [ref=e979]:
+                    - paragraph [ref=e980]:
+                      - text: Free users in EEA (EU + UK), Switzerland, Norway, Iceland, or Liechtenstein will see a prompt to enable this setting or can visit
+                      - emphasis [ref=e981]: Settings
+                      - text: ">"
+                      - emphasis [ref=e982]: Personalization
+                      - text: ">"
+                      - emphasis [ref=e983]: Memory
+                      - text: ">"
+                      - emphasis [ref=e984]: Reference chat history
+                      - text: to enable.
+                  - listitem [ref=e985]:
+                    - paragraph [ref=e986]: Outside the European regions listed above, all Free users that have memory enabled will receive the upgrade automatically.
+                - paragraph [ref=e987]:
+                  - text: You can turn off memory anytime in settings. Learn more in our
+                  - link "Memory FAQ" [ref=e988] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/8590148
+                  - text: .
+                - heading "May 15, 2025" [level=1] [ref=e989]
+                - heading "Dropbox connector for deep research for Plus/Pro/Team" [level=2] [ref=e990]
+                - paragraph [ref=e991]: ChatGPT deep research with Dropbox is available globally to Team users. It is also gradually rolling out to Plus and Pro users, except for those in the EEA, Switzerland, and the UK. Enterprise user access will be announced at a later date.
+                - paragraph [ref=e992]:
+                  - text: "See:"
+                  - link "Connect apps to ChatGPT deep research" [ref=e993] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11367239-connect-apps-to-chatgpt-deep-research
+                - heading "GitHub connector for deep research" [level=2] [ref=e994]
+                - paragraph [ref=e995]: The GitHub connector is now available globally to Plus/Pro/Team users, including those in the EEA, Switzerland, and the UK.
+                - heading "May 14, 2025" [level=1] [ref=e996]
+                - heading "Releasing GPT-4.1 in ChatGPT for all paid users" [level=2] [ref=e997]
+                - paragraph [ref=e998]: Since its launch in the API in April, GPT-4.1 has become a favorite among developers—by popular demand, we’re making it available directly in ChatGPT.
+                - paragraph [ref=e999]: GPT-4.1 is a specialized model that excels at coding tasks. Compared to GPT-4o, it's even stronger at precise instruction following and web development tasks, and offers an alternative to OpenAI o3 and OpenAI o4-mini for simpler, everyday coding needs.
+                - paragraph [ref=e1000]: Starting today, Plus, Pro, and Team users can access GPT-4.1 via the "more models" dropdown in the model picker. Enterprise and Edu users will get access in the coming weeks. GPT-4.1 has the same rate limits as GPT-4o for paid users.
+                - heading "Introducing GPT-4.1 mini, replacing GPT-4o mini, in ChatGPT for all users" [level=2] [ref=e1001]
+                - paragraph [ref=e1002]: GPT-4.1 mini is a fast, capable, and efficient small model, delivering significant improvements compared to GPT-4o mini—in instruction-following, coding, and overall intelligence. Starting today, GPT-4.1 mini replaces GPT-4o mini in the model picker under "more models" for paid users, and will serve as the fallback model for free users once they reach their GPT-4o usage limits. Rate limits remain the same.
+                - paragraph [ref=e1003]:
+                  - text: Evals for GPT-4.1 and GPT-4.1 mini were originally shared in the
+                  - link "blog post" [ref=e1004] [cursor=pointer]:
+                    - /url: https://openai.com/index/gpt-4-1/
+                  - text: accompanying their API release. They also went through standard safety evaluations. Detailed results are available in the newly launched
+                  - link "Safety Evaluations Hub" [ref=e1005] [cursor=pointer]:
+                    - /url: https://openai.com/safety/evaluations-hub/
+                  - text: .
+                - heading "May 12, 2025" [level=1] [ref=e1006]
+                - heading "Microsoft Sharepoint and OneDrive connector for deep research for Plus/Pro/Team" [level=2] [ref=e1007]
+                - paragraph [ref=e1008]: ChatGPT deep research with Sharepoint and OneDrive is available globally to Team users. It is also gradually rolling out to Plus and Pro users, except for those in the EEA, Switzerland, and the UK. Enterprise user access will be announced at a later date.
+                - paragraph [ref=e1009]:
+                  - text: "See:"
+                  - link "Connecting SharePoint and Microsoft OneDrive to ChatGPT deep research" [ref=e1010] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11367239-connecting-sharepoint-and-microsoft-onedrive-to-chatgpt-deep-research
+                - heading "Export Deep Research as PDF for Plus/Pro/Team" [level=2] [ref=e1011]
+                - paragraph [ref=e1012]: You can now export your deep research reports as well-formatted PDFs—complete with tables, images, linked citations, and sources.
+                - paragraph [ref=e1013]: To use, click the share icon and select 'Download as PDF.' It works for both new and past reports.
+                - heading "May 8, 2025" [level=1] [ref=e1014]
+                - heading "GitHub connector for deep research for Plus/Pro/Team" [level=2] [ref=e1015]
+                - paragraph [ref=e1016]: ChatGPT deep research with GitHub is available globally to Team users. It is also gradually rolling out to Plus and Pro users, except for those in the EEA, Switzerland, and the UK. Enterprise user access will be announced at a later date.
+                - paragraph [ref=e1017]:
+                  - text: "See:"
+                  - link "Connecting GitHub to ChatGPT deep research" [ref=e1018] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt-deep-research
+                  - text: .
+                - heading "Enhanced Memory in ChatGPT (including EU) on Plus/Pro" [level=2] [ref=e1019]
+                - paragraph [ref=e1020]: Enhanced memory rolling out to all Plus and Pro users (including the EU). The new memory features are available in the EEA (EU + UK), Switzerland, Norway, Iceland, or Liechtenstein. These features are OFF by default and must be enabled in Settings > Personalization > Reference Chat History.
+                - heading "Plan differences" [level=3] [ref=e1021]
+                - paragraph [ref=e1022]: • Saved memories and Chat history are offered only to Plus and Pro accounts.
+                - paragraph [ref=e1023]: • Free‑tier users have access to Saved memories only.
+                - heading "Opt‑in reminders" [level=3] [ref=e1024]
+                - paragraph [ref=e1025]: • Outside the European regions listed above, all Plus and Pro accounts that have memory enabled will receive the upgrade automatically.
+                - paragraph [ref=e1026]: • If you previously opted out of memory, ChatGPT will not reference past conversations unless you opt back in.
+                - paragraph [ref=e1027]:
+                  - text: See
+                  - link "Memory FAQ" [ref=e1028] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/8590148-memory-faq
+                  - text: .
+                - heading "May 6, 2025" [level=1] [ref=e1029]
+                - heading "Mobile UI (iOS/Android) changing on Free/Plus/Pro plans" [level=2] [ref=e1030]
+                - paragraph [ref=e1031]: We've removed the row of individual tool icons from the mobile composer and replaces it with the new sliders‑style icon to open the Skills menu; tapping that button opens a bottom‑sheet menu where users can choose tools like Create an image or Search the web.
+                - img "Image" [ref=e1033]
+                - paragraph [ref=e1034]: No tools are deprecated—access is simply consolidated to clear space and reduce on‑screen clutter.
+                - heading "May 1, 2025" [level=1] [ref=e1035]
+                - heading "Sunsetting Monday GPT" [level=2] [ref=e1036]
+                - paragraph [ref=e1037]: Launched on April 1 as a one-month surprise, our “Monday” personality (available in both voice and text) has now been sunset. We hope you enjoyed Monday's irreverent style, and we’re already working on new personalities for future use. Please stay tuned for what’s next!
+                - heading "April 29, 2025" [level=1] [ref=e1038]
+                - heading "Updates to GPT-4o" [level=2] [ref=e1039]
+                - paragraph [ref=e1040]: We've reverted the most recent update to GPT-4o due to issues with overly agreeable responses (sycophancy).
+                - paragraph [ref=e1041]:
+                  - text: We’re actively working on further improvements. For more details, check out our
+                  - link "blog post" [ref=e1042] [cursor=pointer]:
+                    - /url: https://openai.com/index/sycophancy-in-gpt-4o/
+                  - text: explaining what happened and our initial findings, and
+                  - link "this blog post" [ref=e1043] [cursor=pointer]:
+                    - /url: https://openai.com/index/expanding-on-sycophancy/
+                  - text: where we expand on what we missed with sycophancy and the changes we're going to make going forward.
+                - heading "April 25, 2025" [level=1] [ref=e1044]
+                - heading "Improvements to GPT-4o" [level=2] [ref=e1045]
+                - paragraph [ref=e1046]: We’re making additional improvements to GPT-4o, optimizing when it saves memories and enhancing problem-solving capabilities for STEM. We’ve also made subtle changes to the way it responds, making it more proactive and better at guiding conversations toward productive outcomes. We think these updates help GPT-4o feel more intuitive and effective across a variety of tasks–we hope you agree!
+                - heading "April 16, 2025" [level=1] [ref=e1047]
+                - heading "o3 and o4-mini in ChatGPT" [level=2] [ref=e1048]
+                - paragraph [ref=e1049]: Today, we’re releasing OpenAI o3 and o4-mini, the latest in our o-series of models trained to think for longer before responding. These are the smartest models we’ve released to date, representing a step change in ChatGPT's capabilities for everyone from curious users to advanced researchers. For the first time, our reasoning models can agentically use and combine every tool within ChatGPT—this includes searching the web, analyzing uploaded files and other data with Python, reasoning deeply about visual inputs, and even generating images. Critically, these models are trained to reason about when and how to use tools to produce detailed and thoughtful answers in the right output formats, typically in under a minute, to solve more complex problems. This allows them to tackle multi-faceted questions more effectively, a step toward a more agentic ChatGPT that can independently execute tasks on your behalf. The combined power of state-of-the-art reasoning with full tool access translates into significantly stronger performance across academic benchmarks and real-world tasks, setting a new standard in both intelligence and usefulness.
+                - heading "Memory with Search" [level=2] [ref=e1050]
+                - paragraph [ref=e1051]:
+                  - text: ChatGPT can also use memories to inform search queries when ChatGPT searches the web using third-party search providers.
+                  - link "Learn more about search" [ref=e1052] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/9237897-chatgpt-search
+                  - text: .
+                - heading "April 15, 2025" [level=1] [ref=e1053]
+                - heading "ChatGPT Image Library" [level=2] [ref=e1054]
+                - paragraph [ref=e1055]:
+                  - text: All images you create with ChatGPT are now automatically saved to a new
+                  - link "Library" [ref=e1056] [cursor=pointer]:
+                    - /url: https://help.openai.com/en/articles/11084440-chatgpt-image-library
+                  - text: in the sidebar, giving you one place to browse, revisit, and reuse your work without digging through past conversations. The Library is rolling out today on Web, iOS, and Android for Free, Plus, and Pro users (Enterprise / Edu support coming soon). For now, it displays images generated with 4o Image Generation while we backfill older creations, and you can remove an image by deleting the conversation where it was made.
+                - heading "April 10, 2025" [level=1] [ref=e1057]
+                - heading "Sunsetting GPT‑4 in ChatGPT" [level=3] [ref=e1058]
+                - paragraph [ref=e1059]:
+                  - emphasis [ref=e1060]: Effective April 30, 2025, GPT‑4 will be retired from ChatGPT and fully replaced by GPT‑4o.
+                - paragraph [ref=e1061]: GPT‑4o is our newer, natively multimodal model. In head‑to‑head evaluations it consistently surpasses GPT‑4 in writing, coding, STEM, and more.
+                - paragraph [ref=e1062]: Recent upgrades have further improved GPT‑4o’s instruction following, problem solving, and conversational flow, making it a natural successor to GPT‑4.
+                - paragraph [ref=e1063]: GPT-4 will still be available in the API.
+                - paragraph [ref=e1064]: GPT‑4 marked a pivotal moment in ChatGPT’s evolution. We’re grateful for the breakthroughs it enabled and for the feedback that helped shape its successor. GPT‑4o builds on that foundation to deliver even greater capability, consistency, and creativity.
+                - heading "March 27, 2025" [level=1] [ref=e1065]
+                - heading "Improvements to GPT-4o" [level=2] [ref=e1066]
+                - paragraph [ref=e1067]: We’ve made improvements to GPT-4o—it now feels more intuitive, creative, and collaborative, with enhanced instruction-following, smarter coding capabilities, and a clearer communication style.
+                - heading "Smarter problem-solving in STEM and coding:" [level=3] [ref=e1068]
+                - paragraph [ref=e1069]: GPT-4o has further improved its capability to tackle complex technical and coding problems. It now generates cleaner, simpler frontend code, more accurately thinks through existing code to identify necessary changes, and consistently produces coding outputs that successfully compile and run, streamlining your coding workflows.
+                - heading "Enhanced instruction-following and formatting accuracy:" [level=3] [ref=e1070]
+                - paragraph [ref=e1071]: GPT-4o is now more adept at following detailed instructions, especially for prompts containing multiple or complex requests. It improves on generating outputs according to the format requested and achieves higher accuracy in classification tasks.
+                - heading "“Fuzzy” improvements:" [level=3] [ref=e1072]
+                - paragraph [ref=e1073]: Early testers say that the model seems to better understand the implied intent behind their prompts, especially when it comes to creative and collaborative tasks. It’s also slightly more concise and clear, using fewer markdown hierarchies and emojis for responses that are easier to read, less cluttered, and more focused. We're curious to see if our users also find this to be the case.
+                - paragraph [ref=e1074]: This model is now available in ChatGPT and in the API as the newest snapshot of chatgpt-4o-latest. We plan to bring these improvements to a dated model in the API in the coming weeks.
+                - heading "March 18, 2025" [level=1] [ref=e1075]
+                - paragraph [ref=e1076]: We have been working on a variety of usability and performance improvements and bug fixes across Web, Android, and iOS. Below are a small number of specific callouts. For updates on the ChatGPT macOS app, please see this page.
+                - heading "Web and the Windows desktop app" [level=2] [ref=e1077]
+                - paragraph [ref=e1078]: "1. In-line message error retries: If you encounter a message error, you can retry or just continue chatting in the same conversation."
+                - img "Image" [ref=e1080]
+                - paragraph [ref=e1081]: "2. o1 and o3-mini now offer Python-powered data analysis in ChatGPT: You can now ask these models to perform tasks like running regressions on test data, visualizing complex business metrics, and conducting scenario-based simulations."
+                - paragraph [ref=e1082]: "3. Conversation Drafts: Unsubmitted messages in your message prompt will now be saved."
+                - img "Image" [ref=e1084]
+                - paragraph [ref=e1085]: "4. New UI for Temporary Chats: We’ve made accessing and viewing these private conversations more clear."
+                - img "Image" [ref=e1087]
+                - heading "Android App" [level=2] [ref=e1088]
+                - paragraph [ref=e1089]: 1. Increased the default size for in‐line generated images.
+                - img "Image" [ref=e1091]
+                - paragraph [ref=e1092]: 2. More clear and private Incognito keyboard for Temporary Chats.
+                - img "Image" [ref=e1094]
+                - heading "iOS App" [level=2] [ref=e1095]
+                - paragraph [ref=e1096]: 1. Improved table-copying functionality out of ChatGPT responses on iOS and macOS.
+                - img "Image" [ref=e1098]
+                - paragraph [ref=e1099]: "2. Added long press on your message to open menu actions: Copy, Edit."
+                - img "Image" [ref=e1101]
+                - paragraph [ref=e1102]: 3. Improved response display of nested blockquote content.
+                - img "Image" [ref=e1104]
+                - paragraph [ref=e1105]: 4. Improved display and faster streaming of conversations and message menu actions.
+                - img "Image" [ref=e1107]
+                - heading "February 28, 2025" [level=1] [ref=e1108]
+                - list [ref=e1109]:
+                  - listitem [ref=e1110]:
+                    - paragraph [ref=e1111]: General
+                    - list [ref=e1112]:
+                      - listitem [ref=e1113]:
+                        - paragraph [ref=e1114]:
+                          - link "GPT-4.5" [ref=e1115] [cursor=pointer]:
+                            - /url: https://help.openai.com/en/articles/10658365-gpt-4-5-in-chatgpt
+                          - text: was released to users on the Pro plan in ChatGPT.
+                      - listitem [ref=e1116]:
+                        - paragraph [ref=e1117]: The temporary chat icon is now in top bar to make the temporary chat experience more accessible and clear.
+                  - listitem [ref=e1118]:
+                    - paragraph [ref=e1119]: iOS
+                    - list [ref=e1120]:
+                      - listitem [ref=e1121]:
+                        - paragraph [ref=e1122]: "Long press to select text on iOS and moved the message quick actions to always be visible below the message:"
+                        - list [ref=e1123]:
+                          - listitem [ref=e1124]:
+                            - img "Image" [ref=e1126]
+                      - listitem [ref=e1127]:
+                        - paragraph [ref=e1128]:
+                          - text: Bug fixes and small improvements in the
+                          - link "1.2025.056 iOS release" [ref=e1129] [cursor=pointer]:
+                            - /url: https://apps.apple.com/us/app/chatgpt/id6448311069
+                          - text: .
+                      - listitem [ref=e1130]:
+                        - paragraph [ref=e1131]: A setting to allow users to auto-submit transcriptions.
+                        - list [ref=e1132]:
+                          - listitem [ref=e1133]:
+                            - paragraph [ref=e1134]: OFF by default.
+                  - listitem [ref=e1135]:
+                    - paragraph [ref=e1136]: Android
+                    - list [ref=e1137]:
+                      - listitem [ref=e1138]:
+                        - paragraph [ref=e1139]: Improved error handling for Play Integrity errors.
+                - heading "February 21, 2025" [level=1] [ref=e1140]
+                - paragraph [ref=e1141]: "1. iOS widget (see below):"
+                - img "Image" [ref=e1143]
+                - paragraph [ref=e1144]: "2. Text selection improvements: you can now select text across horizontal rulers.3. Performance improvements: Improved model header loading behavior. Conversation history and GPTs show up faster.4. Bug fix for logged-out users: 401s when dismissing tooltips 401s logging out users on Android."
+                - heading "February 14, 2025" [level=1] [ref=e1145]
+                - list [ref=e1146]:
+                  - listitem [ref=e1147]:
+                    - paragraph [ref=e1148]: Set ChatGPT as default search engine in Safari.
+                  - listitem [ref=e1149]:
+                    - paragraph [ref=e1150]: Confirmation dialog for logging out (iOS, web).
+                  - listitem [ref=e1151]:
+                    - paragraph [ref=e1152]: Improved Android conversation parsing performance.
+                  - listitem [ref=e1153]:
+                    - paragraph [ref=e1154]: iOS performance fixes.
+                  - listitem [ref=e1155]:
+                    - paragraph [ref=e1156]: Updated launch animations and composer design on Android.
+                  - listitem [ref=e1157]:
+                    - paragraph [ref=e1158]: "Whisper (ChatGPT's voice-to-text feature) now shows a text preview of dictated text after recording:"
+                - img "Image" [ref=e1160]
+                - heading "February 6, 2025" [level=1] [ref=e1161]
+                - heading "Canvas sharing" [level=2] [ref=e1162]
+                - paragraph [ref=e1163]: Users can now share a Canvas asset such as rendered React/HTML code, document, or code with another user, similar to how you share a conversation. You can do this from the Canvas toolbar when Canvas is open.
+                - img "Image" [ref=e1165]
+                - paragraph [ref=e1166]: For more details about the canvas feature in ChatGPT, check out the following Help Center article!
+                - heading "January 17, 2025" [level=1] [ref=e1167]
+                - heading "More personalization in Custom Instructions" [level=2] [ref=e1168]
+                - paragraph [ref=e1169]: We've updated custom instructions to make it easier to customize how ChatGPT responds to you. With the new UI, you can tell ChatGPT the traits you want it to have, how you want it to talk to you, and any rules you want it to follow.
+                - paragraph [ref=e1170]: If you're already using custom instructions, this won't change your current settings.
+                - paragraph [ref=e1171]:
+                  - text: The new UI is rolling out now on
+                  - link "http://chatgpt.com" [ref=e1172] [cursor=pointer]:
+                    - /url: http://chatgpt.com
+                  - text: and desktop on Windows, and is coming to mobile and desktop on MacOS in the next few weeks. Available soon to ChatGPT users in the EU, Norway, Iceland, Liechtenstein, and Switzerland.
+                - img "Image" [ref=e1174]
+                - heading "January 15, 2025" [level=1] [ref=e1175]
+                - heading "Import from Chat into Canvas" [level=2] [ref=e1176]
+                - list [ref=e1177]:
+                  - listitem [ref=e1178]:
+                    - paragraph [ref=e1179]: Edit a full model response in Canvas
+                  - listitem [ref=e1180]:
+                    - paragraph [ref=e1181]: Edit a code block in Canvas
+                - paragraph [ref=e1182]: Web only (no desktop or mobile in this release).
+                - heading "January 14, 2025" [level=1] [ref=e1183]
+                - heading "Scheduled tasks in ChatGPT" [level=2] [ref=e1184]
+                - paragraph [ref=e1185]: Today we’re rolling out a beta version of tasks—a new way to ask ChatGPT to do things for you at a future time. Whether it's one-time reminders or recurring actions, tell ChatGPT what you need and when, and it will automatically take care of it.
+                - paragraph [ref=e1186]: Scheduled tasks is in early beta for Plus, Pro, and Teams. Eventually this will be available to anyone with a ChatGPT account.
+                - paragraph [ref=e1187]: For details see Scheduled tasks in ChatGPT.
+              - generic [ref=e1188]:
+                - heading "December 13, 2024" [level=1] [ref=e1189]
+                - heading "Projects in ChatGPT" [level=2] [ref=e1190]
+                - paragraph [ref=e1191]: "Projects provide a new way to group files and chats for personal use, simplifying the management of work that involves multiple chats. You can set custom instructions and upload files in your Projects, and any conversations in your Project share context with your uploaded files and custom instructions. Chats in Projects use GPT-4o and support the following features:"
+                - list [ref=e1192]:
+                  - listitem [ref=e1193]:
+                    - paragraph [ref=e1194]: Canvas
+                  - listitem [ref=e1195]:
+                    - paragraph [ref=e1196]: Advanced data analysis
+                  - listitem [ref=e1197]:
+                    - paragraph [ref=e1198]: DALL•E
+                  - listitem [ref=e1199]:
+                    - paragraph [ref=e1200]: Search
+                - paragraph [ref=e1201]: ChatGPT Projects are available to all Plus, Team, and Pro users.
+                - heading "Dec 12, 2024" [level=1] [ref=e1202]
+                - heading "Santa Voice and Video and Screen Share in Voice Chats" [level=2] [ref=e1203]
+                - paragraph [ref=e1204]: "Today we started rolling out two updates to voice mode in ChatGPT:"
+                - list [ref=e1205]:
+                  - listitem [ref=e1206]:
+                    - paragraph [ref=e1207]: "Santa voice: You can now chat with Santa in ChatGPT! Until early January, you can find Santa in the list of available voices in settings or by tapping on a snowflake icon. We are rolling out Santa globally to all logged in users today, and you can chat with Santa everywhere you use voice mode."
+                - paragraph [ref=e1208]: The first time you chat with Santa, your advanced voice limit will reset one time. So, if you’ve already used up your advanced voice limit for the day or the month (based on your subscription plan), you can still chat with Santa for the first time using advanced voice.
+                - img "Image" [ref=e1210]
+                - list [ref=e1211]:
+                  - listitem [ref=e1212]:
+                    - paragraph [ref=e1213]: "Video and screenshare: In our latest mobile apps, we are starting to roll out real-time video, screen share, and image upload capabilities in advanced voice. We expect to complete this rollout to all Team and most Plus and Pro users, except for those in the European Union, Switzerland, Iceland, Norway, and Liechtenstein, over the next week. Video and screen share are subject to daily usage limits for all plans, and image uploads are subject to ChatGPT vision message limits."
+                - paragraph [ref=e1214]: Use the controls at the bottom of the screen, like the camera button below, to get started. You can find screen share and image upload controls under the “...” menu at the bottom of the screen.
+                - img "Image" [ref=e1216]
+                - heading "Dec 10, 2024" [level=1] [ref=e1217]
+                - heading "Canvas" [level=2] [ref=e1218]
+                - paragraph [ref=e1219]: "Today we made Canvas available in 4o by default for all users, Free and Paid. Additionally, we launched a number of new capabilities for canvas, including:"
+                - list [ref=e1220]:
+                  - listitem [ref=e1221]:
+                    - paragraph [ref=e1222]: "Canvas in GPTs: Canvas can now be used with GPTs when enabled in the GPT creator. This toggle will be enabled for newly created GPTs by default."
+                - img "Image" [ref=e1224]
+                - list [ref=e1225]:
+                  - listitem [ref=e1226]:
+                    - paragraph [ref=e1227]: "Python code execution: You can now execute Python code in a canvas. ChatGPT will take a pass on fixing bugs in your code and provide comments on errors."
+                  - listitem [ref=e1228]:
+                    - paragraph [ref=e1229]: "Canvas shortcut: You can now paste content into ChatGPT and instantly open it in canvas via a shortcut in the upper right corner of the composer."
+                    - list
+                  - listitem [ref=e1230]:
+                    - paragraph [ref=e1231]: "Canvas in Toolbox: Canvas has been added as an option in the toolbox."
+                - img "Image" [ref=e1233]
+                - heading "Nov 22, 2024" [level=1] [ref=e1234]
+                - heading "Updates to the ChatGPT Web experience" [level=2] [ref=e1235]
+                - paragraph [ref=e1236]: We are rolling out the following updates over the next two weeks to all ChatGPT users.
+                - heading "Sidebar redesign" [level=3] [ref=e1237]
+                - list [ref=e1238]:
+                  - listitem [ref=e1239]:
+                    - paragraph [ref=e1240]: New floating mode added with soft dismiss behavior
+                  - listitem [ref=e1241]:
+                    - paragraph [ref=e1242]: Recent conversations are now limited in the sidebar, with an unlimited infinite scroll flyout for all conversations
+                  - listitem [ref=e1243]:
+                    - paragraph [ref=e1244]: Recent GPTs & Pinned GPT's are now displayed below conversations
+                  - listitem [ref=e1245]:
+                    - paragraph [ref=e1246]: Settings are now always in the bottom of the sidebar
+                  - listitem [ref=e1247]:
+                    - paragraph [ref=e1248]: A small settings icon was added in larger viewports when the sidebar is not open
+                  - listitem [ref=e1249]:
+                    - paragraph [ref=e1250]: New transitions were added to create a more immersive feel
+                - heading "Other updates for ChatGPT on Web" [level=3] [ref=e1251]
+                - list [ref=e1252]:
+                  - listitem [ref=e1253]:
+                    - paragraph [ref=e1254]: The core underpinnings of the site were revamped, offering much better support for a larger variety of devices and sizes
+                  - listitem [ref=e1255]:
+                    - paragraph [ref=e1256]: Initiating a new conversation now scrolls it into view at the top of the screen
+                  - listitem [ref=e1257]:
+                    - paragraph [ref=e1258]: Initiating a new conversation no longer auto scrolls to the bottom while the message is generating
+                  - listitem [ref=e1259]:
+                    - paragraph [ref=e1260]: The sidebar when pinned can now stay open with an active Canvas if enough space is available
+                  - listitem [ref=e1261]:
+                    - paragraph [ref=e1262]: A new composer bar layout now fades content underneath it as you scroll with an updated look & feel
+                  - listitem [ref=e1263]:
+                    - paragraph [ref=e1264]: The new chat button has been moved to the left of the Model Picker to be easier to access
+                  - listitem [ref=e1265]:
+                    - paragraph [ref=e1266]: The system icon in conversations has been removed to make additional horizontal space
+                  - listitem [ref=e1267]:
+                    - paragraph [ref=e1268]: Dall-E focused view has an updated layout
+                  - listitem [ref=e1269]:
+                    - paragraph [ref=e1270]: GPT Creator has an updated layout
+                - heading "Improved Mobile Web Experience" [level=3] [ref=e1271]
+                - list [ref=e1272]:
+                  - listitem [ref=e1273]:
+                    - paragraph [ref=e1274]: The experience with the on-screen keyboard on mobile devices has been greatly improved across iOS & Android devices
+                  - listitem [ref=e1275]:
+                    - paragraph [ref=e1276]: The new sidebar is always in floating mode and auto closes when switching threads
+                  - listitem [ref=e1277]:
+                    - paragraph [ref=e1278]: We no longer focus the composer on mobile web when switching conversations
+                  - listitem [ref=e1279]:
+                    - paragraph [ref=e1280]: An issue causing scroll to get stuck in certain situations should be resolved
+                - heading "Nov 19, 2024" [level=1] [ref=e1281]
+                - heading "Advanced Voice for ChatGPT Web" [level=2] [ref=e1282]
+                - paragraph [ref=e1283]: Starting today, we’re beginning to roll out Advanced Voice Mode on web (already available on mobile and desktop apps). You can now start a voice chat on chatgpt.com on your desktop and have real-time, natural conversations with ChatGPT while doing tasks like shopping, planning, writing, and brainstorming.
+                - paragraph [ref=e1284]: We’re starting to roll out to all paid (Plus, Team, Enterprise, and Edu) users today, and expect it to take a few days.
+                - heading "Aug 8, 2024" [level=1] [ref=e1285]
+                - heading "DALL·E 3 for ChatGPT Free users" [level=2] [ref=e1286]
+                - paragraph [ref=e1287]: We’re rolling out the ability for ChatGPT Free users to create up to two images per day with DALL·E 3.
+                - paragraph [ref=e1288]: Just ask ChatGPT to create an image for a slide deck, personalize a card for a friend, or show you what something looks like.
+                - heading "July 18, 2024" [level=1] [ref=e1289]
+                - heading "Introducing GPT-4o mini" [level=2] [ref=e1290]
+                - paragraph [ref=e1291]: We’re introducing GPT-4o mini, the most capable and cost-efficient small model available today. GPT-4o mini surpasses GPT-3.5 Turbo and other small models on academic benchmarks across both textual intelligence and multimodal reasoning and supports the same range of languages as GPT-4o. It also demonstrates strong performance in function calling, which can enable developers to build applications that fetch data or take actions with external systems, and improved long-context performance compared to GPT-3.5 Turbo.
+                - paragraph [ref=e1292]: You can read more about GPT-4o mini in the blog announcement here.
+                - heading "May 16, 2024" [level=1] [ref=e1293]
+                - heading "Improvements to data analysis in ChatGPT" [level=2] [ref=e1294]
+                - paragraph [ref=e1295]: "Today, we’re starting to roll out enhancements to data analysis:"
+                - list [ref=e1296]:
+                  - listitem [ref=e1297]:
+                    - paragraph [ref=e1298]: Upload the latest file versions directly from Google Drive, Microsoft OneDrive Personal, and Microsoft OneDrive including Sharepoint
+                  - listitem [ref=e1299]:
+                    - paragraph [ref=e1300]: Interact with tables and charts in a new expandable view
+                  - listitem [ref=e1301]:
+                    - paragraph [ref=e1302]: Customize and download presentation-ready charts and documents
+                - paragraph [ref=e1303]: Data analysis improvements are available in our new flagship model, GPT-4o, for ChatGPT Plus, Team, and Enterprise users.
+                - heading "May 13, 2024" [level=1] [ref=e1304]
+                - heading "Introducing GPT-4o" [level=2] [ref=e1305]
+                - paragraph [ref=e1306]: GPT-4o is our newest flagship model that provides GPT-4-level intelligence that is much faster and improves on its capabilities across text, voice, and vision. Currently, only the new text and image capabilities have been rolled out. You can read more about the announcement here.
+                - paragraph [ref=e1307]: Plus users will have a message limit that is up to 5x greater than free users, and Team and Enterprise users will have even higher limits.
+                - heading "Apr 29, 2024" [level=1] [ref=e1308]
+                - heading "Memory is now available to Plus users" [level=2] [ref=e1309]
+                - paragraph [ref=e1310]: "Memory is now available to all ChatGPT Plus users, except in Europe Korea where we will be rolling it out soon. Using Memory is easy: just start a new chat and tell ChatGPT anything you’d like it to remember."
+                - paragraph [ref=e1311]: Memory can be turned on or off in settings. Team, Enterprise, and GPTs to come.
+                - heading "Apr 1, 2024" [level=1] [ref=e1312]
+                - heading "Start using ChatGPT instantly" [level=2] [ref=e1313]
+                - paragraph [ref=e1314]: We’re making it easier for people to experience the benefits of AI without needing to sign up. Starting today, you can use ChatGPT instantly, without needing to sign-up. We're rolling this out gradually, with the aim to make AI accessible to anyone curious about its capabilities.
+                - heading "Feb 13, 2024" [level=1] [ref=e1315]
+                - heading "Memory and new controls for ChatGPT" [level=2] [ref=e1316]
+                - paragraph [ref=e1317]: We’re testing memory with ChatGPT. Remembering things you discuss across all chats saves you from having to repeat information and makes future conversations more helpful.
+                - paragraph [ref=e1318]: You're in control of ChatGPT's memory. You can explicitly tell it to remember something, ask it what it remembers, and tell it to forget conversationally or through settings. You can also turn it off entirely.
+                - paragraph [ref=e1319]: We are rolling out to a small portion of ChatGPT free and Plus users this week to learn how useful it is. We will share plans for a broader roll out soon.
+                - paragraph [ref=e1320]: You can read more about memory and controls here.
+                - heading "Jan 10, 2024" [level=1] [ref=e1321]
+                - heading "Introducing the GPT Store and ChatGPT Team plan" [level=2] [ref=e1322]
+                - heading "Discover what’s trending in the GPT Store" [level=4] [ref=e1323]
+                - paragraph [ref=e1324]: The store features a diverse range of GPTs developed by our partners and the community. Browse popular and trending GPTs on the community leaderboard, with categories like DALL·E, writing, research, programming, education, and lifestyle.
+                - paragraph [ref=e1325]: Explore GPTs at chatgpt.com/gpts.
+                - heading "Use ChatGPT alongside your team" [level=4] [ref=e1326]
+                - paragraph [ref=e1327]: We’re launching a new ChatGPT plan for teams of all sizes, which provides a secure, collaborative workspace to get the most out of ChatGPT at work.
+                - paragraph [ref=e1328]: ChatGPT Team offers access to our advanced models like GPT-4 and DALL·E 3, and tools like Advanced Data Analysis. It additionally includes a dedicated collaborative workspace for your team and admin tools for team management. As with ChatGPT Enterprise, you own and control your business data — we do not train on your business data or conversations, and our models don’t learn from your usage. More details on our data privacy practices can be found on our privacy page and Trust Portal.
+                - paragraph [ref=e1329]: You can learn more about the ChatGPT Team plan here.
+              - generic [ref=e1330]:
+                - heading "November 21, 2023" [level=1] [ref=e1331]
+                - heading "ChatGPT with voice is available to all users" [level=2] [ref=e1332]
+                - paragraph [ref=e1333]: ChatGPT with voice is now available to all free users. Download the app on your phone and tap the headphones icon to start a conversation.
+                - heading "November 6, 2023" [level=1] [ref=e1334]
+                - heading "Introducing GPTs" [level=2] [ref=e1335]
+                - paragraph [ref=e1336]: You can now create custom versions of ChatGPT that combine instructions, extra knowledge, and any combination of skills. Learn more here.
+                - paragraph [ref=e1337]: We’re rolling out custom versions of ChatGPT that you can create for a specific purpose—called GPTs. GPTs are a new way for anyone to create a tailored version of ChatGPT to be more helpful in their daily life, at specific tasks, at work, or at home—and then share that creation with others. For example, GPTs can help you learn the rules to any board game, help teach your kids math, or design stickers.
+                - paragraph [ref=e1338]: Plus and Enterprise users can start creating GPTs this week. Later this month, we’ll launch the GPT Store, so people can feature and make money from their GPTs. We plan to offer GPTs to more users soon.
+                - heading "October 17, 2023" [level=1] [ref=e1339]
+                - heading "Browsing is now out of beta" [level=2] [ref=e1340]
+                - paragraph [ref=e1341]: Browsing, which we re-launched a few weeks ago, is moving out of beta.
+                - paragraph [ref=e1342]: Plus and Enterprise users no longer need to switch the beta toggle to use browse, and are able to choose "Browse with Bing" from the GPT-4 model selector.
+                - heading "October 16, 2023" [level=1] [ref=e1343]
+                - heading "DALL·E 3 is now rolling out in beta" [level=2] [ref=e1344]
+                - paragraph [ref=e1345]: We’ve integrated DALL·E 3 with ChatGPT, allowing it to respond to your requests with images. From a simple sentence to a detailed paragraph, ask ChatGPT what you want to see and it will translate your ideas into exceptionally accurate images.
+                - paragraph [ref=e1346]: To use DALL·E 3 on both web and mobile, choose DALL·E 3 in the selector under GPT-4. The message limit may vary based on capacity.
+                - heading "September 27, 2023" [level=1] [ref=e1347]
+                - heading "Browsing is rolling back out to Plus users" [level=2] [ref=e1348]
+                - paragraph [ref=e1349]: Browsing is rolling out to all Plus users. ChatGPT can now browse the internet to provide you with current and authoritative information, complete with direct links to sources. It is no longer limited to data before September 2021.
+                - paragraph [ref=e1350]: To try it out, enable Browsing in your beta features setting.
+                - list [ref=e1351]:
+                  - listitem [ref=e1352]:
+                    - paragraph [ref=e1353]: Click on 'Profile & Settings’
+                  - listitem [ref=e1354]:
+                    - paragraph [ref=e1355]: Select 'Beta features'
+                  - listitem [ref=e1356]:
+                    - paragraph [ref=e1357]: Toggle on ‘Browse with Bing’
+                - paragraph [ref=e1358]: Choose Browse with Bing in the selector under GPT-4.
+                - heading "September 25, 2023" [level=1] [ref=e1359]
+                - heading "New voice and image capabilities in ChatGPT" [level=2] [ref=e1360]
+                - paragraph [ref=e1361]: We are beginning to roll out new voice and image capabilities in ChatGPT. They offer a new, more intuitive type of interface by allowing you to have a voice conversation or show ChatGPT what you’re talking about. Learn more here.
+                - heading "Voice (Beta) is now rolling out to Plus users on iOS and Android" [level=4] [ref=e1362]
+                - paragraph [ref=e1363]: You can now use voice to engage in a back-and-forth conversation with your assistant. Speak with it on the go, request a bedtime story, or settle a dinner table debate.
+                - paragraph [ref=e1364]: To get started with voice, head to Settings → New Features on the mobile app and opt into voice conversations. Then, tap the headphone button located in the top-right corner of the home screen and choose your preferred voice out of five different voices.
+                - heading "Image input will be generally available to Plus users on all platforms" [level=4] [ref=e1365]
+                - paragraph [ref=e1366]: You can now show ChatGPT one or more images. Troubleshoot why your grill won’t start, explore the contents of your fridge to plan a meal, or analyze a complex graph for work-related data. To focus on a specific part of the image, you can use the drawing tool in our mobile app.
+                - paragraph [ref=e1367]: To get started, tap the photo button to capture or choose an image. You can also discuss multiple images or use our drawing tool to guide your assistant.
+                - heading "September 11, 2023" [level=1] [ref=e1368]
+                - heading "ChatGPT language support - Alpha on web" [level=2] [ref=e1369]
+                - paragraph [ref=e1370]: "ChatGPT now supports a limited selection of languages in the interface:"
+                - list [ref=e1371]:
+                  - listitem [ref=e1372]:
+                    - paragraph [ref=e1373]: Chinese (zh-Hans)
+                  - listitem [ref=e1374]:
+                    - paragraph [ref=e1375]: Chinese (zh-TW)
+                  - listitem [ref=e1376]:
+                    - paragraph [ref=e1377]: French (fr-FR)
+                  - listitem [ref=e1378]:
+                    - paragraph [ref=e1379]: German (de-DE)
+                  - listitem [ref=e1380]:
+                    - paragraph [ref=e1381]: Italian (it-IT)
+                  - listitem [ref=e1382]:
+                    - paragraph [ref=e1383]: Japanese (ja-JP)
+                  - listitem [ref=e1384]:
+                    - paragraph [ref=e1385]: Portuguese (pt-BR)
+                  - listitem [ref=e1386]:
+                    - paragraph [ref=e1387]: Russian (ru-RU)
+                  - listitem [ref=e1388]:
+                    - paragraph [ref=e1389]: Spanish (es-ES)
+                - paragraph [ref=e1390]: If you've configured your browser to use one of these supported languages, you'll see a banner in ChatGPT that enables you to switch your language settings. You can deactivate this option at any time through the settings menu.
+                - paragraph [ref=e1391]: This feature is in alpha, requires opting in, and currently can only be used on the web at chatgpt.com. Learn more here.
+                - heading "August 28, 2023" [level=1] [ref=e1392]
+                - heading "Introducing ChatGPT Enterprise" [level=2] [ref=e1393]
+                - paragraph [ref=e1394]: Today we’re launching ChatGPT Enterprise, which offers enterprise-grade security and privacy, unlimited higher-speed GPT-4 access, longer context windows for processing longer inputs, advanced data analysis capabilities, customization options, and much more.
+                - paragraph [ref=e1395]: ChatGPT Enterprise also provides unlimited access to Advanced Data Analysis, previously known as Code Interpreter.
+                - paragraph [ref=e1396]: Learn more on our website and connect with our sales team to get started.
+                - heading "August 21, 2023" [level=1] [ref=e1397]
+                - heading "Custom instructions are now available to users in the EU & UK" [level=2] [ref=e1398]
+                - paragraph [ref=e1399]: Custom instructions are now available to users in the European Union United Kingdom.
+                - paragraph [ref=e1400]: "To add your instructions:"
+                - list [ref=e1401]:
+                  - listitem [ref=e1402]:
+                    - paragraph [ref=e1403]: Click on your name
+                  - listitem [ref=e1404]:
+                    - paragraph [ref=e1405]: Select ‘Custom instructions’
+                - heading "August 9, 2023" [level=1] [ref=e1406]
+                - heading "Custom instructions are now available to free users" [level=2] [ref=e1407]
+                - paragraph [ref=e1408]: Custom instructions are now available to ChatGPT users on the free plan, except for in the EU UK where we will be rolling it out soon!
+                - paragraph [ref=e1409]: Customize your interactions with ChatGPT by providing specific details and guidelines for your chats.
+                - paragraph [ref=e1410]: "To add your instructions:"
+                - list [ref=e1411]:
+                  - listitem [ref=e1412]:
+                    - paragraph [ref=e1413]: Click on your name
+                  - listitem [ref=e1414]:
+                    - paragraph [ref=e1415]: Select ‘Custom instructions’
+                - heading "August 3, 2023" [level=1] [ref=e1416]
+                - heading "Updates to ChatGPT" [level=2] [ref=e1417]
+                - paragraph [ref=e1418]: "We’re rolling out a bunch of small updates to improve the ChatGPT experience. Shipping over the next week:"
+                - paragraph [ref=e1419]: "1. Prompt examples: A blank page can be intimidating. At the beginning of a new chat, you’ll now see examples to help you get started."
+                - paragraph [ref=e1420]: "2. Suggested replies: Go deeper with a click. ChatGPT now suggests relevant ways to continue your conversation."
+                - paragraph [ref=e1421]: "3. GPT-4 by default, finally: When starting a new chat as a Plus user, ChatGPT will remember your previously selected model — no more defaulting back to GPT-3.5."
+                - paragraph [ref=e1422]: "4. Upload multiple files: You can now ask ChatGPT to analyze data and generate insights across multiple files. This is available with the Code Interpreter beta for all Plus users."
+                - paragraph [ref=e1423]: "5. Stay logged in: You’ll no longer be logged out every 2 weeks! When you do need to log in, you’ll be greeted with a much more welcoming page."
+                - paragraph [ref=e1424]: "6. Keyboard shortcuts: Work faster with shortcuts, like ⌘ (Ctrl) + Shift + ; to copy last code block. Try ⌘ (Ctrl) + / to see the complete list."
+                - heading "July 25, 2023" [level=1] [ref=e1425]
+                - heading "Introducing the ChatGPT app for Android" [level=2] [ref=e1426]
+                - paragraph [ref=e1427]: ChatGPT for Android is now available for download in the United States, India, Bangladesh, and Brazil from the Google Play Store.
+                - paragraph [ref=e1428]: We plan to expand the rollout to additional countries over the next week. You can track the Android rollout here.
+                - heading "July 20, 2023" [level=1] [ref=e1429]
+                - heading "Custom instructions are rolling out in beta" [level=2] [ref=e1430]
+                - paragraph [ref=e1431]: We’re starting to roll out custom instructions, giving you more control over ChatGPT’s responses. Set your preferences once, and they’ll steer future conversations. You can read more about custom instructions in the blogpost here.
+                - paragraph [ref=e1432]: Custom instructions are available to all Plus users and expanding to all users in the coming weeks.
+                - paragraph [ref=e1433]: "To enable beta features:"
+                - list [ref=e1434]:
+                  - listitem [ref=e1435]:
+                    - paragraph [ref=e1436]: Click on 'Profile & Settings’
+                  - listitem [ref=e1437]:
+                    - paragraph [ref=e1438]: Select 'Beta features'
+                  - listitem [ref=e1439]:
+                    - paragraph [ref=e1440]: Toggle on 'Custom instructions'
+                - paragraph [ref=e1441]: "To add your instructions:"
+                - list [ref=e1442]:
+                  - listitem [ref=e1443]:
+                    - paragraph [ref=e1444]: Click on your name
+                  - listitem [ref=e1445]:
+                    - paragraph [ref=e1446]: Select ‘Custom instructions’
+                - paragraph [ref=e1447]: This feature is not yet available in the UK and EU.
+                - heading "July 19, 2023" [level=1] [ref=e1448]
+                - heading "Higher message limits for GPT-4" [level=2] [ref=e1449]
+                - paragraph [ref=e1450]: We're doubling the number of messages ChatGPT Plus customers can send with GPT-4. Rolling out over the next week, the new message limit will be 40 every 3 hours.
+                - heading "July 6, 2023" [level=1] [ref=e1451]
+                - heading "Code interpreter is now rolling out in beta on web" [level=2] [ref=e1452]
+                - paragraph [ref=e1453]: We’re rolling out code interpreter to all ChatGPT Plus users over the next week.
+                - paragraph [ref=e1454]: It lets ChatGPT run code, optionally with access to files you've uploaded. You can ask ChatGPT to analyze data, create charts, edit files, perform math, etc.
+                - paragraph [ref=e1455]: We’ll be making these features accessible to Plus users on the web via the beta panel in your settings over the course of the next week.
+                - paragraph [ref=e1456]: "To enable code interpreter:"
+                - list [ref=e1457]:
+                  - listitem [ref=e1458]:
+                    - paragraph [ref=e1459]: Click on your name
+                  - listitem [ref=e1460]:
+                    - paragraph [ref=e1461]: Select beta features from your settings
+                  - listitem [ref=e1462]:
+                    - paragraph [ref=e1463]: Toggle on the beta features you’d like to try
+                - heading "July 3, 2023" [level=1] [ref=e1464]
+                - heading "Browsing is temporarily disabled" [level=2] [ref=e1465]
+                - paragraph [ref=e1466]: We've learned that the browsing beta can occasionally display content in ways we don't want, e.g. if a user specifically asks for a URL's full text, it may inadvertently fulfill this request. We are temporarily disabling Browse while we fix this.
+                - heading "June 22, 2023" [level=1] [ref=e1467]
+                - heading "Browsing and search on mobile" [level=2] [ref=e1468]
+                - paragraph [ref=e1469]: "We’ve made two updates to the mobile ChatGPT app:"
+                - list [ref=e1470]:
+                  - listitem [ref=e1471]:
+                    - paragraph [ref=e1472]: "Browsing: Plus users can now use Browsing to get comprehensive answers and current insights on events and information that extend beyond the model's original training data. To try it out, enable Browsing in the “new features” section of your app settings. Then select GPT-4 in the model switcher and choose “Browse with Bing” in the drop-down."
+                  - listitem [ref=e1473]:
+                    - paragraph [ref=e1474]: "Search History Improvements: Tapping on a search result takes you directly to the respective point in the conversation."
+                - heading "May 24, 2023" [level=1] [ref=e1475]
+                - heading "iOS app available in more countries, shared links in alpha, Bing Plugin, disable history on iOS" [level=2] [ref=e1476]
+                - heading "ChatGPT app for iOS in more countries" [level=4] [ref=e1477]
+                - paragraph [ref=e1478]: "Good news! We’re expanding availability of the ChatGPT app for iOS to more countries and regions. Users in 11 countries can now download the ChatGPT app in the Apple App Store including the United States: Albania, Croatia, France, Germany, Ireland, Jamaica, Korea, New Zealand, Nicaragua, Nigeria, and the United Kingdom."
+                - paragraph [ref=e1479]: We will continue to roll out to more countries and regions in the coming weeks. You can track the iOS app rollout here.
+                - heading "Shared Links" [level=4] [ref=e1480]
+                - paragraph [ref=e1481]: "We're excited to introduce a new feature: shared links. This feature allows you to create and share your ChatGPT conversations with others. Recipients of your shared link can either view the conversation or copy it to their own chats to continue the thread. This feature is currently rolling out to a small set of testers in alpha, with plans to expand to all users (including free) in the upcoming weeks."
+                - paragraph [ref=e1482]: "To share your conversations:"
+                - list [ref=e1483]:
+                  - listitem [ref=e1484]:
+                    - paragraph [ref=e1485]: Click on the thread you’d like to share
+                  - listitem [ref=e1486]:
+                    - paragraph [ref=e1487]: Select the “Share” button
+                  - listitem [ref=e1488]:
+                    - paragraph [ref=e1489]: Click on “Copy Link”
+                - paragraph [ref=e1490]: Learn more.
+                - heading "Bing Plugin" [level=4] [ref=e1491]
+                - paragraph [ref=e1492]: Browse with Bing. We’ve integrated the browsing feature - currently in beta for paid users - more deeply with Bing. You can now click into queries that the model is performing. We look forward to expanding the integration soon.
+                - heading "Disable chat history on iOS" [level=4] [ref=e1493]
+                - paragraph [ref=e1494]: You can now disable your chat history on iOS. Conversations started on your device when chat history is disabled won’t be used to improve our models, won’t appear in your history on your other devices, and will only be stored for 30 days. Similar to the functionality on the web, this setting does not sync across browsers or devices. Learn more.
+                - heading "May 12, 2023" [level=1] [ref=e1495]
+                - heading "Web browsing and Plugins are now rolling out in beta" [level=2] [ref=e1496]
+                - paragraph [ref=e1497]: If you are a ChatGPT Plus user, enjoy early access to experimental new features, which may change during development. We’ll be making these features accessible via a new beta panel in your settings, which is rolling out to all Plus users over the course of the next week.
+                - img "Image" [ref=e1499]
+                - paragraph [ref=e1500]: "Once the beta panel rolls out to you, you’ll be able to try two new features:"
+                - list [ref=e1501]:
+                  - listitem [ref=e1502]:
+                    - paragraph [ref=e1503]: "Web browsing: Try a new version of ChatGPT that knows when and how to browse the internet to answer questions about recent topics and events."
+                  - listitem [ref=e1504]:
+                    - paragraph [ref=e1505]: "Plugins: Try a new version of ChatGPT that knows when and how to use third-party plugins that you enable."
+                - paragraph [ref=e1506]: "To use third-party plugins, follow these instructions:"
+                - list [ref=e1507]:
+                  - listitem [ref=e1508]:
+                    - paragraph [ref=e1509]:
+                      - text: Navigate to
+                      - link "https://chatgpt.com/" [ref=e1510] [cursor=pointer]:
+                        - /url: https://chatgpt.com/
+                  - listitem [ref=e1511]:
+                    - paragraph [ref=e1512]: Select “Plugins” from the model switcher
+                  - listitem [ref=e1513]:
+                    - paragraph [ref=e1514]: In the “Plugins” dropdown, click “Plugin Store” to install and enable new plugins
+                - paragraph [ref=e1515]: "To enable beta features:"
+                - list [ref=e1516]:
+                  - listitem [ref=e1517]:
+                    - paragraph [ref=e1518]: Click on 'Profile & Settings'
+                  - listitem [ref=e1519]:
+                    - paragraph [ref=e1520]: Select 'Beta features'
+                  - listitem [ref=e1521]:
+                    - paragraph [ref=e1522]: Toggle on the features you’d like to try
+                - paragraph [ref=e1523]: For more information on our rollout process, please check out the article here.
+                - paragraph [ref=e1524]: In addition to the beta panel, users can now choose to continue generating a message beyond the maximum token limit. Each continuation counts towards the message allowance.
+                - heading "May 3, 2023" [level=1] [ref=e1525]
+                - heading "Updates to ChatGPT" [level=2] [ref=e1526]
+                - paragraph [ref=e1527]: "We’ve made several updates to ChatGPT! Here's what's new:"
+                - list [ref=e1528]:
+                  - listitem [ref=e1529]:
+                    - paragraph [ref=e1530]: You can now turn off chat history and export your data from the ChatGPT settings. Conversations that are started when chat history is disabled won’t be used to train and improve our models, and won’t appear in the history sidebar.
+                  - listitem [ref=e1531]:
+                    - paragraph [ref=e1532]: We are deprecating the Legacy (GPT-3.5) model on May 10th. Users will be able to continue their existing conversations with this model, but new messages will use the default model.
+                - heading "March 23, 2023" [level=1] [ref=e1533]
+                - heading "Introducing plugins in ChatGPT" [level=2] [ref=e1534]
+                - paragraph [ref=e1535]: We are announcing experimental support for AI plugins in ChatGPT — tools designed specifically for language models. Plugins can help ChatGPT access up-to-date information, run computations, or use third-party services. You can learn more about plugins here.
+                - paragraph [ref=e1536]: "Today, we will begin extending plugin access to users and developers from our waitlist. The plugins we are rolling out with are:"
+                - list [ref=e1537]:
+                  - listitem [ref=e1538]:
+                    - paragraph [ref=e1539]: "Browsing: An experimental model that knows when and how to browse the internet"
+                  - listitem [ref=e1540]:
+                    - paragraph [ref=e1541]: "Code Interpreter: An experimental ChatGPT model that can use Python, and handles uploads and downloads"
+                  - listitem [ref=e1542]:
+                    - paragraph [ref=e1543]: "Third-party plugins: An experimental model that knows when and how to use external plugins."
+                - paragraph [ref=e1544]: "You can join the waitlist to try plugins here:"
+                - list [ref=e1545]:
+                  - listitem [ref=e1546]:
+                    - paragraph [ref=e1547]:
+                      - link "ChatGPT Plugin Waitlist" [ref=e1548] [cursor=pointer]:
+                        - /url: https://share.hsforms.com/16C8k9E5FR5mRLYYkwohdiQ4sk30
+                - heading "March 14, 2023" [level=1] [ref=e1549]
+                - heading "Announcing GPT-4 in ChatGPT" [level=2] [ref=e1550]
+                - paragraph [ref=e1551]: We’re excited to bring GPT-4, our latest model, to our ChatGPT Plus subscribers.
+                - paragraph [ref=e1552]: "GPT-4 has enhanced capabilities in:"
+                - list [ref=e1553]:
+                  - listitem [ref=e1554]:
+                    - paragraph [ref=e1555]: Advanced reasoning
+                  - listitem [ref=e1556]:
+                    - paragraph [ref=e1557]: Complex instructions
+                  - listitem [ref=e1558]:
+                    - paragraph [ref=e1559]: More creativity
+                - paragraph [ref=e1560]: To give every Plus subscriber a chance to try the model, we'll dynamically adjust the cap for GPT-4 usage based on demand. You can learn more about GPT-4 here.
+                - paragraph [ref=e1561]: For this release, there are no updates to free accounts.
+                - heading "Feb 13, 2023" [level=1] [ref=e1562]
+                - heading "Updates to ChatGPT" [level=2] [ref=e1563]
+                - paragraph [ref=e1564]: "We’ve made several updates to ChatGPT! Here's what's new:"
+                - list [ref=e1565]:
+                  - listitem [ref=e1566]:
+                    - paragraph [ref=e1567]: We’ve updated performance of the ChatGPT model on our free plan in order to serve more users.
+                  - listitem [ref=e1568]:
+                    - paragraph [ref=e1569]: Based on user feedback, we are now defaulting Plus users to a faster version of ChatGPT, formerly known as “Turbo”. We’ll keep the previous version around for a while.
+                  - listitem [ref=e1570]:
+                    - paragraph [ref=e1571]:
+                      - text: We rolled out the ability to purchase
+                      - link "ChatGPT Plus" [ref=e1572] [cursor=pointer]:
+                        - /url: https://openai.com/blog/chatgpt-plus/
+                      - text: internationally.
+                - heading "Feb 9 2023" [level=1] [ref=e1573]
+                - heading "Introducing ChatGPT Plus" [level=2] [ref=e1574]
+                - paragraph [ref=e1575]: "As we recently announced, our Plus plan comes with early access to new, experimental features. We are beginning to roll out a way for Plus users the ability to choose between different versions of ChatGPT:"
+                - list [ref=e1576]:
+                  - listitem [ref=e1577]:
+                    - paragraph [ref=e1578]: "Default: the standard ChatGPT model"
+                  - listitem [ref=e1579]:
+                    - paragraph [ref=e1580]: "Turbo: optimized for speed (alpha)"
+                - paragraph [ref=e1581]: Version selection is made easy with a dedicated dropdown menu at the top of the page. Depending on feedback, we may roll out this feature (or just Turbo) to all users soon.
+                - heading "Jan 30, 2023" [level=1] [ref=e1582]
+                - heading "Factuality and mathematical improvements" [level=2] [ref=e1583]
+                - paragraph [ref=e1584]: We’ve upgraded the ChatGPT model with improved factuality and mathematical capabilities.
+                - heading "Jan 9, 2023" [level=1] [ref=e1585]
+                - heading "Updates to ChatGPT" [level=2] [ref=e1586]
+                - paragraph [ref=e1587]: "We're excited to announce several updates to ChatGPT! Here's what's new:"
+                - list [ref=e1588]:
+                  - listitem [ref=e1589]:
+                    - paragraph [ref=e1590]: We made more improvements to the ChatGPT model! It should be generally better across a wide range of topics and has improved factuality.
+                  - listitem [ref=e1591]:
+                    - paragraph [ref=e1592]: "Stop generating: Based on your feedback, we've added the ability to stop generating ChatGPT's response"
+                - heading "Dec 15, 2022" [level=1] [ref=e1593]
+                - heading "Performance updates to ChatGPT" [level=2] [ref=e1594]
+                - paragraph [ref=e1595]: "We're excited to announce several updates to ChatGPT! Here's what's new:"
+                - list [ref=e1596]:
+                  - listitem [ref=e1597]:
+                    - paragraph [ref=e1598]: "General performance: Among other improvements, users will notice that ChatGPT is now less likely to refuse to answer questions."
+                  - listitem [ref=e1599]:
+                    - paragraph [ref=e1600]: "Conversation history: You’ll soon be able to view past conversations with ChatGPT, rename your saved conversations and delete the ones you don’t want to keep. We are gradually rolling out this feature."
+                  - listitem [ref=e1601]:
+                    - paragraph [ref=e1602]: "Daily limit: To ensure a high-quality experience for all ChatGPT users, we are experimenting with a daily message cap. If you’re included in this group, you’ll be presented with an option to extend your access by providing feedback to ChatGPT."
+                - paragraph [ref=e1603]: To see if you’re using the updated version, look for “ChatGPT Dec 15 Version” at the bottom of the screen.
+          - generic [ref=e2323]:
+            - heading "Related articles" [level=2] [ref=e2324]
+            - list [ref=e2325]:
+              - listitem [ref=e2326]:
+                - link "ChatGPT Atlas - Release Notes" [ref=e2327] [cursor=pointer]:
+                  - /url: /en/articles/12591856-chatgpt-atlas-release-notes
+                  - generic [ref=e2329]: ChatGPT Atlas - Release Notes
+                  - img [ref=e2331]
+              - listitem [ref=e2333]:
+                - link "ChatGPT MacOS app release notes Notes on updates to the ChatGPT MacOS app" [ref=e2334] [cursor=pointer]:
+                  - /url: /en/articles/9703738-chatgpt-macos-app-release-notes
+                  - generic [ref=e2335]:
+                    - generic [ref=e2336]: ChatGPT MacOS app release notes
+                    - generic [ref=e2337]: Notes on updates to the ChatGPT MacOS app
+                  - img [ref=e2339]
+          - generic [ref=e1604]:
+            - heading "Was this article helpful?" [level=2] [ref=e1605]
+            - generic [ref=e1606]:
+              - generic [ref=e1607]:
+                - button "Thumbs up" [ref=e1608] [cursor=pointer]:
+                  - img [ref=e1609]
+                - button "Thumbs down" [ref=e1611] [cursor=pointer]:
+                  - img [ref=e1612]
+              - textbox "Additional feedback (optional)" [ref=e1614]
+              - button "Submit" [disabled] [ref=e1616]:
+                - generic [ref=e1617]: Submit
+        - navigation "Table of contents" [ref=e1618]:
+          - list [ref=e1619]:
+            - listitem [ref=e1620]:
+              - link "March 20, 2026" [ref=e1621] [cursor=pointer]:
+                - /url: "#march-20-2026"
+            - listitem [ref=e1622]:
+              - link "Codex for Students" [ref=e1623] [cursor=pointer]:
+                - /url: "#codex-for-students"
+            - listitem [ref=e1624]:
+              - link "March 19, 2026" [ref=e1625] [cursor=pointer]:
+                - /url: "#march-19-2026"
+            - listitem [ref=e1626]:
+              - link "Legacy deep research mode deprecation notice" [ref=e1627] [cursor=pointer]:
+                - /url: "#legacy-deep-research-mode-deprecation-notice"
+            - listitem [ref=e1628]:
+              - link "March 18, 2026" [ref=e1629] [cursor=pointer]:
+                - /url: "#march-18-2026"
+            - listitem [ref=e1630]:
+              - link "GPT-5.4 mini in ChatGPT" [ref=e1631] [cursor=pointer]:
+                - /url: "#gpt-54-mini-in-chatgpt"
+            - listitem [ref=e1632]:
+              - link "March 17, 2026" [ref=e1633] [cursor=pointer]:
+                - /url: "#march-17-2026"
+            - listitem [ref=e1634]:
+              - link "Updates to the model picker in ChatGPT" [ref=e1635] [cursor=pointer]:
+                - /url: "#updates-to-the-model-picker-in-chatgpt"
+            - listitem [ref=e1636]:
+              - link "Configure more advanced settings" [ref=e1637] [cursor=pointer]:
+                - /url: "#configure-more-advanced-settings"
+            - listitem [ref=e1638]:
+              - link "Sunsetting the “Nerdy” base style" [ref=e1639] [cursor=pointer]:
+                - /url: "#sunsetting-the-nerdy-base-style"
+            - listitem [ref=e1640]:
+              - link "March 16, 2026" [ref=e1641] [cursor=pointer]:
+                - /url: "#march-16-2026"
+            - listitem [ref=e1642]:
+              - link "GPT-5.3 Instant update" [ref=e1643] [cursor=pointer]:
+                - /url: "#gpt-53-instant-update"
+            - listitem [ref=e1644]:
+              - link "March 11, 2026" [ref=e1645] [cursor=pointer]:
+                - /url: "#march-11-2026"
+            - listitem [ref=e1646]:
+              - link "Retiring GPT-5.1 models" [ref=e1647] [cursor=pointer]:
+                - /url: "#retiring-gpt-51-models"
+            - listitem [ref=e1648]:
+              - link "March 10, 2026" [ref=e1649] [cursor=pointer]:
+                - /url: "#march-10-2026"
+            - listitem [ref=e1650]:
+              - link "Interactive learning for math and science" [ref=e1651] [cursor=pointer]:
+                - /url: "#interactive-learning-for-math-and-science"
+            - listitem [ref=e1652]:
+              - link "Auto top-up for flexible usage credits" [ref=e1653] [cursor=pointer]:
+                - /url: "#auto-top-up-for-flexible-usage-credits"
+            - listitem [ref=e1654]:
+              - link "March 5, 2026" [ref=e1655] [cursor=pointer]:
+                - /url: "#march-5-2026"
+            - listitem [ref=e1656]:
+              - link "GPT-5.4 Thinking in ChatGPT" [ref=e1657] [cursor=pointer]:
+                - /url: "#gpt-54-thinking-in-chatgpt"
+            - listitem [ref=e1658]:
+              - link "March 4, 2026" [ref=e1659] [cursor=pointer]:
+                - /url: "#march-4-2026"
+            - listitem [ref=e1660]:
+              - link "Codex app on Windows" [ref=e1661] [cursor=pointer]:
+                - /url: "#codex-app-on-windows"
+            - listitem [ref=e1662]:
+              - link "March 3, 2026" [ref=e1663] [cursor=pointer]:
+                - /url: "#march-3-2026"
+            - listitem [ref=e1664]:
+              - link "GPT-5.3 Instant Update" [ref=e1665] [cursor=pointer]:
+                - /url: "#gpt-53-instant-update"
+            - listitem [ref=e1666]:
+              - link "February 27, 2026" [ref=e1667] [cursor=pointer]:
+                - /url: "#february-27-2026"
+            - listitem [ref=e1668]:
+              - 'link "ChatGPT Web and Android updates: Edit image prompts, share faster, and smoother conversations" [ref=e1669] [cursor=pointer]':
+                - /url: "#chatgpt-web-and-android-updates-edit-image-prompts-share-faster-and-smoother-conversations"
+            - listitem [ref=e1670]:
+              - link "Web" [ref=e1671] [cursor=pointer]:
+                - /url: "#web"
+            - listitem [ref=e1672]:
+              - link "Android" [ref=e1673] [cursor=pointer]:
+                - /url: "#android"
+            - listitem [ref=e1674]:
+              - link "Bug fixes" [ref=e1675] [cursor=pointer]:
+                - /url: "#bug-fixes"
+            - listitem [ref=e1676]:
+              - link "February 25, 2026" [ref=e1677] [cursor=pointer]:
+                - /url: "#february-25-2026"
+            - listitem [ref=e1678]:
+              - link "Add sources to your projects from anywhere" [ref=e1679] [cursor=pointer]:
+                - /url: "#add-sources-to-your-projects-from-anywhere"
+            - listitem [ref=e1680]:
+              - link "February 20, 2026" [ref=e1681] [cursor=pointer]:
+                - /url: "#february-20-2026"
+            - listitem [ref=e1682]:
+              - link "Expanded context window for Thinking" [ref=e1683] [cursor=pointer]:
+                - /url: "#expanded-context-window-for-thinking"
+            - listitem [ref=e1684]:
+              - link "February 19, 2026" [ref=e1685] [cursor=pointer]:
+                - /url: "#february-19-2026"
+            - listitem [ref=e1686]:
+              - link "Interactive Code Blocks in ChatGPT" [ref=e1687] [cursor=pointer]:
+                - /url: "#interactive-code-blocks-in-chatgpt"
+            - listitem [ref=e1688]:
+              - link "February 13, 2026" [ref=e1689] [cursor=pointer]:
+                - /url: "#february-13-2026"
+            - listitem [ref=e1690]:
+              - link "Retiring GPT-4o and other legacy models" [ref=e1691] [cursor=pointer]:
+                - /url: "#retiring-gpt-4o-and-other-legacy-models"
+            - listitem [ref=e1692]:
+              - 'link "ChatGPT updates: Better file uploads, easier copying, and more reliable long chats" [ref=e1693] [cursor=pointer]':
+                - /url: "#chatgpt-updates-better-file-uploads-easier-copying-and-more-reliable-long-chats"
+            - listitem [ref=e1694]:
+              - link "Web" [ref=e1695] [cursor=pointer]:
+                - /url: "#web"
+            - listitem [ref=e1696]:
+              - link "Android" [ref=e1697] [cursor=pointer]:
+                - /url: "#android"
+            - listitem [ref=e1698]:
+              - link "iOS" [ref=e1699] [cursor=pointer]:
+                - /url: "#ios"
+            - listitem [ref=e1700]:
+              - link "Web, iOS, and Android" [ref=e1701] [cursor=pointer]:
+                - /url: "#web-ios-and-android"
+            - listitem [ref=e1702]:
+              - link "February 12, 2026" [ref=e1703] [cursor=pointer]:
+                - /url: "#february-12-2026"
+            - listitem [ref=e1704]:
+              - link "ChatGPT Voice Update" [ref=e1705] [cursor=pointer]:
+                - /url: "#chatgpt-voice-update"
+            - listitem [ref=e1706]:
+              - link "February 10, 2026" [ref=e1707] [cursor=pointer]:
+                - /url: "#february-10-2026"
+            - listitem [ref=e1708]:
+              - link "Updates to deep research" [ref=e1709] [cursor=pointer]:
+                - /url: "#updates-to-deep-research"
+            - listitem [ref=e1710]:
+              - link "GPT-5.2 Instant Update" [ref=e1711] [cursor=pointer]:
+                - /url: "#gpt-52-instant-update"
+            - listitem [ref=e1712]:
+              - link "February 9, 2026" [ref=e1713] [cursor=pointer]:
+                - /url: "#february-9-2026"
+            - listitem [ref=e1714]:
+              - link "Testing ads in ChatGPT (Free, Go)" [ref=e1715] [cursor=pointer]:
+                - /url: "#testing-ads-in-chatgpt-free-go"
+            - listitem [ref=e1716]:
+              - link "February 4, 2026" [ref=e1717] [cursor=pointer]:
+                - /url: "#february-4-2026"
+            - listitem [ref=e1718]:
+              - link "Update on thinking time settings for GPT-5.2 Thinking in ChatGPT" [ref=e1719] [cursor=pointer]:
+                - /url: "#update-on-thinking-time-settings-for-gpt-52-thinking-in-chatgpt"
+            - listitem [ref=e1720]:
+              - link "February 2, 2026" [ref=e1721] [cursor=pointer]:
+                - /url: "#february-2-2026"
+            - listitem [ref=e1722]:
+              - link "Introducing the Codex app" [ref=e1723] [cursor=pointer]:
+                - /url: "#introducing-the-codex-app"
+            - listitem [ref=e1724]:
+              - link "January 30, 2026" [ref=e1725] [cursor=pointer]:
+                - /url: "#january-30-2026"
+            - listitem [ref=e1726]:
+              - link "More visual responses" [ref=e1727] [cursor=pointer]:
+                - /url: "#more-visual-responses"
+            - listitem [ref=e1728]:
+              - link "January 29, 2026" [ref=e1729] [cursor=pointer]:
+                - /url: "#january-29-2026"
+            - listitem [ref=e1730]:
+              - link "Retiring GPT-4o and other legacy models" [ref=e1731] [cursor=pointer]:
+                - /url: "#retiring-gpt-4o-and-other-legacy-models"
+            - listitem [ref=e1732]:
+              - link "January 26, 2026" [ref=e1733] [cursor=pointer]:
+                - /url: "#january-26-2026"
+            - listitem [ref=e1734]:
+              - link "Improvements to search response quality in Voice" [ref=e1735] [cursor=pointer]:
+                - /url: "#improvements-to-search-response-quality-in-voice"
+            - listitem [ref=e1736]:
+              - link "January 22, 2026" [ref=e1737] [cursor=pointer]:
+                - /url: "#january-22-2026"
+            - listitem [ref=e1738]:
+              - link "5.2 Personality System Prompt Update" [ref=e1739] [cursor=pointer]:
+                - /url: "#52-personality-system-prompt-update"
+            - listitem [ref=e1740]:
+              - link "January 20, 2026" [ref=e1741] [cursor=pointer]:
+                - /url: "#january-20-2026"
+            - listitem [ref=e1742]:
+              - link "Voice Updates" [ref=e1743] [cursor=pointer]:
+                - /url: "#voice-updates"
+            - listitem [ref=e1744]:
+              - link "Rolling out age prediction" [ref=e1745] [cursor=pointer]:
+                - /url: "#rolling-out-age-prediction"
+            - listitem [ref=e1746]:
+              - link "January 15, 2026" [ref=e1747] [cursor=pointer]:
+                - /url: "#january-15-2026"
+            - listitem [ref=e1748]:
+              - link "Improved memory for finding details from past chats (Plus & Pro)" [ref=e1749] [cursor=pointer]:
+                - /url: "#improved-memory-for-finding-details-from-past-chats-plus-pro"
+            - listitem [ref=e1750]:
+              - link "January 12, 2026" [ref=e1751] [cursor=pointer]:
+                - /url: "#january-12-2026"
+            - listitem [ref=e1752]:
+              - link "Dictation Updates" [ref=e1753] [cursor=pointer]:
+                - /url: "#dictation-updates"
+            - listitem [ref=e1754]:
+              - link "January 7, 2026" [ref=e1755] [cursor=pointer]:
+                - /url: "#january-7-2026"
+            - listitem [ref=e1756]:
+              - link "Health in ChatGPT" [ref=e1757] [cursor=pointer]:
+                - /url: "#health-in-chatgpt"
+            - listitem [ref=e1758]:
+              - link "December 22, 2025" [ref=e1759] [cursor=pointer]:
+                - /url: "#december-22-2025"
+            - listitem [ref=e1760]:
+              - link "Your Year with ChatGPT" [ref=e1761] [cursor=pointer]:
+                - /url: "#your-year-with-chatgpt"
+            - listitem [ref=e1762]:
+              - link "December 19, 2025" [ref=e1763] [cursor=pointer]:
+                - /url: "#december-19-2025"
+            - listitem [ref=e1764]:
+              - link "New detailed characteristic controls" [ref=e1765] [cursor=pointer]:
+                - /url: "#new-detailed-characteristic-controls"
+            - listitem [ref=e1766]:
+              - link "December 18, 2025" [ref=e1767] [cursor=pointer]:
+                - /url: "#december-18-2025"
+            - listitem [ref=e1768]:
+              - link "Introducing the app directory in ChatGPT" [ref=e1769] [cursor=pointer]:
+                - /url: "#introducing-the-app-directory-in-chatgpt"
+            - listitem [ref=e1770]:
+              - link "Pinned chats in ChatGPT" [ref=e1771] [cursor=pointer]:
+                - /url: "#pinned-chats-in-chatgpt"
+            - listitem [ref=e1772]:
+              - link "December 17, 2025" [ref=e1773] [cursor=pointer]:
+                - /url: "#december-17-2025"
+            - listitem [ref=e1774]:
+              - link "Tasks are now in Pulse" [ref=e1775] [cursor=pointer]:
+                - /url: "#tasks-are-now-in-pulse"
+            - listitem [ref=e1776]:
+              - link "December 16, 2025" [ref=e1777] [cursor=pointer]:
+                - /url: "#december-16-2025"
+            - listitem [ref=e1778]:
+              - link "ChatGPT Images on Web and Mobile (iOS & Android)" [ref=e1779] [cursor=pointer]:
+                - /url: "#chatgpt-images-on-web-and-mobile-ios-android"
+            - listitem [ref=e1780]:
+              - link "December 11, 2025" [ref=e1781] [cursor=pointer]:
+                - /url: "#december-11-2025"
+            - listitem [ref=e1782]:
+              - link "Voice on macOS desktop app is retiring (effective January 15, 2026)" [ref=e1783] [cursor=pointer]:
+                - /url: "#voice-on-macos-desktop-app-is-retiring-effective-january-15-2026"
+            - listitem [ref=e1784]:
+              - link "December 11, 2025" [ref=e1785] [cursor=pointer]:
+                - /url: "#december-11-2025"
+            - listitem [ref=e1786]:
+              - link "November 25, 2025" [ref=e1787] [cursor=pointer]:
+                - /url: "#november-25-2025"
+            - listitem [ref=e1788]:
+              - 'link "An improved Voice interface: the audio you know, with text and visuals when you need them." [ref=e1789] [cursor=pointer]':
+                - /url: "#an-improved-voice-interface-the-audio-you-know-with-text-and-visuals-when-you-need-them"
+            - listitem [ref=e1790]:
+              - link "November 24, 2025" [ref=e1791] [cursor=pointer]:
+                - /url: "#november-24-2025"
+            - listitem [ref=e1792]:
+              - link "Shopping research in ChatGPT" [ref=e1793] [cursor=pointer]:
+                - /url: "#shopping-research-in-chatgpt"
+            - listitem [ref=e1794]:
+              - link "November 21, 2025" [ref=e1795] [cursor=pointer]:
+                - /url: "#november-21-2025"
+            - listitem [ref=e1796]:
+              - link "More images in answers" [ref=e1797] [cursor=pointer]:
+                - /url: "#more-images-in-answers"
+            - listitem [ref=e1798]:
+              - link "November 20, 2025" [ref=e1799] [cursor=pointer]:
+                - /url: "#november-20-2025"
+            - listitem [ref=e1800]:
+              - link "Instant Checkout now rolling out to Shopify merchants" [ref=e1801] [cursor=pointer]:
+                - /url: "#instant-checkout-now-rolling-out-to-shopify-merchants"
+            - listitem [ref=e1802]:
+              - link "November 19, 2025" [ref=e1803] [cursor=pointer]:
+                - /url: "#november-19-2025"
+            - listitem [ref=e1804]:
+              - 'link "GPT-5.1 Pro: Clearer, more capable answers for complex work" [ref=e1805] [cursor=pointer]':
+                - /url: "#gpt-51-pro-clearer-more-capable-answers-for-complex-work"
+            - listitem [ref=e1806]:
+              - link "November 13, 2025" [ref=e1807] [cursor=pointer]:
+                - /url: "#november-13-2025"
+            - listitem [ref=e1808]:
+              - link "Group chats in ChatGPT" [ref=e1809] [cursor=pointer]:
+                - /url: "#group-chats-in-chatgpt"
+            - listitem [ref=e1810]:
+              - link "November 12, 2025" [ref=e1811] [cursor=pointer]:
+                - /url: "#november-12-2025"
+            - listitem [ref=e1812]:
+              - link "GPT-5.1 in ChatGPT" [ref=e1813] [cursor=pointer]:
+                - /url: "#gpt-51-in-chatgpt"
+            - listitem [ref=e1814]:
+              - link "New tone and personalization controls" [ref=e1815] [cursor=pointer]:
+                - /url: "#new-tone-and-personalization-controls"
+            - listitem [ref=e1816]:
+              - link "November 7, 2025" [ref=e1817] [cursor=pointer]:
+                - /url: "#november-7-2025"
+            - listitem [ref=e1818]:
+              - link "Personality and custom instructions now apply to all chats" [ref=e1819] [cursor=pointer]:
+                - /url: "#personality-and-custom-instructions-now-apply-to-all-chats"
+            - listitem [ref=e1820]:
+              - link "November 5, 2025" [ref=e1821] [cursor=pointer]:
+                - /url: "#november-5-2025"
+            - listitem [ref=e1822]:
+              - link "Interrupt ChatGPT" [ref=e1823] [cursor=pointer]:
+                - /url: "#interrupt-chatgpt"
+            - listitem [ref=e1824]:
+              - link "November 3, 2025" [ref=e1825] [cursor=pointer]:
+                - /url: "#november-3-2025"
+            - listitem [ref=e1826]:
+              - link "ChatGPT Go Promo - India" [ref=e1827] [cursor=pointer]:
+                - /url: "#chatgpt-go-promo-india"
+            - listitem [ref=e1828]:
+              - link "October 30, 2025" [ref=e1829] [cursor=pointer]:
+                - /url: "#october-30-2025"
+            - listitem [ref=e1830]:
+              - link "ChatGPT Go expansion" [ref=e1831] [cursor=pointer]:
+                - /url: "#chatgpt-go-expansion"
+            - listitem [ref=e1832]:
+              - link "Credits for Flexible Usage for Codex and Sora" [ref=e1833] [cursor=pointer]:
+                - /url: "#credits-for-flexible-usage-for-codex-and-sora"
+            - listitem [ref=e1834]:
+              - link "October 29, 2025" [ref=e1835] [cursor=pointer]:
+                - /url: "#october-29-2025"
+            - listitem [ref=e1836]:
+              - link "ChatGPT Pulse on Web" [ref=e1837] [cursor=pointer]:
+                - /url: "#chatgpt-pulse-on-web"
+            - listitem [ref=e1838]:
+              - link "October 28, 2025" [ref=e1839] [cursor=pointer]:
+                - /url: "#october-28-2025"
+            - listitem [ref=e1840]:
+              - link "ChatGPT Go now available in Brazil" [ref=e1841] [cursor=pointer]:
+                - /url: "#chatgpt-go-now-available-in-brazil"
+            - listitem [ref=e1842]:
+              - link "October 23, 2025" [ref=e1843] [cursor=pointer]:
+                - /url: "#october-23-2025"
+            - listitem [ref=e1844]:
+              - link "Shared projects" [ref=e1845] [cursor=pointer]:
+                - /url: "#shared-projects"
+            - listitem [ref=e1846]:
+              - link "October 22, 2025" [ref=e1847] [cursor=pointer]:
+                - /url: "#october-22-2025"
+            - listitem [ref=e1848]:
+              - link "October 15, 2025" [ref=e1849] [cursor=pointer]:
+                - /url: "#october-15-2025"
+            - listitem [ref=e1850]:
+              - link "ChatGPT can now automatically manage saved memories so it’s even better at remembering what’s important to you." [ref=e1851] [cursor=pointer]:
+                - /url: "#chatgpt-can-now-automatically-manage-saved-memories-so-its-even-better-at-remembering-whats-important-to-you"
+            - listitem [ref=e1852]:
+              - link "October 14, 2025" [ref=e1853] [cursor=pointer]:
+                - /url: "#october-14-2025"
+            - listitem [ref=e1854]:
+              - link "ChatGPT Go expansion" [ref=e1855] [cursor=pointer]:
+                - /url: "#chatgpt-go-expansion"
+            - listitem [ref=e1856]:
+              - link "October 13, 2025" [ref=e1857] [cursor=pointer]:
+                - /url: "#october-13-2025"
+            - listitem [ref=e1858]:
+              - link "Slack connector and app" [ref=e1859] [cursor=pointer]:
+                - /url: "#slack-connector-and-app"
+            - listitem [ref=e1860]:
+              - link "October 9, 2025" [ref=e1861] [cursor=pointer]:
+                - /url: "#october-9-2025"
+            - listitem [ref=e1862]:
+              - link "Adding Notion & Linear synced connectors" [ref=e1863] [cursor=pointer]:
+                - /url: "#adding-notion-linear-synced-connectors"
+            - listitem [ref=e1864]:
+              - link "October 8, 2025" [ref=e1865] [cursor=pointer]:
+                - /url: "#october-8-2025"
+            - listitem [ref=e1866]:
+              - link "ChatGPT Go expansion" [ref=e1867] [cursor=pointer]:
+                - /url: "#chatgpt-go-expansion"
+            - listitem [ref=e1868]:
+              - link "October 6, 2025" [ref=e1869] [cursor=pointer]:
+                - /url: "#october-6-2025"
+            - listitem [ref=e1870]:
+              - link "Updates to Codex" [ref=e1871] [cursor=pointer]:
+                - /url: "#updates-to-codex"
+            - listitem [ref=e1872]:
+              - link "October 3, 2025" [ref=e1873] [cursor=pointer]:
+                - /url: "#october-3-2025"
+            - listitem [ref=e1874]:
+              - link "Updating GPT-5" [ref=e1875] [cursor=pointer]:
+                - /url: "#updating-gpt-5"
+            - listitem [ref=e1876]:
+              - link "September 29, 2025" [ref=e1877] [cursor=pointer]:
+                - /url: "#h_ddcfc706d7"
+            - listitem [ref=e1878]:
+              - link "Parental Controls" [ref=e1879] [cursor=pointer]:
+                - /url: "#h_a357acf5ac"
+            - listitem [ref=e1880]:
+              - link "Introducing Instant Checkout and the Agentic Commerce Protocol" [ref=e1881] [cursor=pointer]:
+                - /url: "#h_50b9ee9002"
+            - listitem [ref=e1882]:
+              - link "Instant Checkout" [ref=e1883] [cursor=pointer]:
+                - /url: "#instant-checkout"
+            - listitem [ref=e1884]:
+              - link "Agentic Commerce Protocol" [ref=e1885] [cursor=pointer]:
+                - /url: "#agentic-commerce-protocol"
+            - listitem [ref=e1886]:
+              - link "September 25, 2025" [ref=e1887] [cursor=pointer]:
+                - /url: "#h_f5b2a9d2d9"
+            - listitem [ref=e1888]:
+              - link "Introducing ChatGPT Pulse for Pro users" [ref=e1889] [cursor=pointer]:
+                - /url: "#h_55c2532a96"
+            - listitem [ref=e1890]:
+              - link "September 22, 2025" [ref=e1891] [cursor=pointer]:
+                - /url: "#h_8d575159f0"
+            - listitem [ref=e1892]:
+              - link "ChatGPT Go now available in Indonesia" [ref=e1893] [cursor=pointer]:
+                - /url: "#h_e04f664a8c"
+            - listitem [ref=e1894]:
+              - link "September 18, 2025" [ref=e1895] [cursor=pointer]:
+                - /url: "#h_25d70048e5"
+            - listitem [ref=e1896]:
+              - link "Voice Updates" [ref=e1897] [cursor=pointer]:
+                - /url: "#h_0b79c9b612"
+            - listitem [ref=e1898]:
+              - link "September 17, 2025" [ref=e1899] [cursor=pointer]:
+                - /url: "#h_342bdf4198"
+            - listitem [ref=e1900]:
+              - link "Toggle thinking time in the message composer" [ref=e1901] [cursor=pointer]:
+                - /url: "#h_31db500f30"
+            - listitem [ref=e1902]:
+              - link "What’s new" [ref=e1903] [cursor=pointer]:
+                - /url: "#whats-new"
+            - listitem [ref=e1904]:
+              - link "How it works" [ref=e1905] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e1906]:
+              - link "Why we’re making this change" [ref=e1907] [cursor=pointer]:
+                - /url: "#why-were-making-this-change"
+            - listitem [ref=e1908]:
+              - link "What’s next" [ref=e1909] [cursor=pointer]:
+                - /url: "#whats-next"
+            - listitem [ref=e1910]:
+              - link "September 16, 2025" [ref=e1911] [cursor=pointer]:
+                - /url: "#h_85256807be"
+            - listitem [ref=e1912]:
+              - link "Improvements to search in ChatGPT" [ref=e1913] [cursor=pointer]:
+                - /url: "#h_adc59d257e"
+            - listitem [ref=e1914]:
+              - link "September 15, 2025" [ref=e1915] [cursor=pointer]:
+                - /url: "#h_aa0a38795e"
+            - listitem [ref=e1916]:
+              - link "Personalization settings are now in Settings" [ref=e1917] [cursor=pointer]:
+                - /url: "#h_027e9df930"
+            - listitem [ref=e1918]:
+              - link "Updates to Codex (Plus/Pro) - Introducing GPT-5-Codex" [ref=e1919] [cursor=pointer]:
+                - /url: "#h_afbf70c9c0"
+            - listitem [ref=e1920]:
+              - link "September 9, 2025" [ref=e1921] [cursor=pointer]:
+                - /url: "#h_5908fc253f"
+            - listitem [ref=e1922]:
+              - link "ChatGPT Voice Update" [ref=e1923] [cursor=pointer]:
+                - /url: "#h_81a147a2c1"
+            - listitem [ref=e1924]:
+              - link "September 4, 2025" [ref=e1925] [cursor=pointer]:
+                - /url: "#h_3fc59dbd59"
+            - listitem [ref=e1926]:
+              - link "Branch conversations on web" [ref=e1927] [cursor=pointer]:
+                - /url: "#h_a0d1605009"
+            - listitem [ref=e1928]:
+              - link "September 3, 2025" [ref=e1929] [cursor=pointer]:
+                - /url: "#h_67d4e675aa"
+            - listitem [ref=e1930]:
+              - link "Projects Now Available on ChatGPT Free Tier" [ref=e1931] [cursor=pointer]:
+                - /url: "#h_982d3e505d"
+            - listitem [ref=e1932]:
+              - link "August 27, 2025" [ref=e1933] [cursor=pointer]:
+                - /url: "#h_70047e37a1"
+            - listitem [ref=e1934]:
+              - link "Updates to Codex (Plus/Pro)" [ref=e1935] [cursor=pointer]:
+                - /url: "#h_dcaac4ec67"
+            - listitem [ref=e1936]:
+              - link "August 22, 2025" [ref=e1937] [cursor=pointer]:
+                - /url: "#h_fb3ac52750"
+            - listitem [ref=e1938]:
+              - link "Project-only memory" [ref=e1939] [cursor=pointer]:
+                - /url: "#h_76ef02082f"
+            - listitem [ref=e1940]:
+              - link "August 18, 2025" [ref=e1941] [cursor=pointer]:
+                - /url: "#h_e1f5670d6b"
+            - listitem [ref=e1942]:
+              - link "Introducing ChatGPT Go" [ref=e1943] [cursor=pointer]:
+                - /url: "#h_22cae6eb9f"
+            - listitem [ref=e1944]:
+              - link "August 15, 2025" [ref=e1945] [cursor=pointer]:
+                - /url: "#h_ffd09f76a2"
+            - listitem [ref=e1946]:
+              - link "GPT-5 Updates" [ref=e1947] [cursor=pointer]:
+                - /url: "#h_6b1adafe01"
+            - listitem [ref=e1948]:
+              - link "August 13, 2025" [ref=e1949] [cursor=pointer]:
+                - /url: "#h_bb6f66afc4"
+            - listitem [ref=e1950]:
+              - link "Gmail, Google Calendar, and Google Contacts Connectors in ChatGPT (Plus)" [ref=e1951] [cursor=pointer]:
+                - /url: "#h_aa2c316cd4"
+            - listitem [ref=e1952]:
+              - link "August 12, 2025" [ref=e1953] [cursor=pointer]:
+                - /url: "#h_bb6f66afc4"
+            - listitem [ref=e1954]:
+              - link "GPT-5 Updates" [ref=e1955] [cursor=pointer]:
+                - /url: "#h_7e1d4f8bf8"
+            - listitem [ref=e1956]:
+              - link "Gmail, Google Calendar, and Google Contacts Connectors in ChatGPT (Pro)" [ref=e1957] [cursor=pointer]:
+                - /url: "#h_4da46a695f"
+            - listitem [ref=e1958]:
+              - link "August 11, 2025" [ref=e1959] [cursor=pointer]:
+                - /url: "#h_12f820b41c"
+            - listitem [ref=e1960]:
+              - link "Additional connectors for Plus and Pro" [ref=e1961] [cursor=pointer]:
+                - /url: "#h_8bd863b7b4"
+            - listitem [ref=e1962]:
+              - link "August 8, 2025" [ref=e1963] [cursor=pointer]:
+                - /url: "#h_f3863e4727"
+            - listitem [ref=e1964]:
+              - link "Image generation update to ChatGPT Free" [ref=e1965] [cursor=pointer]:
+                - /url: "#h_c71943ef9f"
+            - listitem [ref=e1966]:
+              - link "August 7, 2025" [ref=e1967] [cursor=pointer]:
+                - /url: "#h_b246595851"
+            - listitem [ref=e1968]:
+              - link "GPT-5" [ref=e1969] [cursor=pointer]:
+                - /url: "#h_57ea59e232"
+            - listitem [ref=e1970]:
+              - link "Personalities" [ref=e1971] [cursor=pointer]:
+                - /url: "#h_1bd35bc38d"
+            - listitem [ref=e1972]:
+              - link "Accent Colors" [ref=e1973] [cursor=pointer]:
+                - /url: "#h_3700829e81"
+            - listitem [ref=e1974]:
+              - link "ChatGPT Voice updates" [ref=e1975] [cursor=pointer]:
+                - /url: "#h_5bbf1ce31d"
+            - listitem [ref=e1976]:
+              - link "July 29, 2025" [ref=e1977] [cursor=pointer]:
+                - /url: "#h_24bcbfdb6f"
+            - listitem [ref=e1978]:
+              - link "Study Mode" [ref=e1979] [cursor=pointer]:
+                - /url: "#h_c2b3700ded"
+            - listitem [ref=e1980]:
+              - link "July 24, 2025" [ref=e1981] [cursor=pointer]:
+                - /url: "#h_cf8fe5ea51"
+            - listitem [ref=e1982]:
+              - link "Canva and Notion connectors (Pro)" [ref=e1983] [cursor=pointer]:
+                - /url: "#h_4a5fe30df9"
+            - listitem [ref=e1984]:
+              - link "Chat search for HubSpot and custom connectors (MCP) (Pro)" [ref=e1985] [cursor=pointer]:
+                - /url: "#h_9fb0469813"
+            - listitem [ref=e1986]:
+              - link "July 17, 2025" [ref=e1987] [cursor=pointer]:
+                - /url: "#h_227a3a02c0"
+            - listitem [ref=e1988]:
+              - link "Updates to Advanced Voice Mode for Free tier users" [ref=e1989] [cursor=pointer]:
+                - /url: "#h_d66fe4f65b"
+            - listitem [ref=e1990]:
+              - link "July 16, 2025" [ref=e1991] [cursor=pointer]:
+                - /url: "#h_a1ced17590"
+            - listitem [ref=e1992]:
+              - link "Record mode in ChatGPT macOS desktop app (Plus)" [ref=e1993] [cursor=pointer]:
+                - /url: "#h_3bfabcc648"
+            - listitem [ref=e1994]:
+              - link "June 24, 2025" [ref=e1995] [cursor=pointer]:
+                - /url: "#june-24-2025"
+            - listitem [ref=e1996]:
+              - link "Chat search connectors (Pro)" [ref=e1997] [cursor=pointer]:
+                - /url: "#h_fab7aa1610"
+            - listitem [ref=e1998]:
+              - link "Project file limit increased (Pro)" [ref=e1999] [cursor=pointer]:
+                - /url: "#h_f2f58eebf7"
+            - listitem [ref=e2000]:
+              - link "June 18, 2025" [ref=e2001] [cursor=pointer]:
+                - /url: "#h_9e009b6b34"
+            - listitem [ref=e2002]:
+              - link "ChatGPT record mode" [ref=e2003] [cursor=pointer]:
+                - /url: "#h_2e5af39d39"
+            - listitem [ref=e2004]:
+              - link "June 16, 2025" [ref=e2005] [cursor=pointer]:
+                - /url: "#h_dc23b72374"
+            - listitem [ref=e2006]:
+              - link "Expanded Model Support for Custom GPTs" [ref=e2007] [cursor=pointer]:
+                - /url: "#h_6899618be6"
+            - listitem [ref=e2008]:
+              - link "June 13, 2025" [ref=e2009] [cursor=pointer]:
+                - /url: "#h_dc23b72374"
+            - listitem [ref=e2010]:
+              - link "Improvements to the ChatGPT search response quality" [ref=e2011] [cursor=pointer]:
+                - /url: "#h_ad67f97a87"
+            - listitem [ref=e2012]:
+              - link "Improved quality" [ref=e2013] [cursor=pointer]:
+                - /url: "#improved-quality"
+            - listitem [ref=e2014]:
+              - link "Improved search capability and instruction following" [ref=e2015] [cursor=pointer]:
+                - /url: "#improved-search-capability-and-instruction-following"
+            - listitem [ref=e2016]:
+              - link "Known limitations" [ref=e2017] [cursor=pointer]:
+                - /url: "#known-limitations"
+            - listitem [ref=e2018]:
+              - link "June 12, 2025" [ref=e2019] [cursor=pointer]:
+                - /url: "#h_3e3aa13dfa"
+            - listitem [ref=e2020]:
+              - link "Expanded Model Support for Custom GPTs" [ref=e2021] [cursor=pointer]:
+                - /url: "#h_783ac074f6"
+            - listitem [ref=e2022]:
+              - link "Adding More Capabilities to Projects" [ref=e2023] [cursor=pointer]:
+                - /url: "#h_4c7f139c2c"
+            - listitem [ref=e2024]:
+              - link "June 10, 2025" [ref=e2025] [cursor=pointer]:
+                - /url: "#h_db59bda53c"
+            - listitem [ref=e2026]:
+              - link "Today, we're launching OpenAI o3-pro—available now for Pro users in ChatGPT and in our API." [ref=e2027] [cursor=pointer]:
+                - /url: "#h_6c98aab643"
+            - listitem [ref=e2028]:
+              - link "June 7, 2025" [ref=e2029] [cursor=pointer]:
+                - /url: "#h_d1dfd7dad4"
+            - listitem [ref=e2030]:
+              - link "Updates to Advanced Voice Mode for paid users" [ref=e2031] [cursor=pointer]:
+                - /url: "#h_7c3277c4c6"
+            - listitem [ref=e2032]:
+              - link "Known Limitations" [ref=e2033] [cursor=pointer]:
+                - /url: "#known-limitations"
+            - listitem [ref=e2034]:
+              - link "June 4, 2025" [ref=e2035] [cursor=pointer]:
+                - /url: "#h_c0f001f4d0"
+            - listitem [ref=e2036]:
+              - link "Connectors in beta for deep research (Plus, Pro, Team, Enterprise, Edu)" [ref=e2037] [cursor=pointer]:
+                - /url: "#h_e4a3260e98"
+            - listitem [ref=e2038]:
+              - link "Custom connectors via Model Context Protocol (Pro, Team, Enterprise, Edu)" [ref=e2039] [cursor=pointer]:
+                - /url: "#h_f5dbd569f6"
+            - listitem [ref=e2040]:
+              - link "June 3, 2025" [ref=e2041] [cursor=pointer]:
+                - /url: "#h_33666b153b"
+            - listitem [ref=e2042]:
+              - link "Memory is now more comprehensive for Free users" [ref=e2043] [cursor=pointer]:
+                - /url: "#h_252f356852"
+            - listitem [ref=e2044]:
+              - link "Opt‑in reminders" [ref=e2045] [cursor=pointer]:
+                - /url: "#optin-reminders"
+            - listitem [ref=e2046]:
+              - link "May 15, 2025" [ref=e2047] [cursor=pointer]:
+                - /url: "#h_ddb7704ab0"
+            - listitem [ref=e2048]:
+              - link "Dropbox connector for deep research for Plus/Pro/Team" [ref=e2049] [cursor=pointer]:
+                - /url: "#h_69ed24df34"
+            - listitem [ref=e2050]:
+              - link "GitHub connector for deep research" [ref=e2051] [cursor=pointer]:
+                - /url: "#h_3bd25f14ad"
+            - listitem [ref=e2052]:
+              - link "May 14, 2025" [ref=e2053] [cursor=pointer]:
+                - /url: "#h_ddb7704ab0"
+            - listitem [ref=e2054]:
+              - link "Releasing GPT-4.1 in ChatGPT for all paid users" [ref=e2055] [cursor=pointer]:
+                - /url: "#h_abf8995b3f"
+            - listitem [ref=e2056]:
+              - link "Introducing GPT-4.1 mini, replacing GPT-4o mini, in ChatGPT for all users" [ref=e2057] [cursor=pointer]:
+                - /url: "#h_d98772a9ea"
+            - listitem [ref=e2058]:
+              - link "May 12, 2025" [ref=e2059] [cursor=pointer]:
+                - /url: "#h_95bc392649"
+            - listitem [ref=e2060]:
+              - link "Microsoft Sharepoint and OneDrive connector for deep research for Plus/Pro/Team" [ref=e2061] [cursor=pointer]:
+                - /url: "#h_bf4e42247f"
+            - listitem [ref=e2062]:
+              - link "Export Deep Research as PDF for Plus/Pro/Team" [ref=e2063] [cursor=pointer]:
+                - /url: "#h_ba8c5e493c"
+            - listitem [ref=e2064]:
+              - link "May 8, 2025" [ref=e2065] [cursor=pointer]:
+                - /url: "#h_2a285b2c97"
+            - listitem [ref=e2066]:
+              - link "GitHub connector for deep research for Plus/Pro/Team" [ref=e2067] [cursor=pointer]:
+                - /url: "#h_4a35adaaa7"
+            - listitem [ref=e2068]:
+              - link "Enhanced Memory in ChatGPT (including EU) on Plus/Pro" [ref=e2069] [cursor=pointer]:
+                - /url: "#h_b2d3baff8f"
+            - listitem [ref=e2070]:
+              - link "Plan differences" [ref=e2071] [cursor=pointer]:
+                - /url: "#h_e531ab9ed6"
+            - listitem [ref=e2072]:
+              - link "Opt‑in reminders" [ref=e2073] [cursor=pointer]:
+                - /url: "#h_0f0df9f1e6"
+            - listitem [ref=e2074]:
+              - link "May 6, 2025" [ref=e2075] [cursor=pointer]:
+                - /url: "#h_acfe64e63a"
+            - listitem [ref=e2076]:
+              - link "Mobile UI (iOS/Android) changing on Free/Plus/Pro plans" [ref=e2077] [cursor=pointer]:
+                - /url: "#h_06962b5dbb"
+            - listitem [ref=e2078]:
+              - link "May 1, 2025" [ref=e2079] [cursor=pointer]:
+                - /url: "#h_9fbded14bb"
+            - listitem [ref=e2080]:
+              - link "Sunsetting Monday GPT" [ref=e2081] [cursor=pointer]:
+                - /url: "#h_cb831e8531"
+            - listitem [ref=e2082]:
+              - link "April 29, 2025" [ref=e2083] [cursor=pointer]:
+                - /url: "#h_8497c8b1d4"
+            - listitem [ref=e2084]:
+              - link "Updates to GPT-4o" [ref=e2085] [cursor=pointer]:
+                - /url: "#h_34439eda3a"
+            - listitem [ref=e2086]:
+              - link "April 25, 2025" [ref=e2087] [cursor=pointer]:
+                - /url: "#h_c03c420095"
+            - listitem [ref=e2088]:
+              - link "Improvements to GPT-4o" [ref=e2089] [cursor=pointer]:
+                - /url: "#h_d91a021622"
+            - listitem [ref=e2090]:
+              - link "April 16, 2025" [ref=e2091] [cursor=pointer]:
+                - /url: "#h_40089b1bfc"
+            - listitem [ref=e2092]:
+              - link "o3 and o4-mini in ChatGPT" [ref=e2093] [cursor=pointer]:
+                - /url: "#h_0f7524107c"
+            - listitem [ref=e2094]:
+              - link "Memory with Search" [ref=e2095] [cursor=pointer]:
+                - /url: "#h_91933c7e57"
+            - listitem [ref=e2096]:
+              - link "April 15, 2025" [ref=e2097] [cursor=pointer]:
+                - /url: "#h_707801a904"
+            - listitem [ref=e2098]:
+              - link "ChatGPT Image Library" [ref=e2099] [cursor=pointer]:
+                - /url: "#h_51475eb129"
+            - listitem [ref=e2100]:
+              - link "April 10, 2025" [ref=e2101] [cursor=pointer]:
+                - /url: "#h_cbb2e4f019"
+            - listitem [ref=e2102]:
+              - link "Sunsetting GPT‑4 in ChatGPT" [ref=e2103] [cursor=pointer]:
+                - /url: "#h_a22eaafec2"
+            - listitem [ref=e2104]:
+              - link "March 27, 2025" [ref=e2105] [cursor=pointer]:
+                - /url: "#h_10dcfa2a17"
+            - listitem [ref=e2106]:
+              - link "Improvements to GPT-4o" [ref=e2107] [cursor=pointer]:
+                - /url: "#improvements-to-gpt-4o"
+            - listitem [ref=e2108]:
+              - link "Smarter problem-solving in STEM and coding:" [ref=e2109] [cursor=pointer]:
+                - /url: "#smarter-problem-solving-in-stem-and-coding"
+            - listitem [ref=e2110]:
+              - link "Enhanced instruction-following and formatting accuracy:" [ref=e2111] [cursor=pointer]:
+                - /url: "#enhanced-instruction-following-and-formatting-accuracy"
+            - listitem [ref=e2112]:
+              - link "“Fuzzy” improvements:" [ref=e2113] [cursor=pointer]:
+                - /url: "#fuzzy-improvements"
+            - listitem [ref=e2114]:
+              - link "March 18, 2025" [ref=e2115] [cursor=pointer]:
+                - /url: "#h_70ce7542eb"
+            - listitem [ref=e2116]:
+              - link "Web and the Windows desktop app" [ref=e2117] [cursor=pointer]:
+                - /url: "#h_556fc71a28"
+            - listitem [ref=e2118]:
+              - link "Android App" [ref=e2119] [cursor=pointer]:
+                - /url: "#h_4684e4f3d2"
+            - listitem [ref=e2120]:
+              - link "iOS App" [ref=e2121] [cursor=pointer]:
+                - /url: "#h_12a3315bc9"
+            - listitem [ref=e2122]:
+              - link "February 28, 2025" [ref=e2123] [cursor=pointer]:
+                - /url: "#h_58c020a59f"
+            - listitem [ref=e2124]:
+              - link "February 21, 2025" [ref=e2125] [cursor=pointer]:
+                - /url: "#h_375aa0aec5"
+            - listitem [ref=e2126]:
+              - link "February 14, 2025" [ref=e2127] [cursor=pointer]:
+                - /url: "#h_0776d514e7"
+            - listitem [ref=e2128]:
+              - link "February 6, 2025" [ref=e2129] [cursor=pointer]:
+                - /url: "#february-6-2025"
+            - listitem [ref=e2130]:
+              - link "Canvas sharing" [ref=e2131] [cursor=pointer]:
+                - /url: "#h_54c46b74c5"
+            - listitem [ref=e2132]:
+              - link "January 17, 2025" [ref=e2133] [cursor=pointer]:
+                - /url: "#january-17-2025"
+            - listitem [ref=e2134]:
+              - link "More personalization in Custom Instructions" [ref=e2135] [cursor=pointer]:
+                - /url: "#h_407213a48f"
+            - listitem [ref=e2136]:
+              - link "January 15, 2025" [ref=e2137] [cursor=pointer]:
+                - /url: "#h_710fb9ad37"
+            - listitem [ref=e2138]:
+              - link "Import from Chat into Canvas" [ref=e2139] [cursor=pointer]:
+                - /url: "#h_db21108595"
+            - listitem [ref=e2140]:
+              - link "January 14, 2025" [ref=e2141] [cursor=pointer]:
+                - /url: "#h_c16236d0f4"
+            - listitem [ref=e2142]:
+              - link "Scheduled tasks in ChatGPT" [ref=e2143] [cursor=pointer]:
+                - /url: "#h_4b6da11720"
+            - listitem [ref=e2144]:
+              - link "December 13, 2024" [ref=e2145] [cursor=pointer]:
+                - /url: "#h_d673004b21"
+            - listitem [ref=e2146]:
+              - link "Projects in ChatGPT" [ref=e2147] [cursor=pointer]:
+                - /url: "#h_25fd60fd15"
+            - listitem [ref=e2148]:
+              - link "Dec 12, 2024" [ref=e2149] [cursor=pointer]:
+                - /url: "#h_97cfc3cc7b"
+            - listitem [ref=e2150]:
+              - link "Santa Voice and Video and Screen Share in Voice Chats" [ref=e2151] [cursor=pointer]:
+                - /url: "#h_45b0e6f55e"
+            - listitem [ref=e2152]:
+              - link "Dec 10, 2024" [ref=e2153] [cursor=pointer]:
+                - /url: "#h_741ff7bb70"
+            - listitem [ref=e2154]:
+              - link "Canvas" [ref=e2155] [cursor=pointer]:
+                - /url: "#h_72c532e4b9"
+            - listitem [ref=e2156]:
+              - link "Nov 22, 2024" [ref=e2157] [cursor=pointer]:
+                - /url: "#h_4082a8d7d4"
+            - listitem [ref=e2158]:
+              - link "Updates to the ChatGPT Web experience" [ref=e2159] [cursor=pointer]:
+                - /url: "#h_60c888bb1b"
+            - listitem [ref=e2160]:
+              - link "Sidebar redesign" [ref=e2161] [cursor=pointer]:
+                - /url: "#h_8b3d2f5c4b"
+            - listitem [ref=e2162]:
+              - link "Other updates for ChatGPT on Web" [ref=e2163] [cursor=pointer]:
+                - /url: "#h_c515610a94"
+            - listitem [ref=e2164]:
+              - link "Improved Mobile Web Experience" [ref=e2165] [cursor=pointer]:
+                - /url: "#h_d430f75e94"
+            - listitem [ref=e2166]:
+              - link "Nov 19, 2024" [ref=e2167] [cursor=pointer]:
+                - /url: "#h_772c9094ce"
+            - listitem [ref=e2168]:
+              - link "Advanced Voice for ChatGPT Web" [ref=e2169] [cursor=pointer]:
+                - /url: "#h_e9c0cda552"
+            - listitem [ref=e2170]:
+              - link "Aug 8, 2024" [ref=e2171] [cursor=pointer]:
+                - /url: "#h_887d23daa0"
+            - listitem [ref=e2172]:
+              - link "DALL·E 3 for ChatGPT Free users" [ref=e2173] [cursor=pointer]:
+                - /url: "#h_de294f0730"
+            - listitem [ref=e2174]:
+              - link "July 18, 2024" [ref=e2175] [cursor=pointer]:
+                - /url: "#h_16a383ac68"
+            - listitem [ref=e2176]:
+              - link "Introducing GPT-4o mini" [ref=e2177] [cursor=pointer]:
+                - /url: "#h_5ce52d9f14"
+            - listitem [ref=e2178]:
+              - link "May 16, 2024" [ref=e2179] [cursor=pointer]:
+                - /url: "#h_dc3149dd8f"
+            - listitem [ref=e2180]:
+              - link "Improvements to data analysis in ChatGPT" [ref=e2181] [cursor=pointer]:
+                - /url: "#h_78b6147826"
+            - listitem [ref=e2182]:
+              - link "May 13, 2024" [ref=e2183] [cursor=pointer]:
+                - /url: "#h_f78ba9fcea"
+            - listitem [ref=e2184]:
+              - link "Introducing GPT-4o" [ref=e2185] [cursor=pointer]:
+                - /url: "#h_3cb68a1d55"
+            - listitem [ref=e2186]:
+              - link "Apr 29, 2024" [ref=e2187] [cursor=pointer]:
+                - /url: "#h_7d632a28d8"
+            - listitem [ref=e2188]:
+              - link "Memory is now available to Plus users" [ref=e2189] [cursor=pointer]:
+                - /url: "#h_d8b5710502"
+            - listitem [ref=e2190]:
+              - link "Apr 1, 2024" [ref=e2191] [cursor=pointer]:
+                - /url: "#h_94cc122322"
+            - listitem [ref=e2192]:
+              - link "Start using ChatGPT instantly" [ref=e2193] [cursor=pointer]:
+                - /url: "#h_126f2fa257"
+            - listitem [ref=e2194]:
+              - link "Feb 13, 2024" [ref=e2195] [cursor=pointer]:
+                - /url: "#h_bb44cfbba6"
+            - listitem [ref=e2196]:
+              - link "Memory and new controls for ChatGPT" [ref=e2197] [cursor=pointer]:
+                - /url: "#h_30ceb8d7ba"
+            - listitem [ref=e2198]:
+              - link "Jan 10, 2024" [ref=e2199] [cursor=pointer]:
+                - /url: "#h_8f084b7228"
+            - listitem [ref=e2200]:
+              - link "Introducing the GPT Store and ChatGPT Team plan" [ref=e2201] [cursor=pointer]:
+                - /url: "#h_a94a35a825"
+            - listitem [ref=e2202]:
+              - link "November 21, 2023" [ref=e2203] [cursor=pointer]:
+                - /url: "#h_8a65fe3dbc"
+            - listitem [ref=e2204]:
+              - link "ChatGPT with voice is available to all users" [ref=e2205] [cursor=pointer]:
+                - /url: "#h_3fb903d2d0"
+            - listitem [ref=e2206]:
+              - link "November 6, 2023" [ref=e2207] [cursor=pointer]:
+                - /url: "#h_0ca140a107"
+            - listitem [ref=e2208]:
+              - link "Introducing GPTs" [ref=e2209] [cursor=pointer]:
+                - /url: "#h_61daed3949"
+            - listitem [ref=e2210]:
+              - link "October 17, 2023" [ref=e2211] [cursor=pointer]:
+                - /url: "#h_7b4cec3184"
+            - listitem [ref=e2212]:
+              - link "Browsing is now out of beta" [ref=e2213] [cursor=pointer]:
+                - /url: "#h_6401b89b6b"
+            - listitem [ref=e2214]:
+              - link "October 16, 2023" [ref=e2215] [cursor=pointer]:
+                - /url: "#h_8670d7da97"
+            - listitem [ref=e2216]:
+              - link "DALL·E 3 is now rolling out in beta" [ref=e2217] [cursor=pointer]:
+                - /url: "#h_d94d1efdaf"
+            - listitem [ref=e2218]:
+              - link "September 27, 2023" [ref=e2219] [cursor=pointer]:
+                - /url: "#h_805a67823e"
+            - listitem [ref=e2220]:
+              - link "Browsing is rolling back out to Plus users" [ref=e2221] [cursor=pointer]:
+                - /url: "#h_4799933861"
+            - listitem [ref=e2222]:
+              - link "September 25, 2023" [ref=e2223] [cursor=pointer]:
+                - /url: "#h_6deaf34f13"
+            - listitem [ref=e2224]:
+              - link "New voice and image capabilities in ChatGPT" [ref=e2225] [cursor=pointer]:
+                - /url: "#h_e3a2ee7903"
+            - listitem [ref=e2226]:
+              - link "September 11, 2023" [ref=e2227] [cursor=pointer]:
+                - /url: "#h_9ae4c7960a"
+            - listitem [ref=e2228]:
+              - link "ChatGPT language support - Alpha on web" [ref=e2229] [cursor=pointer]:
+                - /url: "#h_2235297035"
+            - listitem [ref=e2230]:
+              - link "August 28, 2023" [ref=e2231] [cursor=pointer]:
+                - /url: "#h_1b037d6892"
+            - listitem [ref=e2232]:
+              - link "Introducing ChatGPT Enterprise" [ref=e2233] [cursor=pointer]:
+                - /url: "#h_9c2276ca4e"
+            - listitem [ref=e2234]:
+              - link "August 21, 2023" [ref=e2235] [cursor=pointer]:
+                - /url: "#h_19cebd4cbc"
+            - listitem [ref=e2236]:
+              - link "Custom instructions are now available to users in the EU & UK" [ref=e2237] [cursor=pointer]:
+                - /url: "#h_e5d13591f0"
+            - listitem [ref=e2238]:
+              - link "August 9, 2023" [ref=e2239] [cursor=pointer]:
+                - /url: "#h_fefd39b6b2"
+            - listitem [ref=e2240]:
+              - link "Custom instructions are now available to free users" [ref=e2241] [cursor=pointer]:
+                - /url: "#h_88eefa0552"
+            - listitem [ref=e2242]:
+              - link "August 3, 2023" [ref=e2243] [cursor=pointer]:
+                - /url: "#h_9776d9caa7"
+            - listitem [ref=e2244]:
+              - link "Updates to ChatGPT" [ref=e2245] [cursor=pointer]:
+                - /url: "#h_c761ea2ff1"
+            - listitem [ref=e2246]:
+              - link "July 25, 2023" [ref=e2247] [cursor=pointer]:
+                - /url: "#h_6198f05897"
+            - listitem [ref=e2248]:
+              - link "Introducing the ChatGPT app for Android" [ref=e2249] [cursor=pointer]:
+                - /url: "#h_74577ea413"
+            - listitem [ref=e2250]:
+              - link "July 20, 2023" [ref=e2251] [cursor=pointer]:
+                - /url: "#h_e19f92aa23"
+            - listitem [ref=e2252]:
+              - link "Custom instructions are rolling out in beta" [ref=e2253] [cursor=pointer]:
+                - /url: "#h_647a58ba8a"
+            - listitem [ref=e2254]:
+              - link "July 19, 2023" [ref=e2255] [cursor=pointer]:
+                - /url: "#h_4bba4579d2"
+            - listitem [ref=e2256]:
+              - link "Higher message limits for GPT-4" [ref=e2257] [cursor=pointer]:
+                - /url: "#h_e65b44764b"
+            - listitem [ref=e2258]:
+              - link "July 6, 2023" [ref=e2259] [cursor=pointer]:
+                - /url: "#h_94bd91c819"
+            - listitem [ref=e2260]:
+              - link "Code interpreter is now rolling out in beta on web" [ref=e2261] [cursor=pointer]:
+                - /url: "#h_398fb5df55"
+            - listitem [ref=e2262]:
+              - link "July 3, 2023" [ref=e2263] [cursor=pointer]:
+                - /url: "#h_ba53776807"
+            - listitem [ref=e2264]:
+              - link "Browsing is temporarily disabled" [ref=e2265] [cursor=pointer]:
+                - /url: "#h_91d1350d34"
+            - listitem [ref=e2266]:
+              - link "June 22, 2023" [ref=e2267] [cursor=pointer]:
+                - /url: "#h_ec6c3400a5"
+            - listitem [ref=e2268]:
+              - link "Browsing and search on mobile" [ref=e2269] [cursor=pointer]:
+                - /url: "#h_b444a710ea"
+            - listitem [ref=e2270]:
+              - link "May 24, 2023" [ref=e2271] [cursor=pointer]:
+                - /url: "#h_291e1105ff"
+            - listitem [ref=e2272]:
+              - link "iOS app available in more countries, shared links in alpha, Bing Plugin, disable history on iOS" [ref=e2273] [cursor=pointer]:
+                - /url: "#h_461971b989"
+            - listitem [ref=e2274]:
+              - link "May 12, 2023" [ref=e2275] [cursor=pointer]:
+                - /url: "#h_a954e45f02"
+            - listitem [ref=e2276]:
+              - link "Web browsing and Plugins are now rolling out in beta" [ref=e2277] [cursor=pointer]:
+                - /url: "#h_9894d7b0a4"
+            - listitem [ref=e2278]:
+              - link "May 3, 2023" [ref=e2279] [cursor=pointer]:
+                - /url: "#h_5a840e423b"
+            - listitem [ref=e2280]:
+              - link "Updates to ChatGPT" [ref=e2281] [cursor=pointer]:
+                - /url: "#h_2818247821"
+            - listitem [ref=e2282]:
+              - link "March 23, 2023" [ref=e2283] [cursor=pointer]:
+                - /url: "#h_25947587df"
+            - listitem [ref=e2284]:
+              - link "Introducing plugins in ChatGPT" [ref=e2285] [cursor=pointer]:
+                - /url: "#h_98b0bcf5a4"
+            - listitem [ref=e2286]:
+              - link "March 14, 2023" [ref=e2287] [cursor=pointer]:
+                - /url: "#h_814575eff8"
+            - listitem [ref=e2288]:
+              - link "Announcing GPT-4 in ChatGPT" [ref=e2289] [cursor=pointer]:
+                - /url: "#h_0eb2784e11"
+            - listitem [ref=e2290]:
+              - link "Feb 13, 2023" [ref=e2291] [cursor=pointer]:
+                - /url: "#h_cf1475b532"
+            - listitem [ref=e2292]:
+              - link "Updates to ChatGPT" [ref=e2293] [cursor=pointer]:
+                - /url: "#h_71fed9b7cb"
+            - listitem [ref=e2294]:
+              - link "Feb 9 2023" [ref=e2295] [cursor=pointer]:
+                - /url: "#h_72f2be58d5"
+            - listitem [ref=e2296]:
+              - link "Introducing ChatGPT Plus" [ref=e2297] [cursor=pointer]:
+                - /url: "#h_0be048126c"
+            - listitem [ref=e2298]:
+              - link "Jan 30, 2023" [ref=e2299] [cursor=pointer]:
+                - /url: "#h_f452fb96cc"
+            - listitem [ref=e2300]:
+              - link "Factuality and mathematical improvements" [ref=e2301] [cursor=pointer]:
+                - /url: "#h_f46bd1d771"
+            - listitem [ref=e2302]:
+              - link "Jan 9, 2023" [ref=e2303] [cursor=pointer]:
+                - /url: "#h_bd3d8ef1eb"
+            - listitem [ref=e2304]:
+              - link "Updates to ChatGPT" [ref=e2305] [cursor=pointer]:
+                - /url: "#h_b1c7f24762"
+            - listitem [ref=e2306]:
+              - link "Dec 15, 2022" [ref=e2307] [cursor=pointer]:
+                - /url: "#h_e18c6a1b3a"
+            - listitem [ref=e2308]:
+              - link "Performance updates to ChatGPT" [ref=e2309] [cursor=pointer]:
+                - /url: "#h_026e1e86a4"
+    - contentinfo [ref=e2310]:
+      - img "OpenAI logo" [ref=e2311]
+      - navigation [ref=e2312]:
+        - link "ChatGPT" [ref=e2313] [cursor=pointer]:
+          - /url: https://chatgpt.com
+        - link "API" [ref=e2314] [cursor=pointer]:
+          - /url: https://platform.openai.com/docs/
+        - link "Service Status" [ref=e2315] [cursor=pointer]:
+          - /url: https://status.openai.com
+        - button "Open cookie preferences dialog" [ref=e2316] [cursor=pointer]: Cookie Preferences
+  - button "Open chat" [ref=e2317] [cursor=pointer]:
+    - img [ref=e2318]
