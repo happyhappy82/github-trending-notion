@@ -2,7 +2,7 @@ name: Fetch Anthropic → Notion
 
 on:
   schedule:
-    - cron: "30 7 * * *"  # 매일 UTC 07:30 (KST 16:30)
+    - cron: "0 * * * *"  # 매시 정각
   workflow_dispatch:
 
 jobs:

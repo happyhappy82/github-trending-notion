@@ -2,7 +2,7 @@ name: Fetch Meta AI → Notion
 
 on:
   schedule:
-    - cron: "45 7 * * *"  # 매일 UTC 07:45 (KST 16:45)
+    - cron: "20 * * * *"  # 매시 20분
   workflow_dispatch:
 
 jobs:

@@ -2,7 +2,7 @@ name: Fetch Ben's Bites → Notion
 
 on:
   schedule:
-    - cron: "30 8 * * *"  # 매일 UTC 08:30 (KST 17:30)
+    - cron: "10 * * * *"  # 매시 10분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

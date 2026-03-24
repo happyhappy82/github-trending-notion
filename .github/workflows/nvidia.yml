@@ -2,7 +2,7 @@ name: Fetch NVIDIA → Notion
 
 on:
   schedule:
-    - cron: "30 8 * * *"  # 매일 UTC 08:30 (KST 17:30)
+    - cron: "28 * * * *"  # 매시 28분
   workflow_dispatch:
 
 jobs:

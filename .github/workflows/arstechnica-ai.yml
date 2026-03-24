@@ -2,7 +2,7 @@ name: Fetch Ars Technica AI → Notion
 
 on:
   schedule:
-    - cron: "40 7 * * *"  # 매일 UTC 07:40 (KST 16:40)
+    - cron: "4 * * * *"  # 매시 4분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

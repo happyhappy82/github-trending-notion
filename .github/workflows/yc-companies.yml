@@ -2,7 +2,7 @@ name: Fetch YC Companies → Notion
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # 매일 UTC 09:00 (KST 18:00)
+    - cron: "50 * * * *"  # 매시 50분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

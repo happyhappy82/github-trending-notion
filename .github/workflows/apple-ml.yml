@@ -2,7 +2,7 @@ name: Fetch Apple ML → Notion
 
 on:
   schedule:
-    - cron: "15 9 * * *"  # 매일 UTC 09:15 (KST 18:15)
+    - cron: "2 * * * *"  # 매시 2분
   workflow_dispatch:
 
 jobs:

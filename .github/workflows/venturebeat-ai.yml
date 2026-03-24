@@ -2,7 +2,7 @@ name: Fetch VentureBeat AI → Notion
 
 on:
   schedule:
-    - cron: "20 7 * * *"  # 매일 UTC 07:20 (KST 16:20)
+    - cron: "44 * * * *"  # 매시 44분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

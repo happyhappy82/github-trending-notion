@@ -2,7 +2,7 @@ name: Fetch The Verge AI → Notion
 
 on:
   schedule:
-    - cron: "10 7 * * *"  # 매일 UTC 07:10 (KST 16:10)
+    - cron: "46 * * * *"  # 매시 46분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

@@ -2,7 +2,7 @@ name: Fetch arXiv AI → Notion
 
 on:
   schedule:
-    - cron: "10 9 * * *"  # 매일 UTC 09:10 (KST 18:10)
+    - cron: "6 * * * *"  # 매시 6분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

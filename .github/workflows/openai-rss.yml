@@ -2,7 +2,7 @@ name: Fetch OpenAI RSS Feeds → Notion
 
 on:
   schedule:
-    - cron: "30 7 * * *"  # 매일 UTC 07:30 (KST 16:30)
+    - cron: "32 * * * *"  # 매시 32분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

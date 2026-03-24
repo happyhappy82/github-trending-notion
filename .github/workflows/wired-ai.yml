@@ -2,7 +2,7 @@ name: Fetch Wired AI → Notion
 
 on:
   schedule:
-    - cron: "50 7 * * *"  # 매일 UTC 07:50 (KST 16:50)
+    - cron: "48 * * * *"  # 매시 48분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

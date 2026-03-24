@@ -2,7 +2,7 @@ name: Fetch AWS ML → Notion
 
 on:
   schedule:
-    - cron: "30 9 * * *"  # 매일 UTC 09:30 (KST 18:30)
+    - cron: "8 * * * *"  # 매시 8분
   workflow_dispatch:
 
 jobs:

@@ -2,7 +2,7 @@ name: Fetch Microsoft AI → Notion
 
 on:
   schedule:
-    - cron: "15 8 * * *"  # 매일 UTC 08:15 (KST 17:15)
+    - cron: "22 * * * *"  # 매시 22분
   workflow_dispatch:
 
 jobs:

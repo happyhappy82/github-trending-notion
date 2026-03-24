@@ -2,7 +2,7 @@ name: Fetch OpenAI Blog → Notion
 
 on:
   schedule:
-    - cron: "20 9 * * *"  # 매일 UTC 09:20 (KST 18:20)
+    - cron: "30 * * * *"  # 매시 30분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

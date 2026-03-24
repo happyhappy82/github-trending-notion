@@ -2,7 +2,7 @@ name: Fetch Google AI → Notion
 
 on:
   schedule:
-    - cron: "15 7 * * *"  # 매일 UTC 07:15 (KST 16:15)
+    - cron: "14 * * * *"  # 매시 14분
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:
