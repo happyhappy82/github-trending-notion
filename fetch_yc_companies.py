@@ -138,7 +138,7 @@ def save_to_notion(companies):
         )
         # company["title"]에는 "Name - one_liner" 형식이 들어있음
         description = company["title"].split(" - ", 1)[1] if " - " in company["title"] else ""
-        write_article(page["id"], company["name"], description, "Y Combinator")
+        write_article(page["id"], company["name"], description, "Y Combinator", url=company["url"])
         seen.add(company["name"])
         print(f"  ✅ {company['title']}")
 

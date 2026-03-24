@@ -171,7 +171,7 @@ def save_to_notion(releases):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
-        write_article(page["id"], release["title"], "", "Model Releases")
+        write_article(page["id"], release["title"], "", "Model Releases", url=release["url"])
         seen.add(release["title"])
         print(f"  ✅ {release['title']} ({release['date']})")
 

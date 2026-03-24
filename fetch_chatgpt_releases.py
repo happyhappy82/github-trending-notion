@@ -160,7 +160,7 @@ def save_to_notion(releases):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
-        write_article(page["id"], release["title"], "", "ChatGPT Releases")
+        write_article(page["id"], release["title"], "", "ChatGPT Releases", url=release["url"])
         seen.add(release["title"])
         print(f"  ✅ {release['title']} ({release['date']})")
 

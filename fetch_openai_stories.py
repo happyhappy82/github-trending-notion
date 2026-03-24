@@ -172,7 +172,7 @@ def save_to_notion(stories):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
-        write_article(page["id"], story["title"], story.get("category", ""), "OpenAI Stories")
+        write_article(page["id"], story["title"], story.get("category", ""), "OpenAI Stories", url=story["url"])
         seen.add(story["url"])
         print(f"  ✅ {story['title']} ({story['category']}, {story['date']})")
 

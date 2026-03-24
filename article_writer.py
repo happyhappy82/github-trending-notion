@@ -8,6 +8,8 @@ import json
 import os
 import re
 
+import requests as http_requests
+from bs4 import BeautifulSoup
 from google import genai
 from notion_client import Client
 
@@ -25,7 +27,43 @@ def _ensure_configured():
     return True
 
 
-def write_article(notion_page_id, title, description="", source_name=""):
+def _fetch_article_content(url):
+    """URL에서 기사 본문 텍스트를 추출한다."""
+    if not url:
+        return ""
+    try:
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
+        }
+        resp = http_requests.get(url, headers=headers, timeout=15)
+        resp.raise_for_status()
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
+            tag.decompose()
+
+        article = soup.find("article") or soup.find("main") or soup.body
+        if not article:
+            return ""
+
+        paragraphs = []
+        for p in article.find_all("p"):
+            text = p.get_text(strip=True)
+            if len(text) > 30:
+                paragraphs.append(text)
+
+        content = "\n\n".join(paragraphs)
+        return content[:5000]
+    except Exception as e:
+        print(f"  ⚠️ 원문 가져오기 실패: {e}")
+        return ""
+
+
+def write_article(notion_page_id, title, description="", source_name="", url=""):
     """기사를 생성하고 Notion 하부 페이지로 저장하는 통합 함수.
 
     Args:
@@ -33,13 +71,15 @@ def write_article(notion_page_id, title, description="", source_name=""):
         title: 원문 제목 (영어)
         description: 원문 요약/설명 (영어)
         source_name: 출처 이름 (예: "Product Hunt", "Hacker News")
+        url: 원문 URL
     """
     if not _ensure_configured():
         print("  ⚠️ GEMINI_API_KEY 미설정, 기사 생성 건너뜀")
         return False
 
     try:
-        article = _generate_article(title, description, source_name)
+        original_content = _fetch_article_content(url)
+        article = _generate_article(title, description, source_name, original_content)
         if article:
             _save_to_notion(notion_page_id, article)
             print(f"  📝 기사 생성: {article['headline']}")
@@ -49,8 +89,12 @@ def write_article(notion_page_id, title, description="", source_name=""):
     return False
 
 
-def _generate_article(title, description, source_name):
+def _generate_article(title, description, source_name, original_content=""):
     """Gemini API로 한국어 뉴스 기사를 생성한다."""
+    content_section = f"""
+[원문 내용]
+{original_content}""" if original_content else ""
+
     prompt = f"""당신은 한국 최고 수준의 AI/기술 전문 뉴스 기자입니다. 아래 영문 뉴스 정보를 바탕으로 심층 한국어 뉴스 기사를 작성하세요.
 
 [원문 제목]
@@ -58,7 +102,7 @@ def _generate_article(title, description, source_name):
 
 [원문 요약]
 {description or '(없음)'}
-
+{content_section}
 [출처]
 {source_name}
 

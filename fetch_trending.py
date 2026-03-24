@@ -140,7 +140,7 @@ def save_to_notion(repos):
         }
 
         page = notion.pages.create(parent={"database_id": database_id}, properties=properties)
-        write_article(page["id"], repo["repo"], repo.get("description", ""), "GitHub Trending")
+        write_article(page["id"], repo["repo"], repo.get("description", ""), "GitHub Trending", url=repo["url"])
         seen.add(repo["url"])
         print(f"  ✅ {repo['repo']} ({repo['stars']}⭐, +{repo['stars_today']} today)")
 

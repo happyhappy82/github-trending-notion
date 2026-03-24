@@ -145,7 +145,7 @@ if __name__ == "__main__":
                     "소스유형": {"select": {"name": feed["source_type"]}},
                 }
                 page = notion.pages.create(parent={"database_id": database_id}, properties=properties)
-                write_article(page["id"], item["title"], item.get("description", ""), feed["source_type"])
+                write_article(page["id"], item["title"], item.get("description", ""), feed["source_type"], url=item["url"])
                 seen.add(item["url"])
                 print(f"  ✅ {item['title']} ({item['date']})")
         except Exception as e:
