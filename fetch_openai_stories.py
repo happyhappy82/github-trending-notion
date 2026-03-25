@@ -13,6 +13,7 @@ from pathlib import Path
 import requests as http_requests
 from playwright.sync_api import sync_playwright
 from notion_client import Client
+from scraper_utils import fetch_article_text, text_to_notion_blocks
 
 OPENAI_STORIES_URL = "https://openai.com/ko-KR/stories/"
 KST = timezone(timedelta(hours=9))
@@ -168,8 +169,10 @@ def save_to_notion(stories):
             "URL": {"url": story["url"]},
             "소스유형": {"select": {"name": "OpenAI Stories"}},
         }
+        article_text = fetch_article_text(story["url"])
+        children = text_to_notion_blocks(article_text)
         page = notion.pages.create(
-            parent={"database_id": database_id}, properties=properties
+            parent={"database_id": database_id}, properties=properties, children=children
         )
         seen.add(story["url"])
         print(f"  ✅ {story['title']} ({story['category']}, {story['date']})")
