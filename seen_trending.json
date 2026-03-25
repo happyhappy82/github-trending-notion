@@ -1,4 +1,5 @@
 [
+  "https://github.com/BerriAI/litellm",
   "https://github.com/Crosstalk-Solutions/project-nomad",
   "https://github.com/FujiwaraChoki/MoneyPrinterV2",
   "https://github.com/HKUDS/LightRAG",
@@ -24,5 +25,6 @@
   "https://github.com/supermemoryai/supermemory",
   "https://github.com/systemd/systemd",
   "https://github.com/tinygrad/tinygrad",
+  "https://github.com/usestrix/strix",
   "https://github.com/vxcontrol/pentagi"
 ]
