@@ -10,7 +10,6 @@ from pathlib import Path
 
 import requests as http_requests
 from notion_client import Client
-from article_writer import write_article
 
 KST = timezone(timedelta(hours=9))
 SEEN_FILE = Path(__file__).parent / "seen_yc_companies.json"
@@ -136,9 +135,6 @@ def save_to_notion(companies):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
-        # company["title"]에는 "Name - one_liner" 형식이 들어있음
-        description = company["title"].split(" - ", 1)[1] if " - " in company["title"] else ""
-        write_article(page["id"], company["name"], description, "Y Combinator", url=company["url"])
         seen.add(company["name"])
         print(f"  ✅ {company['title']}")
 

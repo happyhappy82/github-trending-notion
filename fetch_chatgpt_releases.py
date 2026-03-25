@@ -13,7 +13,6 @@ from pathlib import Path
 import requests as http_requests
 from playwright.sync_api import sync_playwright
 from notion_client import Client
-from article_writer import write_article
 
 RELEASE_NOTES_URL = "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
 KST = timezone(timedelta(hours=9))
@@ -160,7 +159,6 @@ def save_to_notion(releases):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
-        write_article(page["id"], release["title"], "", "ChatGPT Releases", url=release["url"])
         seen.add(release["title"])
         print(f"  ✅ {release['title']} ({release['date']})")
 

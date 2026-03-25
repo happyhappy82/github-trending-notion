@@ -13,7 +13,6 @@ from pathlib import Path
 
 import requests as http_requests
 from notion_client import Client
-from article_writer import write_article
 
 KST = timezone(timedelta(hours=9))
 _today = datetime.now(timezone.utc).date()
@@ -146,7 +145,6 @@ def save_to_notion(items, source_type):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
-        write_article(page["id"], item["title"], item.get("description", ""), source_type, url=item["url"])
         seen.add(item["url"])
         print(f"  ✅ {item['title']} ({item['date']})")
 

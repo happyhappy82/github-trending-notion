@@ -9,7 +9,6 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from notion_client import Client
-from article_writer import write_article
 
 GITHUB_TRENDING_URL = "https://github.com/trending"
 KST = timezone(timedelta(hours=9))
@@ -140,7 +139,6 @@ def save_to_notion(repos):
         }
 
         page = notion.pages.create(parent={"database_id": database_id}, properties=properties)
-        write_article(page["id"], repo["repo"], repo.get("description", ""), "GitHub Trending", url=repo["url"])
         seen.add(repo["url"])
         print(f"  ✅ {repo['repo']} ({repo['stars']}⭐, +{repo['stars_today']} today)")
 
