@@ -9,7 +9,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from notion_client import Client
-from scraper_utils import text_to_notion_blocks
+from scraper_utils import fetch_article_text, save_original_subpage
 
 GITHUB_TRENDING_URL = "https://github.com/trending"
 KST = timezone(timedelta(hours=9))
@@ -139,8 +139,9 @@ def save_to_notion(repos):
             "소스유형": {"select": {"name": "GitHub Trending"}},
         }
 
-        children = text_to_notion_blocks(repo["description"])
-        page = notion.pages.create(parent={"database_id": database_id}, properties=properties, children=children)
+        article_text = fetch_article_text(repo["url"])
+        page = notion.pages.create(parent={"database_id": database_id}, properties=properties)
+        save_original_subpage(notion, page["id"], repo["repo"], article_text, repo["url"], "GitHub Trending")
         seen.add(repo["url"])
         print(f"  ✅ {repo['repo']} ({repo['stars']}⭐, +{repo['stars_today']} today)")
 

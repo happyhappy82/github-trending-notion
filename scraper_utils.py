@@ -42,3 +42,45 @@ def text_to_notion_blocks(text):
             })
 
     return blocks
+
+
+def save_original_subpage(notion, parent_page_id, title, text, url, source_name):
+    """원문을 노션 하부 페이지(child page)로 저장한다."""
+    children = []
+
+    # 출처 정보
+    children.append({
+        "object": "block",
+        "type": "callout",
+        "callout": {
+            "icon": {"type": "emoji", "emoji": "🔗"},
+            "rich_text": [{"type": "text", "text": {"content": f"출처: {source_name}\nURL: {url or '없음'}"}}],
+        },
+    })
+
+    if text:
+        for i in range(0, len(text), 2000):
+            chunk = text[i:i + 2000]
+            children.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [{"type": "text", "text": {"content": chunk}}]
+                },
+            })
+    else:
+        children.append({
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [{"type": "text", "text": {"content": "(원문을 가져올 수 없었습니다)"}}]
+            },
+        })
+
+    notion.pages.create(
+        parent={"page_id": parent_page_id},
+        properties={
+            "title": {"title": [{"text": {"content": f"📄 원문: {title[:100]}"}}]}
+        },
+        children=children,
+    )

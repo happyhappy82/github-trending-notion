@@ -13,7 +13,7 @@ from pathlib import Path
 
 import requests as http_requests
 from notion_client import Client
-from scraper_utils import fetch_article_text, text_to_notion_blocks
+from scraper_utils import fetch_article_text, save_original_subpage
 
 KST = timezone(timedelta(hours=9))
 _today = datetime.now(timezone.utc).date()
@@ -175,8 +175,8 @@ if __name__ == "__main__":
                     "소스유형": {"select": {"name": feed["source_type"]}},
                 }
                 article_text = fetch_article_text(item["url"])
-                children = text_to_notion_blocks(article_text)
-                page = notion.pages.create(parent={"database_id": database_id}, properties=properties, children=children)
+                page = notion.pages.create(parent={"database_id": database_id}, properties=properties)
+                save_original_subpage(notion, page["id"], item["title"], article_text, item["url"], feed["source_type"])
                 seen.add(item["url"])
                 print(f"  ✅ {item['title']} ({item['date']})")
         except Exception as e:
