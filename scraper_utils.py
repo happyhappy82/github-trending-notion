@@ -31,7 +31,7 @@ def text_to_notion_blocks(text):
 
     for para in paragraphs:
         # Notion rich_text content limit is 2000 chars per text object
-        chunks = [para[i:i + 2000] for i in range(0, len(para), 2000)]
+        chunks = [para[i:i + 1900] for i in range(0, len(para), 1900)]
         for chunk in chunks:
             blocks.append({
                 "object": "block",
@@ -59,8 +59,8 @@ def save_original_subpage(notion, parent_page_id, title, text, url, source_name)
     })
 
     if text:
-        for i in range(0, len(text), 2000):
-            chunk = text[i:i + 2000]
+        for i in range(0, len(text), 1900):
+            chunk = text[i:i + 1900]
             children.append({
                 "object": "block",
                 "type": "paragraph",
