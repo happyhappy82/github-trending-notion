@@ -33,7 +33,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen_*.json
-          git diff --staged --quiet || (git commit -m "Update seen_techcrunch_ai [skip ci]" && git pull --rebase && git push)
+          if ! git diff --staged --quiet; then
+            git commit -m "Update seen_techcrunch_ai [skip ci]"
+            for i in 1 2 3 4 5; do
+              git pull --rebase && git push && break
+              echo "Push failed (attempt $i), retrying in $((i * 2))s..."
+              sleep $((i * 2))
+            done
+          fi
 
   notify-failure:
     runs-on: ubuntu-latest
