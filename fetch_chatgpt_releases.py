@@ -13,6 +13,7 @@ from pathlib import Path
 import requests as http_requests
 from playwright.sync_api import sync_playwright
 from notion_client import Client
+from scraper_utils import save_original_subpage
 
 RELEASE_NOTES_URL = "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
 KST = timezone(timedelta(hours=9))
@@ -58,8 +59,8 @@ def fetch_releases():
                 const results = [];
                 let currentDate = '';
 
-                const elements = article.querySelectorAll('h1, h2, h3');
-                for (const el of elements) {
+                const headings = article.querySelectorAll('h1, h2, h3');
+                for (const el of headings) {
                     const text = el.textContent.trim();
                     if (!text) continue;
                     if (text === 'ChatGPT \\u2014 Release Notes') continue;
@@ -71,7 +72,17 @@ def fetch_releases():
                     if (isDate) {
                         currentDate = text;
                     } else if (currentDate) {
-                        results.push({ title: text, date: currentDate });
+                        // 제목 아래 본문 텍스트 수집
+                        const contentParts = [];
+                        let sibling = el.nextElementSibling;
+                        while (sibling) {
+                            const tag = sibling.tagName.toLowerCase();
+                            if (tag === 'h1' || tag === 'h2' || tag === 'h3') break;
+                            const t = sibling.textContent.trim();
+                            if (t) contentParts.push(t);
+                            sibling = sibling.nextElementSibling;
+                        }
+                        results.push({ title: text, date: currentDate, content: contentParts.join('\\n\\n') });
                     }
                 }
                 return results;
@@ -87,6 +98,7 @@ def fetch_releases():
             "title": item["title"],
             "url": RELEASE_NOTES_URL,
             "date": iso_date or "",
+            "content": item.get("content", ""),
         })
 
     return releases
@@ -159,8 +171,14 @@ def save_to_notion(releases):
         page = notion.pages.create(
             parent={"database_id": database_id}, properties=properties
         )
+        # 본문을 하위 페이지로 저장
+        content_text = release.get("content", "")
+        save_original_subpage(
+            notion, page["id"], release["title"],
+            content_text, release["url"], SOURCE_TYPE
+        )
         seen.add(release["title"])
-        print(f"  ✅ {release['title']} ({release['date']})")
+        print(f"  ✅ {release['title']} ({release['date']}) [본문 {len(content_text)}자]")
 
     save_seen(seen)
     print(f"[완료] {len(new_releases)}개 신규 ChatGPT 릴리즈노트 저장, seen 파일 업데이트됨!")
