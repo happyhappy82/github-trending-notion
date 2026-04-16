@@ -1,8 +1,10 @@
 [
+  "https://github.com/BasedHardware/omi",
   "https://github.com/BerriAI/litellm",
   "https://github.com/Crosstalk-Solutions/project-nomad",
   "https://github.com/Dimillian/Skills",
   "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "https://github.com/EvoMap/evolver",
   "https://github.com/FreeCAD/FreeCAD",
   "https://github.com/FujiwaraChoki/MoneyPrinterV2",
   "https://github.com/HKUDS/DeepTutor",
@@ -71,6 +73,7 @@
   "https://github.com/obra/superpowers",
   "https://github.com/onyx-dot-app/onyx",
   "https://github.com/openai/codex",
+  "https://github.com/openai/openai-agents-python",
   "https://github.com/opendataloader-project/opendataloader-pdf",
   "https://github.com/pascalorg/editor",
   "https://github.com/public-apis/public-apis",
@@ -84,10 +87,12 @@
   "https://github.com/shiyu-coder/Kronos",
   "https://github.com/siddharthvaddem/openscreen",
   "https://github.com/snarktank/ralph",
+  "https://github.com/steipete/wacli",
   "https://github.com/supermemoryai/supermemory",
   "https://github.com/systemd/systemd",
   "https://github.com/thedotmack/claude-mem",
   "https://github.com/tinygrad/tinygrad",
+  "https://github.com/topoteretes/cognee",
   "https://github.com/tw93/Mole",
   "https://github.com/twentyhq/twenty",
   "https://github.com/usestrix/strix",
@@ -96,5 +101,6 @@
   "https://github.com/virattt/ai-hedge-fund",
   "https://github.com/virattt/dexter",
   "https://github.com/vxcontrol/pentagi",
+  "https://github.com/z-lab/dflash",
   "https://github.com/zai-org/GLM-OCR"
 ]
