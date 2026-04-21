@@ -11,6 +11,7 @@
   "https://github.com/FujiwaraChoki/MoneyPrinterV2",
   "https://github.com/HKUDS/DeepTutor",
   "https://github.com/HKUDS/LightRAG",
+  "https://github.com/HKUDS/RAG-Anything",
   "https://github.com/Lordog/dive-into-llms",
   "https://github.com/NousResearch/hermes-agent",
   "https://github.com/OpenBB-finance/OpenBB",
@@ -45,6 +46,7 @@
   "https://github.com/coleam00/Archon",
   "https://github.com/czlonkowski/n8n-mcp",
   "https://github.com/datalab-to/chandra",
+  "https://github.com/dayanch96/YTLite",
   "https://github.com/deepseek-ai/DeepGEMM",
   "https://github.com/dmtrKovalenko/fff.nvim",
   "https://github.com/f/prompts.chat",
@@ -74,6 +76,7 @@
   "https://github.com/luongnv89/claude-howto",
   "https://github.com/microsoft/VibeVoice",
   "https://github.com/microsoft/agent-lightning",
+  "https://github.com/microsoft/ai-agents-for-beginners",
   "https://github.com/microsoft/markitdown",
   "https://github.com/moeru-ai/airi",
   "https://github.com/multica-ai/multica",
@@ -94,6 +97,7 @@
   "https://github.com/rustfs/rustfs",
   "https://github.com/ruvnet/RuView",
   "https://github.com/ruvnet/ruflo",
+  "https://github.com/sansan0/TrendRadar",
   "https://github.com/shanraisshan/claude-code-best-practice",
   "https://github.com/shareAI-lab/learn-claude-code",
   "https://github.com/sherlock-project/sherlock",
@@ -117,5 +121,6 @@
   "https://github.com/virattt/dexter",
   "https://github.com/vxcontrol/pentagi",
   "https://github.com/z-lab/dflash",
-  "https://github.com/zai-org/GLM-OCR"
+  "https://github.com/zai-org/GLM-OCR",
+  "https://github.com/zilliztech/claude-context"
 ]
