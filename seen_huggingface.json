@@ -1,4 +1,5 @@
 [
+  "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
   "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
   "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
   "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale-a-strategic-variable-mo",
@@ -7,6 +8,7 @@
   "https://huggingface.co/blog/Hcompany/holotab",
   "https://huggingface.co/blog/JetBrains/mellum2-launch",
   "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+  "https://huggingface.co/blog/ServiceNow-AI/code-switching",
   "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
   "https://huggingface.co/blog/ServiceNow-AI/eva",
   "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
@@ -31,6 +33,7 @@
   "https://huggingface.co/blog/ettin-reranker",
   "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
   "https://huggingface.co/blog/gemma4",
+  "https://huggingface.co/blog/github-ci-hf-jobs",
   "https://huggingface.co/blog/hf-cli-for-agents",
   "https://huggingface.co/blog/ibm-granite/granite-4-1",
   "https://huggingface.co/blog/ibm-granite/granite-4-vision",
