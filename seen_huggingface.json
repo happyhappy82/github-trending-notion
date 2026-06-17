@@ -18,6 +18,7 @@
   "https://huggingface.co/blog/allenai/olmo-eval",
   "https://huggingface.co/blog/allenai/olmoearth-v1-1",
   "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+  "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
   "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
   "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
   "https://huggingface.co/blog/build-small-hackathon/job-search-blog",
@@ -76,5 +77,6 @@
   "https://huggingface.co/blog/transformers-to-mlx",
   "https://huggingface.co/blog/transformersjs-chrome-extension",
   "https://huggingface.co/blog/trl-v1",
-  "https://huggingface.co/blog/waypoint-1-5"
+  "https://huggingface.co/blog/waypoint-1-5",
+  "https://huggingface.co/blog/zai-org/glm-52-blog"
 ]
