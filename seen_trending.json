@@ -301,6 +301,7 @@
   "https://github.com/garrytan/gstack",
   "https://github.com/gastownhall/beads",
   "https://github.com/gastownhall/gastown",
+  "https://github.com/geo-tp/ESP32-Bit-Pirate",
   "https://github.com/ggml-org/llama.cpp",
   "https://github.com/ghostty-org/ghostty",
   "https://github.com/github/copilot-sdk",
@@ -551,6 +552,7 @@
   "https://github.com/tw93/Pake",
   "https://github.com/twentyhq/twenty",
   "https://github.com/unclecode/crawl4ai",
+  "https://github.com/usekaneo/kaneo",
   "https://github.com/usestrix/strix",
   "https://github.com/vas3k/TaxHacker",
   "https://github.com/veracrypt/VeraCrypt",
@@ -578,5 +580,6 @@
   "https://github.com/zai-org/GLM-OCR",
   "https://github.com/zakirullin/files.md",
   "https://github.com/zeux/meshoptimizer",
+  "https://github.com/zhaoxuya520/reverse-skill",
   "https://github.com/zilliztech/claude-context"
 ]
