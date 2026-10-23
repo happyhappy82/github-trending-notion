@@ -192,6 +192,7 @@
   "https://huggingface.co/blog/tokenizers-v1",
   "https://huggingface.co/blog/torch-attention-profile",
   "https://huggingface.co/blog/torch-mlp-fusion",
+  "https://huggingface.co/blog/torch-neuronx-model-support",
   "https://huggingface.co/blog/torch-profiler",
   "https://huggingface.co/blog/train-multi-vector-encoder",
   "https://huggingface.co/blog/train-multimodal-sentence-transformers",
